@@ -1,0 +1,430 @@
+[93mgravity & resonance[0m
+Hash #162/1000
+Generated: 2025-11-30T07:09:04.245354
+Value Estimate: $11541
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'gravity & resonance', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'gravity & resonance' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/0910.5504v1</id>
+    <title>Multipurpose High Frequency Electron Spin Resonance Spectrometer for Condensed Matter Research</title>
+    <updated>2009-10-29T12:15:18Z</updated>
+    <link href="https://arxiv.org/abs/0910.5504v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0910.5504v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We describe a quasi-optical multifrequency ESR spectrometer operating in the 75-225 GHz range and optimized at 210 GHz for general use in condensed matter physics, chemistry and biology. The quasi-optical bridge detects the change of mm wave polarization at the ESR. A controllable reference arm maintains a mm wave bias at the detector. The attained sensitivity of 2x10^10 spin/G/(Hz)1/2, measured on a dilute Mn:MgO sample in a non-resonant probe head at 222.4 GHz and 300 K, is comparable to commercial high sensitive X band spectrometers. The spectrometer has a Fabry-Perot resonator based probe head to measure aqueous solutions, and a probe head to measure magnetic field angular dependence of single crystals. The spectrometer is robust and easy to use and may be operated by undergraduate students. Its performance is demonstrated by examples from various fields of condensed matter physics.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2009-10-29T12:15:18Z</published>
+    <arxiv:comment>submitted to Journal of Magnetic Resonance</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <arxiv:journal_ref>Applied Magnetic Resonance 40, 47-63 (2011)</arxiv:journal_ref>
+    <author>
+      <name>Kalman L Nagy</name>
+    </author>
+    <author>
+      <name>Dario Quintavalle</name>
+    </author>
+    <author>
+      <name>Titusz Feher</name>
+    </author>
+    <author>
+      <name>Andras Janossy</name>
+    </author>
+    <arxiv:doi>10.1007/s00723-010-0182-4</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s00723-010-0182-4" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2210.13095v3</id>
+    <title>The GRAVITY Young Stellar Object survey -- IX. Spatially resolved kinematics of hot hydrogen gas in the star/disk interaction region of T Tauri stars</title>
+    <updated>2022-11-23T11:44:23Z</updated>
+    <link href="https://arxiv.org/abs/2210.13095v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.13095v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Aims: We aim to spatially and spectrally resolve the Br-gamma hydrogen emission line with the methods of interferometry in order to examine the kinematics of the hydrogen gas emission region in the inner accretion disk of a sample of solar-like young stellar objects. The goal is to identify trends and categories among the sources of our sample and to discuss whether or not they can be tied to different origin mechanisms associated with Br-gamma emission in T Tauri stars, chiefly and most prominently magnetospheric accretion.
+  Methods: We observed a sample of seven T Tauri stars for the first time with VLTI GRAVITY, recording spectra and spectrally dispersed interferometric quantities across the Br-gamma line in the NIR K-band. We use them to extract the size of the Br-gamma emission region and the photocenter shifts. To assist in the interpretation, we also make use of radiative transfer models of magnetospheric accretion to establish a baseline of expected interferometric signatures if accretion is the primary driver of Br-gamma emission.
+  Results: From among our sample, we find that five of the seven T~Tauri stars show an emission region with a half-flux radius in the range broadly expected for magnetospheric truncation. Two of the five objects also show Br-gamma emission primarily originating from within the corotation radius, while two other objects exhibit extended emission on a scale beyond 10 R$_*$, one of them even beyond the K~band continuum half-flux radius of 11.3 R$_*$.
+  Conclusions: We find strong evidence to suggest that for the two weakest accretors in the sample, magnetospheric accretion is the primary driver of Br-gamma radiation. The results for the remaining sources imply either partial or strong contributions coming from spatially extended emission components in the form of outflows, such as stellar or disk winds.</summary>
+    <category term="astro-ph.SR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-24T10:26:58Z</published>
+    <arxiv:comment>Version corresponds to the one in A&amp;A production. The author list has been amended with "GRAVITY Collaboration" as first entry in keeping with the convention established for papers published by the GRAVITY consortium in recent years</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.SR"/>
+    <arxiv:journal_ref>A&amp;A 669, A59 (2023)</arxiv:journal_ref>
+    <author>
+      <name> GRAVITY Collaboration</name>
+    </author>
+    <author>
+      <name>J. A. Wojtczak</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Labadie</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Perraut</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Tessore</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Soulain</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Ganci</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Bouvier</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Dougados</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Alécian</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. Nowacki</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Cozzo</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+      <arxiv:affiliation>Dipartimento di Fisica &amp; Chimica, Università di Palermo, Palermo, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>W. Brandner</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Caratti o Garatti</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Dublin Institute for Advanced Studies, Dublin, Ireland</arxiv:affiliation>
+      <arxiv:affiliation>INAF - Osservatorio Astronomico di Capodimonte, Napoli, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Garcia</name>
+      <arxiv:affiliation>CENTRA, Centro de Astrofísica e Gravitação, Instituto Superior Técnico, Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation>Universidade do Porto, Faculdade de Engenharia, Porto, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Garcia Lopez</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Dublin Institute for Advanced Studies, Dublin, Ireland</arxiv:affiliation>
+      <arxiv:affiliation>School of Physics, University College Dublin, Belfield, Ireland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Sanchez-Bermudez</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Instituto de Astronomía, Universidad Nacional Autónoma de México, Ciudad de México, Mexico</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Amorim</name>
+      <arxiv:affiliation>CENTRA, Centro de Astrofísica e Gravitação, Instituto Superior Técnico, Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation>Universidade de Lisboa, Faculdade de Ciências, Campo Grande, Lisboa, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Benisty</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. -P. Berger</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Bourdarot</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Caselli</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Clénet</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. T. de Zeeuw</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Sterrewacht Leiden, Leiden University, Leiden, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Davies</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Drescher</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Duvert</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Eckart</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Max-Planck-Institute for Radio Astronomy, Bonn, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Eisenhauer</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Eupen</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>N. M. Föster-Schreiber</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Gendron</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Gillessen</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Grant</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Grellmann</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Heißel</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Th. Henning</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Hippler</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Horrobin</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Z. Hubert</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Jocou</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Kervella</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Labour</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Lapeyrère</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. -B. Le Bouquin</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Léna</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>D. Lutz</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Mang</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Ott</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Paumard</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Perrin</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Scheithauer</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Shangguan</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Shimizu</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Spezzano</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>O. Straub</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Straubmeier</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Sturm</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. van Dishoeck</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Sterrewacht Leiden, Leiden University, Leiden, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Vincent</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Widmann</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1051/0004-6361/202244675</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1051/0004-6361/202244675" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2003.05042v4</id>
+    <title>Di-chromatic Interpolation of Magnetic Resonance Metabolic Imagery</title>
+    <updated>2021-02-12T18:42:05Z</updated>
+    <link href="https://arxiv.org/abs/2003.05042v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2003.05042v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Magnetic resonance imaging with hyperpolarized contrast agents can provide unprecedented \textit{in-vivo} measurements of metabolism, but yields images that are lower resolution than that achieved with proton anatomical imaging. In order to spatially localize the metabolic activity, the metabolic image must be interpolated to the size of the proton image. The most common methods for choosing the unknown values rely exclusively on values of the original un-interpolated image. In this work, we present an alternative method that uses the higher-resolution proton image to provide additional spatial structure. The interpolated image is the result of a convex optimization algorithm which is solved with the Fast Iterative Shrinkage Threshold Algorithm (FISTA). Results are shown with images of hyperpolarized pyruvate, lactate, and bicarbonate using data of the heart and brain from healthy human volunteers, a healthy porcine heart, and a human with prostate cancer.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-03-11T00:12:03Z</published>
+    <arxiv:comment>Magnetic Resonance Materials in Physics, Biology, and Medicine (2021)</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <arxiv:journal_ref>Magnetic Resonance Materials in Physics, Biology and Medicine (2021): 1-16</arxiv:journal_ref>
+    <author>
+      <name>Nicholas Dwork</name>
+    </author>
+    <author>
+      <name>Jeremy W. Gordon</name>
+    </author>
+    <author>
+      <name>Shuyu Tang</name>
+    </author>
+    <author>
+      <name>Daniel O'Connor</name>
+    </author>
+    <author>
+      <name>Esben Sovso Szocska Hansen</name>
+    </author>
+    <author>
+      <name>Christoffer Laustsen</name>
+    </author>
+    <author>
+      <name>Peder E. Z. Larson</name>
+    </author>
+    <arxiv:doi>10.1007/s10334-020-00903-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10334-020-00903-y" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1903.01325v2</id>
+    <title>Noncontrast free-breathing respiratory self-navigated coronary artery cardiovascular magnetic resonance angiography at 3 T using lipid insensitive binomial off-resonant excitation (LIBRE)</title>
+    <updated>2019-06-12T09:20:46Z</updated>
+    <link href="https://arxiv.org/abs/1903.01325v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1903.01325v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Robust and homogeneous lipid suppression is mandatory for coronary magnetic resonance angiography (MRA) since coronary arteries are commonly embedded in fat. However, effective large volume lipid suppression becomes challenging when performing radial whole-heart coronary MRA and the problem may even be exacerbated at increasing magnetic field strengths. Incomplete fat suppression also generates artifacts, and may affect advanced motion correction methods. The aim was to evaluate a recently reported lipid insensitive MRI method for self-navigated coronary MRA at 3T. Lipid insensitive binomial off resonant excitation (LIBRE) radiofrequency (RF) excitation pulses were included into a self-navigated 3D radial GRE coronary MRA sequence at 3T. LIBRE was compared against conventional fat saturation (FS) and binomial 1-180°-1 water excitation (WE). First, fat suppression of all techniques was numerically characterized using Matlab and experimentally validated in phantoms and in legs of human volunteers. Subsequently, free-breathing self-navigated coronary MRA was performed using the LIBRE pulse as well as FS and WE in ten volunteers. Results obtained in the simulations were confirmed by the experimental validations as LIBRE enabled near complete fat suppression for 3D radial imaging in vitro and in vivo. For self-navigated whole-heart coronary MRA at 3T, fat SNR was significantly attenuated using LIBRE compared with conventional FS. LIBRE increased the RCA vessel sharpness significantly (37 +/- 9% (LIBRE) vs. 29 +/- 8% (FS) and 30 +/- 8% (WE), both p&lt;0.05) and led to a significant increase in the measured RCA vessel length to (83 +/- 31 mm (LIBRE) vs. 56 +/- 12 mm (FS) and 59 +/- 27 (WE) p&lt;0.05). LIBRE enables robust large volume fat suppression and significantly improves coronary artery image quality at 3T compared to the use of conventional fat suppression and water excitation.</summary>
+    <category term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-03-04T16:14:04Z</published>
+    <arxiv:comment>Accepted in Journal of Cardiovascular Magnetic Resonance, 25 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.med-ph"/>
+    <arxiv:journal_ref>Journal of Cardiovascular Magnetic Resonance 2019 21:38</arxiv:journal_ref>
+    <author>
+      <name>Jessica A. M. Bastiaansen</name>
+    </author>
+    <author>
+      <name>Ruud B. van Heeswijk</name>
+    </author>
+    <author>
+      <name>Matthias Stuber</name>
+    </author>
+    <author>
+      <name>Davide Piccini</name>
+    </author>
+    <arxiv:doi>10.1186/s12968-019-0543-6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1186/s12968-019-0543-6" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/hep-th/0002161v2</id>
+    <title>Quasi-Localization of Gravity by Resonant Modes</title>
+    <updated>2000-03-07T18:41:48Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/0002161v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/0002161v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We examine the behaviour of gravity in brane theories with extra dimensions in a non-factorizable geometry. We find that for metrics which are asymptotically flat far from the brane there is a resonant graviton mode at zero energy. The presence of this resonance ensures quasi-localization of gravity, whereby at intermediate scales the gravitational laws on the brane are approximately four dimensional. However, for scales larger than the lifetime of the graviton resonance the five dimensional laws of gravity will be reproduced due to the decay of the four dimensional graviton. We also present a simple classification of the possible types of effective gravity theories on the brane that can appear for general non-factorizable background theories.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2000-02-21T03:54:46Z</published>
+    <arxiv:comment>8 pages, 3 figures included. Requires JHEP.cls. Typos fixed, note and references added. Added expression for width of resonance</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys.Rev.Lett.84:5932-5935,2000</arxiv:journal_ref>
+    <author>
+      <name>Csaba Csaki</name>
+    </author>
+    <author>
+      <name>Joshua Erlich</name>
+    </author>
+    <author>
+      <name>Timothy J. Hollowood</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.84.5932</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.84.5932" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'gravity & resonance' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'gravity & resonance' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

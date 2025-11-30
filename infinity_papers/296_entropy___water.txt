@@ -1,0 +1,179 @@
+[93mentropy & water[0m
+Hash #296/1000
+Generated: 2025-11-30T07:15:01.664879
+Value Estimate: $27571
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'entropy & water', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'entropy & water' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/1804.02436v1</id>
+    <title>Water Bridging Dynamics of Polymerase Chain Reaction in the Gauge Theory Paradigm of Quantum Fields</title>
+    <updated>2018-03-29T23:04:17Z</updated>
+    <link href="https://arxiv.org/abs/1804.02436v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1804.02436v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We discuss the role of water bridging the DNA-enzyme interaction by resorting to recent results showing that London dispersion forces between delocalized electrons of base pairs of DNA are responsible for the formation of dipole modes that can be recognized by \textit{Taq} polymerase. We describe the dynamic origin of the high efficiency and precise targeting of \textit{Taq} activity in PCR. The spatiotemporal distribution of interaction couplings, frequencies, amplitudes, and phase modulations comprise a pattern of fields which constitutes the electromagnetic image of DNA in the surrounding water, which is what the polymerase enzyme actually recognizes in the DNA water environment. The experimental realization of PCR amplification, achieved through replacement of the DNA template by the treatment of pure water with electromagnetic signals recorded from viral and bacterial DNA solutions, is found consistent with the gauge theory paradigm of quantum fields.</summary>
+    <category term="q-bio.OT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-03-29T23:04:17Z</published>
+    <arxiv:comment>18 pages, 3 figures, published in Water 2017, 9, 339</arxiv:comment>
+    <arxiv:primary_category term="q-bio.OT"/>
+    <arxiv:journal_ref>Water 2017, 9, 339</arxiv:journal_ref>
+    <author>
+      <name>Luc Montagnier</name>
+    </author>
+    <author>
+      <name>Jamal Aïssa</name>
+    </author>
+    <author>
+      <name>Antonio Capolupo</name>
+    </author>
+    <author>
+      <name>Travis J. A. Craddock</name>
+    </author>
+    <author>
+      <name>Philip Kurian</name>
+    </author>
+    <author>
+      <name>Claude Lavallee</name>
+    </author>
+    <author>
+      <name>Albino Polcari</name>
+    </author>
+    <author>
+      <name>Paola Romano</name>
+    </author>
+    <author>
+      <name>Alberto Tedeschi</name>
+    </author>
+    <author>
+      <name>Giuseppe Vitiello</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/gr-qc/0003089v1</id>
+    <title>A Spacetime Foam Approach to the Schwarzschild-de Sitter Entropy</title>
+    <updated>2000-03-22T19:08:39Z</updated>
+    <link href="https://arxiv.org/abs/gr-qc/0003089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/gr-qc/0003089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  The entropy for a black hole in a de Sitter space is approached within the framework of spacetime foam. A simple model, made by $N$ wormholes in a semiclassical approximation, is taken under examination to compute the entropy for such a case. An extension to the extreme case when the black hole and cosmological horizons are equal is discussed.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2000-03-22T19:08:39Z</published>
+    <arxiv:comment>Published in Entropy 2000, 2, 26-38, www.mdpi.org/entropy/</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Entropy 2 (2000) 26-38</arxiv:journal_ref>
+    <author>
+      <name>Remo Garattini</name>
+    </author>
+    <arxiv:doi>10.3390/e2010026</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e2010026" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2311.10579v1</id>
+    <title>Graph Neural Networks for Pressure Estimation in Water Distribution Systems</title>
+    <updated>2023-11-17T15:30:12Z</updated>
+    <link href="https://arxiv.org/abs/2311.10579v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.10579v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pressure and flow estimation in Water Distribution Networks (WDN) allows water management companies to optimize their control operations. For many years, mathematical simulation tools have been the most common approach to reconstructing an estimate of the WDN hydraulics. However, pure physics-based simulations involve several challenges, e.g. partially observable data, high uncertainty, and extensive manual configuration. Thus, data-driven approaches have gained traction to overcome such limitations. In this work, we combine physics-based modeling and Graph Neural Networks (GNN), a data-driven approach, to address the pressure estimation problem. First, we propose a new data generation method using a mathematical simulation but not considering temporal patterns and including some control parameters that remain untouched in previous works; this contributes to a more diverse training data. Second, our training strategy relies on random sensor placement making our GNN-based estimation model robust to unexpected sensor location changes. Third, a realistic evaluation protocol considers real temporal patterns and additionally injects the uncertainties intrinsic to real-world scenarios. Finally, a multi-graph pre-training strategy allows the model to be reused for pressure estimation in unseen target WDNs. Our GNN-based model estimates the pressure of a large-scale WDN in The Netherlands with a MAE of 1.94mH$_2$O and a MAPE of 7%, surpassing the performance of previous studies. Likewise, it outperformed previous approaches on other WDN benchmarks, showing a reduction of absolute error up to approximately 52% in the best cases.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-17T15:30:12Z</published>
+    <arxiv:comment>submitted to Water Resources Research. Huy Truong and Andrés Tello contributed equally to this work</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Water Resources Research, 60, issue 7, 2024</arxiv:journal_ref>
+    <author>
+      <name>Huy Truong</name>
+    </author>
+    <author>
+      <name>Andrés Tello</name>
+    </author>
+    <author>
+      <name>Alexander Lazovik</name>
+    </author>
+    <author>
+      <name>Victoria Degeler</name>
+    </author>
+    <arxiv:doi>10.1029/2023WR036741</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1029/2023WR036741" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1612.05917v1</id>
+    <title>Linear Quantum Entropy and Non-Hermitian Hamiltonians</title>
+    <updated>2016-12-18T14:27:24Z</updated>
+    <link href="https://arxiv.org/abs/1612.05917v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1612.05917v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider the description of open quantum systems with probability sinks (or sources) in terms of general non-Hermitian Hamiltonians.~Within such a framework, we study novel possible definitions of the quantum linear entropy as an indicator of the flow of information during the dynamics. Such linear entropy functionals are necessary in the case of a partially Wigner-transformed non-Hermitian Hamiltonian (which is typically useful within a mixed quantum-classical representation). Both the case of a system represented by a pure non-Hermitian Hamiltonian as well as that of the case of non-Hermitian dynamics in a classical bath are explicitly considered.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-12-18T14:27:24Z</published>
+    <arxiv:comment>Entropy, Special Issue "Entropy in Quantum Systems and Quantum Field Theory (QFT)"</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Entropy 18, 451 (2016)</arxiv:journal_ref>
+    <author>
+      <name>Alessandro Sergi</name>
+    </author>
+    <author>
+      <name>Paolo V. Giaquinta</name>
+    </author>
+    <arxiv:doi>10.3390/e18120451</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e18120451" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1809.06500v3</id>
+    <title>Range entropy: A bridge between signal complexity and self-similarity</title>
+    <updated>2018-12-14T02:55:43Z</updated>
+    <link href="https://arxiv.org/abs/1809.06500v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1809.06500v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Approximate entropy (ApEn) and sample entropy (SampEn) are widely used for temporal complexity analysis of real-world phenomena. However, their relationship with the Hurst exponent as a measure of self-similarity is not widely studied. Additionally, ApEn and SampEn are susceptible to signal amplitude changes. A common practice for addressing this issue is to correct their input signal amplitude by its standard deviation. In this study, we first show, using simulations, that ApEn and SampEn are related to the Hurst exponent in their tolerance r and embedding dimension m parameters. We then propose a modification to ApEn and SampEn called range entropy or RangeEn. We show that RangeEn is more robust to nonstationary signal changes, and it has a more linear relationship with the Hurst exponent, compared to ApEn and SampEn. RangeEn is bounded in the tolerance r-plane between 0 (maximum entropy) and 1 (minimum entropy) and it has no need for signal amplitude correction. Finally, we demonstrate the clinical usefulness of signal entropy measures for characterisation of epileptic EEG data as a real-world example.</summary>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-09-18T01:48:56Z</published>
+    <arxiv:comment>This is the revised and published version in Entropy</arxiv:comment>
+    <arxiv:primary_category term="physics.comp-ph"/>
+    <arxiv:journal_ref>Entropy 2018, 20(12), 962</arxiv:journal_ref>
+    <author>
+      <name>Amir Omidvarnia</name>
+    </author>
+    <author>
+      <name>Mostefa Mesbah</name>
+    </author>
+    <author>
+      <name>Mangor Pedersen</name>
+    </author>
+    <author>
+      <name>Graeme Jackson</name>
+    </author>
+    <arxiv:doi>10.3390/e20120962</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/e20120962" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'entropy & water' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'entropy & water' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

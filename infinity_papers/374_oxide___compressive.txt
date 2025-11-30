@@ -1,0 +1,180 @@
+[93moxide & compressive[0m
+Hash #374/1000
+Generated: 2025-11-30T07:18:20.148731
+Value Estimate: $5325
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'oxide & compressive', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'oxide & compressive' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/2208.11988v1</id>
+    <title>Berry curvature induced anomalous Hall conductivity in magnetic topological oxide double perovskite Sr2FeMoO6</title>
+    <updated>2022-08-25T10:38:57Z</updated>
+    <link href="https://arxiv.org/abs/2208.11988v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.11988v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Oxide materials exhibit several novel structural, magnetic, and electronic properties. Their stability under ambient conditions, easy synthesis, and high transition temperatures provide such systems with an ideal ground for realizing topological properties and real-life technological applications. However, experimental evidence of topological states in oxide materials is rare. In this study, we have synthesized single crystals of oxide double perovskite Sr2FeMoO6 and revealed its topological nature by investigating its structural, magnetic, and electronic properties. We observed that the system crystallized in the cubic space group Fm-3m, which is a half-metallic ferromagnet. Transport measurements show an anomalous Hall effect, and it is evident that the Hall contribution originates from the Berry curvature. Assuming a shift of the Fermi energy towards the conduction band, the contribution of the anomalous Hall effect is enhanced owing to the presence of a gaped nodal line. This study can be used to explore and realize the topological properties of bulk oxide systems.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-25T10:38:57Z</published>
+    <arxiv:comment>Topological quantum material, Oxide topological material</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>Tirthankar Chakraborty</name>
+    </author>
+    <author>
+      <name>Kartik Samanta</name>
+    </author>
+    <author>
+      <name>Satya N. Guin</name>
+    </author>
+    <author>
+      <name>Jonathan Noky</name>
+    </author>
+    <author>
+      <name>Iñigo Robredo</name>
+    </author>
+    <author>
+      <name>Suchitra Prasad</name>
+    </author>
+    <author>
+      <name>Juergen Kuebler</name>
+    </author>
+    <author>
+      <name>Chandra Shekhar</name>
+    </author>
+    <author>
+      <name>Maia G. Vergniory</name>
+    </author>
+    <author>
+      <name>Claudia Felser</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1901.09340v1</id>
+    <title>A simple INDIUM TIN OXIDE/glass DRA</title>
+    <updated>2019-01-27T09:22:38Z</updated>
+    <link href="https://arxiv.org/abs/1901.09340v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1901.09340v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A novel Dielectric Resonator Antenna, simply made of INDIUM TIN OXIDE coated glass slides placed on a microstrip transmission line, for communication applications is presented. Changes in the bandwidth and gain of the antenna are observed by modifying the dimensions of the INDIUM TIN OXIDE coated glass slides. Changes in gain, directivity and reflection coefficient are observed. A parametric study is conducted on the size of the DRA to understand the effect on bandwidth, reflection coefficient and gain.</summary>
+    <category term="physics.app-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-01-27T09:22:38Z</published>
+    <arxiv:comment>INDIUM TIN OXIDE, DRA, directivity, gain, bandwidth, WLAN, WiMAX</arxiv:comment>
+    <arxiv:primary_category term="physics.app-ph"/>
+    <author>
+      <name>Vivek Parimi</name>
+    </author>
+    <author>
+      <name>Chia Hao Ku</name>
+    </author>
+    <author>
+      <name>Abhirup Datta</name>
+    </author>
+    <author>
+      <name>Sajal Biring</name>
+    </author>
+    <author>
+      <name>Somaditya Sen</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/0812.3137v1</id>
+    <title>Compressive sensing: a paradigm shift in signal processing</title>
+    <updated>2008-12-16T19:53:30Z</updated>
+    <link href="https://arxiv.org/abs/0812.3137v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0812.3137v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We survey a new paradigm in signal processing known as "compressive sensing". Contrary to old practices of data acquisition and reconstruction based on the Shannon-Nyquist sampling principle, the new theory shows that it is possible to reconstruct images or signals of scientific interest accurately and even exactly from a number of samples which is far smaller than the desired resolution of the image/signal, e.g., the number of pixels in the image. This new technique draws from results in several fields of mathematics, including algebra, optimization, probability theory, and harmonic analysis. We will discuss some of the key mathematical ideas behind compressive sensing, as well as its implications to other fields: numerical analysis, information theory, theoretical computer science, and engineering.</summary>
+    <category term="math.HO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-12-16T19:53:30Z</published>
+    <arxiv:comment>A short survey of compressive sensing</arxiv:comment>
+    <arxiv:primary_category term="math.HO"/>
+    <author>
+      <name>Olga Holtz</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1706.07180v4</id>
+    <title>Compressive Statistical Learning with Random Feature Moments</title>
+    <updated>2021-06-22T08:26:13Z</updated>
+    <link href="https://arxiv.org/abs/1706.07180v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.07180v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe a general framework -- compressive statistical learning -- for resource-efficient large-scale learning: the training collection is compressed in one pass into a low-dimensional sketch (a vector of random empirical generalized moments) that captures the information relevant to the considered learning task. A near-minimizer of the risk is computed from the sketch through the solution of a nonlinear least squares problem. We investigate sufficient sketch sizes to control the generalization error of this procedure. The framework is illustrated on compressive PCA, compressive clustering, and compressive Gaussian mixture Modeling with fixed known variance. The latter two are further developed in a companion paper.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-22T06:59:19Z</published>
+    <arxiv:comment>Main novelties between version 1 and version 2: improved concentration bounds, improved sketch sizes for compressive k-means and compressive GMM that now scale linearly with the ambient dimensionMain novelties of version 3: all content on compressive clustering and compressive GMM is now developed in the companion paper hal-02536818; improved statistical guarantees in a generic framework with illustration of the improvements on compressive PCA. Mathematical Statistics and Learning, EMS Publishing House, In press</arxiv:comment>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Rémi Gribonval</name>
+      <arxiv:affiliation>PANAMA, DANTE</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Gilles Blanchard</name>
+      <arxiv:affiliation>DATASHAPE, LMO</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nicolas Keriven</name>
+      <arxiv:affiliation>PANAMA, GIPSA-GAIA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yann Traonmilin</name>
+      <arxiv:affiliation>PANAMA, IMB</arxiv:affiliation>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2010.13012v1</id>
+    <title>Multifunctional Oxides for Topological Magnetic Textures by Design</title>
+    <updated>2020-10-25T01:27:11Z</updated>
+    <link href="https://arxiv.org/abs/2010.13012v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2010.13012v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Several challenges in designing an operational Skyrmion racetrack memory are well-known. Among those challenges, a few contradictions can be identified if researchers were to rely only on metallic materials. Hence, expanding the exploration on Skyrmion Physics into oxide materials is essential to bridge the contradicting gap. In this topical review, we first briefly revise the theories and criteria involved in stabilizing and manipulating Skymions, followed by studying the behaviors of dipolar-stabilized magnetic bubbles. Next, we explore the properties of multiferroic Skyrmions with magnetoelectric coupling, which can only be stabilized in Cu$_2$OSeO$_3$ thus far, as well as the rare bulk Néel-type Skyrmions in some polar materials. As an interlude section, we review the theory of Anomalous (AHE) and Topological Hall Effect (THE), before going through the recent progress of THE in oxide thin films. The debate about an alternative interpretation is also discussed. Finally, this review ends with future outlooks about the promising strategies of using interfacial charge-transfer and (111)-orientation of perovskites to benefit the field of Skyrmion research.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-10-25T01:27:11Z</published>
+    <arxiv:comment>31 pages, 17 figures, review on oxide skyrmions. J. Phys. D: Appl. Phys. (2020)</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>Z. S. Lim</name>
+    </author>
+    <author>
+      <name>A. Ariando</name>
+    </author>
+    <arxiv:doi>10.1088/1361-6463/abc03f</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1361-6463/abc03f" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'oxide & compressive' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'oxide & compressive' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

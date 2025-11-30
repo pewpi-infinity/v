@@ -1,0 +1,181 @@
+[93msignal & fusion[0m
+Hash #259/1000
+Generated: 2025-11-30T07:13:13.303208
+Value Estimate: $20628
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'signal & fusion', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'signal & fusion' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/2302.04024v1</id>
+    <title>InMyFace: Inertial and Mechanomyography-Based Sensor Fusion for Wearable Facial Activity Recognition</title>
+    <updated>2023-02-08T12:49:02Z</updated>
+    <link href="https://arxiv.org/abs/2302.04024v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.04024v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recognizing facial activity is a well-understood (but non-trivial) computer vision problem. However, reliable solutions require a camera with a good view of the face, which is often unavailable in wearable settings. Furthermore, in wearable applications, where systems accompany users throughout their daily activities, a permanently running camera can be problematic for privacy (and legal) reasons. This work presents an alternative solution based on the fusion of wearable inertial sensors, planar pressure sensors, and acoustic mechanomyography (muscle sounds). The sensors were placed unobtrusively in a sports cap to monitor facial muscle activities related to facial expressions. We present our integrated wearable sensor system, describe data fusion and analysis methods, and evaluate the system in an experiment with thirteen subjects from different cultural backgrounds (eight countries) and both sexes (six women and seven men). In a one-model-per-user scheme and using a late fusion approach, the system yielded an average F1 score of 85.00% for the case where all sensing modalities are combined. With a cross-user validation and a one-model-for-all-user scheme, an F1 score of 79.00% was obtained for thirteen participants (six females and seven males). Moreover, in a hybrid fusion (cross-user) approach and six classes, an average F1 score of 82.00% was obtained for eight users. The results are competitive with state-of-the-art non-camera-based solutions for a cross-user study. In addition, our unique set of participants demonstrates the inclusiveness and generalizability of the approach.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-08T12:49:02Z</published>
+    <arxiv:comment>Submitted to Information Fusion, Elsevier</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Information Fusion Elsevier 2023</arxiv:journal_ref>
+    <author>
+      <name>Hymalai Bello</name>
+    </author>
+    <author>
+      <name>Luis Alfredo Sanchez Marin</name>
+    </author>
+    <author>
+      <name>Sungho Suh</name>
+    </author>
+    <author>
+      <name>Bo Zhou</name>
+    </author>
+    <author>
+      <name>Paul Lukowicz</name>
+    </author>
+    <arxiv:doi>10.1016/j.inffus.2023.101886</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.inffus.2023.101886" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1003.1598v1</id>
+    <title>Information Fusion in the Immune System</title>
+    <updated>2010-03-08T11:18:01Z</updated>
+    <link href="https://arxiv.org/abs/1003.1598v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1003.1598v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Biologically-inspired methods such as evolutionary algorithms and neural networks are proving useful in the field of information fusion. Artificial Immune Systems (AISs) are a biologically-inspired approach which take inspiration from the biological immune system. Interestingly, recent research has show how AISs which use multi-level information sources as input data can be used to build effective algorithms for real time computer intrusion detection. This research is based on biological information fusion mechanisms used by the human immune system and as such might be of interest to the information fusion community. The aim of this paper is to present a summary of some of the biological information fusion mechanisms seen in the human immune system, and of how these mechanisms have been implemented as AISs</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-03-08T11:18:01Z</published>
+    <arxiv:comment>10 pages, 6 tables, 6 figures, Information Fusion</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>Information Fusion, 11 (1), 35-44, 2010</arxiv:journal_ref>
+    <author>
+      <name>Jamie Twycross</name>
+    </author>
+    <author>
+      <name>Uwe Aickelin</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1907.09921v2</id>
+    <title>Retrospective of the ARPA-E ALPHA fusion program</title>
+    <updated>2019-09-26T16:25:02Z</updated>
+    <link href="https://arxiv.org/abs/1907.09921v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1907.09921v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper provides a retrospective of the ALPHA (Accelerating Low-cost Plasma Heating and Assembly) fusion program of the Advanced Research Projects Agency-Energy (ARPA-E) of the U.S. Department of Energy. ALPHA's objective was to catalyze research and development efforts to enable substantially lower-cost pathways to economical fusion power. To do this in a targeted, focused program, ALPHA focused on advancing the science and technology of pulsed, intermediate-density fusion approaches, including magneto-inertial fusion and Z-pinch variants, that have the potential to scale to commercially viable fusion power plants. The paper includes a discussion of the origins and framing of the ALPHA program, a summary of project status and outcomes, a description of associated technology-transition activities, and thoughts on a potential follow-on ARPA-E fusion program.</summary>
+    <category term="physics.plasm-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-07-23T14:51:02Z</published>
+    <arxiv:comment>24 pages, 13 figures; accepted for publication by Journal of Fusion Energy</arxiv:comment>
+    <arxiv:primary_category term="physics.plasm-ph"/>
+    <arxiv:journal_ref>Journal of Fusion Energy 38, 506 (2019)</arxiv:journal_ref>
+    <author>
+      <name>C. L. Nehl</name>
+    </author>
+    <author>
+      <name>R. J. Umstattd</name>
+    </author>
+    <author>
+      <name>W. R. Regan</name>
+    </author>
+    <author>
+      <name>S. C. Hsu</name>
+    </author>
+    <author>
+      <name>P. B. McGrath</name>
+    </author>
+    <arxiv:doi>10.1007/s10894-019-00226-4</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10894-019-00226-4" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1908.09656v2</id>
+    <title>Distributed Detection of Sparse Stochastic Signals via Fusion of 1-bit Local Likelihood Ratios</title>
+    <updated>2019-11-05T01:31:50Z</updated>
+    <link href="https://arxiv.org/abs/1908.09656v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1908.09656v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this letter, we consider the detection of sparse stochastic signals with sensor networks (SNs), where the fusion center (FC) collects 1-bit data from the local sensors and then performs global detection. For this problem, a newly developed 1-bit locally most powerful test (LMPT) detector requires 3.3Q sensors to asymptotically achieve the same detection performance as the centralized LMPT (cLMPT) detector with Q sensors. This 1-bit LMPT detector is based on 1-bit quantized observations without any additional processing at the local sensors. However, direct quantization of observations is not the most efficient processing strategy at the sensors since it incurs unnecessary information loss. In this letter, we propose an improved-1-bit LMPT (Im-1-bit LMPT) detector that fuses local 1-bit quantized likelihood ratios (LRs) instead of directly quantized local observations. In addition, we design the quantization thresholds at the local sensors to ensure asymptotically optimal detection performance of the proposed detector. It is shown theoretically and numerically that, with the designed quantization thresholds, the proposed Im-1-bit LMPT detector for the detection of sparse signals requires less number of sensor nodes to compensate for the performance loss caused by 1-bit quantization.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-08-26T13:01:45Z</published>
+    <arxiv:comment>5 pages,2 figures, published in IEEE Signal Processing Letters (SPL)</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <arxiv:journal_ref>IEEE Signal Processing Letters, vol. 26, no. 12, pp. 1738-1742, Dec. 2019</arxiv:journal_ref>
+    <author>
+      <name>Chengxi Li</name>
+    </author>
+    <author>
+      <name>You He</name>
+    </author>
+    <author>
+      <name>Xueqian Wang</name>
+    </author>
+    <author>
+      <name>Gang Li</name>
+    </author>
+    <author>
+      <name>Pramod K. Varshney</name>
+    </author>
+    <arxiv:doi>10.1109/LSP.2019.2945193</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/LSP.2019.2945193" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2508.21412v1</id>
+    <title>Sampling Theory of Jointly Bandlimited Time-vertex Graph Signals</title>
+    <updated>2025-08-29T08:33:32Z</updated>
+    <link href="https://arxiv.org/abs/2508.21412v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.21412v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time-vertex graph signal (TVGS) models describe time-varying data with irregular structures. The bandlimitedness in the joint time-vertex Fourier spectral domain reflects smoothness in both temporal and graph topology. In this paper, we study the critical sampling of three types of TVGS including continuous-time signals, infinite-length sequences, and finite-length sequences in the time domain for each vertex on the graph. For a jointly bandlimited TVGS, we prove a lower bound on sampling density or sampling ratio, which depends on the measure of the spectral support in the joint time-vertex Fourier spectral domain. We also provide a lower bound on the sampling density or sampling ratio of each vertex on sampling sets for perfect recovery. To demonstrate that critical sampling is achievable, we propose the sampling and reconstruction procedures for the different types of TVGS. Finally, we show how the proposed sampling schemes can be applied to numerical as well as real datasets.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-29T08:33:32Z</published>
+    <arxiv:comment>This paper was published in Signal Processing, Elsevier</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <arxiv:journal_ref>Signal Processing, 2024, 222: 109522</arxiv:journal_ref>
+    <author>
+      <name>Hang Sheng</name>
+    </author>
+    <author>
+      <name>Hui Feng</name>
+    </author>
+    <author>
+      <name>Junhao Yu</name>
+    </author>
+    <author>
+      <name>Feng Ji</name>
+    </author>
+    <author>
+      <name>Bo Hu</name>
+    </author>
+    <arxiv:doi>10.1016/j.sigpro.2024.109522</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.sigpro.2024.109522" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'signal & fusion' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'signal & fusion' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

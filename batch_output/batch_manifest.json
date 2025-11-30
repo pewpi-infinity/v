@@ -1,0 +1,42 @@
+[
+  {
+    "topic": "hydrogen",
+    "hash1": "e2bf608099f3b07773dfea382ebb7246a188269034d2b40f35fccc26d449ed37",
+    "hash2": "9c777ff2cacf998a7484a736bbfbfd3ad8fa5a45d5baf97cccf6c6c15fccec40",
+    "hash3": "17fc1586f18e650692d3aa5c902693676a38226c1d59cd1a61aa5f6df4eb57bf",
+    "color": "UNKNOWN",
+    "timestamp": "2025-11-30 02:10:22.296854"
+  },
+  {
+    "topic": "water",
+    "hash1": "2f273df0d0d8f44c2f8b964ef5be85a1b0631d16d3ce57cf27fae99d34d941a6",
+    "hash2": "63dee75b7bba84e3cc1bab3d78dcda90c4fe43d7a7199a71444e2b8c70c3e523",
+    "hash3": "fbd017563b2812fbd9d5728f79ead3abd96245441536749d057c4530f6b8c4f8",
+    "color": "RED",
+    "timestamp": "2025-11-30 02:10:22.297742"
+  },
+  {
+    "topic": "vapor",
+    "hash1": "ad0c4e04b2e2aebc6941d75b31c4371249afe08ce1c76cf6444f176f03610a27",
+    "hash2": "6515f20357ba0b0da0b7f308bf7eefa1dbbbead68abd8daa7339b0c2b6aab17c",
+    "hash3": "079b433756eb2eefcc55521bf8b50845af8307927a55e94fa8efc3527c2112f2",
+    "color": "GREEN",
+    "timestamp": "2025-11-30 02:10:22.298679"
+  },
+  {
+    "topic": "quantum",
+    "hash1": "23f88678f035cd787bb3ea3a301f44a0a4fd87e151c4b622dbe4fc89e829affe",
+    "hash2": "81ed2d93457d6b3a40594d46905afe5a9ca1f6068b4f76af4ca966ca7dd0f9b4",
+    "hash3": "c799e2a89db5992b21c17183a55dd55cc5384c5a72c3953149f264ceb0a5820d",
+    "color": "UNKNOWN",
+    "timestamp": "2025-11-30 02:10:22.299436"
+  },
+  {
+    "topic": "portal",
+    "hash1": "e964cffd0618e440522b9a634934b32db7f4fbaa3720a9d1028ce9d92caf1720",
+    "hash2": "9255e01a039127390a17906f7527f7bd7151665540439c49589e1233e4f21a32",
+    "hash3": "9ff85a562eaa948809d4f768d9a496e8fc1df36031fe99cbacb3a858c7112f65",
+    "color": "ORANGE",
+    "timestamp": "2025-11-30 02:10:22.300276"
+  }
+]

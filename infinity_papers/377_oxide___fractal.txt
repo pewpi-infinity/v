@@ -1,0 +1,186 @@
+[93moxide & fractal[0m
+Hash #377/1000
+Generated: 2025-11-30T07:18:27.918401
+Value Estimate: $8637
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'oxide & fractal', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'oxide & fractal' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• Strengthening effect of monolayer graphene oxide on the impact mechanical properties of concrete and the mechanism analysis based on fractal theory — https://www.semanticscholar.org/paper/154e1f94fe0ccc0df3f5445513a4c54d6b5e1b7d
+• Adsorption of Cd(II) ions on magnetic graphene oxide/cellulose modified with β-cyclodextrin: Analytical interpretation via statistical physics modeling and fractal like kinetic approach. — https://www.semanticscholar.org/paper/2332f0f8374436df06f2e968f30264e53cbe7a4f
+• Enhancement of critical heat flux and superheat through controlled wettability of cuprous-oxide fractal-like nanotextured surfaces in pool boiling — https://www.semanticscholar.org/paper/f002f0deb924a9484216a7001215e033419c5c97
+• Fractal-like kinetic modelling for sorption of diclofenac onto graphene oxide/polypyrrole composite: Mechanism analysis and response surface methodology for optimization — https://www.semanticscholar.org/paper/388c8162e4299cf5933cf51dcb8cede835936b04
+• Analysis of quantum effects in metal oxide semiconductor field effect transistor in fractal dimensions — https://www.semanticscholar.org/paper/a5ca4159b326ed5f4c2e7c478463dc7e1a57b5f1
+• 
+    <id>http://arxiv.org/abs/1603.09409v4</id>
+    <title>Minkowski dimension and explicit tube formulas for $p$-adic fractal strings</title>
+    <updated>2018-10-11T19:36:08Z</updated>
+    <link href="https://arxiv.org/abs/1603.09409v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1603.09409v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The local theory of complex dimensions describes the oscillations in the geometry (spectra and dynamics) of fractal strings. Such geometric oscillations can be seen most clearly in the explicit volume formula for the tubular neighborhoods of a $p$-adic fractal string $\mathcal{L}_p$, expressed in terms of the underlying complex dimensions. The general fractal tube formula obtained in this paper is illustrated by several examples, including the nonarchimedean Cantor and Euler strings. Moreover, we show that the Minkowski dimension of a $p$-adic fractal string coincides with the abscissa of convergence of the geometric zeta function associated with the string, as well as with the asymptotic growth rate of the corresponding geometric counting function. The proof of this new result can be applied to both real and $p$-adic fractal strings and hence, yields a unifying explanation of a key result in the theory of complex dimensions for fractal strings, even in the archimedean (or real) case.</summary>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-03-30T22:53:36Z</published>
+    <arxiv:comment>34 pages, 1 figure. arXiv admin note: substantial text overlap with arXiv:1105.2966 This is the final version of an original research article on the Minkowski dimension and explicit tube formulas for $p$-adic fractal strings. It is appeared in the open access journal Fractal Fractional</arxiv:comment>
+    <arxiv:primary_category term="math-ph"/>
+    <arxiv:journal_ref>Fractal Fractional No. 2, vol. 2 (2018), 26th paper, 30 pp</arxiv:journal_ref>
+    <author>
+      <name>Michel L. Lapidus</name>
+    </author>
+    <author>
+      <name>Lũ' Hùng</name>
+    </author>
+    <author>
+      <name>Machiel van Frankenhuijsen</name>
+    </author>
+    <arxiv:doi>10.3390/fractalfract2040026</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/fractalfract2040026" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2208.11988v1</id>
+    <title>Berry curvature induced anomalous Hall conductivity in magnetic topological oxide double perovskite Sr2FeMoO6</title>
+    <updated>2022-08-25T10:38:57Z</updated>
+    <link href="https://arxiv.org/abs/2208.11988v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.11988v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Oxide materials exhibit several novel structural, magnetic, and electronic properties. Their stability under ambient conditions, easy synthesis, and high transition temperatures provide such systems with an ideal ground for realizing topological properties and real-life technological applications. However, experimental evidence of topological states in oxide materials is rare. In this study, we have synthesized single crystals of oxide double perovskite Sr2FeMoO6 and revealed its topological nature by investigating its structural, magnetic, and electronic properties. We observed that the system crystallized in the cubic space group Fm-3m, which is a half-metallic ferromagnet. Transport measurements show an anomalous Hall effect, and it is evident that the Hall contribution originates from the Berry curvature. Assuming a shift of the Fermi energy towards the conduction band, the contribution of the anomalous Hall effect is enhanced owing to the presence of a gaped nodal line. This study can be used to explore and realize the topological properties of bulk oxide systems.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-25T10:38:57Z</published>
+    <arxiv:comment>Topological quantum material, Oxide topological material</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>Tirthankar Chakraborty</name>
+    </author>
+    <author>
+      <name>Kartik Samanta</name>
+    </author>
+    <author>
+      <name>Satya N. Guin</name>
+    </author>
+    <author>
+      <name>Jonathan Noky</name>
+    </author>
+    <author>
+      <name>Iñigo Robredo</name>
+    </author>
+    <author>
+      <name>Suchitra Prasad</name>
+    </author>
+    <author>
+      <name>Juergen Kuebler</name>
+    </author>
+    <author>
+      <name>Chandra Shekhar</name>
+    </author>
+    <author>
+      <name>Maia G. Vergniory</name>
+    </author>
+    <author>
+      <name>Claudia Felser</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2205.07151v2</id>
+    <title>Network efficiency of spatial systems with fractal morphology: a geometric graphs approach</title>
+    <updated>2023-08-23T23:37:44Z</updated>
+    <link href="https://arxiv.org/abs/2205.07151v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.07151v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The functional features of spatial networks depend upon a non-trivial relationship between the topological and physical structure. Here, we explore that relationship for spatial networks with radial symmetry and disordered fractal morphology. Under a geometric graphs approach, we quantify the effectiveness of the exchange of information in the system from center to perimeter and over the entire network structure. We mainly consider two paradigmatic models of disordered fractal formation, the Ballistic Aggregation and Diffusion-Limited Aggregation models, and complementary, the Viscek and Hexaflake fractals, and Kagome and Hexagonal lattices. First, we show that complex tree morphologies provide important advantages over regular configurations, such as an invariant structural cost for different fractal dimensions. Furthermore, although these systems are known to be scale-free in space, they have bounded degree distributions for different values of an euclidean connectivity parameter and, therefore, do not represent ordinary scale-free networks. Finally, compared to regular structures, fractal trees are fragile and overall inefficient as expected, however, we show that this efficiency can become similar to that of a robust hexagonal lattice, at a similar cost, by just considering a very short euclidean connectivity beyond first neighbors.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-14T23:34:11Z</published>
+    <arxiv:comment>Spatial networks, fractal morphology, network efficiency</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <arxiv:journal_ref>Scientific Reports 13, 18706 (2023)</arxiv:journal_ref>
+    <author>
+      <name>A. C. Flores-Ortega</name>
+    </author>
+    <author>
+      <name>J. R. Nicolás-Carlock</name>
+    </author>
+    <author>
+      <name>J. L. Carrillo-Estrada</name>
+    </author>
+    <arxiv:doi>10.1038/s41598-023-45962-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41598-023-45962-y" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2008.10379v1</id>
+    <title>Fractal Interpretation of Bacterial Light Harvesters</title>
+    <updated>2020-08-21T14:47:49Z</updated>
+    <link href="https://arxiv.org/abs/2008.10379v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2008.10379v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bacteria light harvesters are interpreted as Vicsek fractal, based upon their morphology, even though such fractals contain only one, or perhaps two, generations. After using fractal dimensions to describe the geometry, we progress to use connectivity matrices to make an improved description of the light harvesters and make connections with our previous studies.</summary>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.PS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.bio-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-08-21T14:47:49Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="physics.optics"/>
+    <arxiv:journal_ref>fractal (2020)</arxiv:journal_ref>
+    <author>
+      <name>Julian Juhi-Lian Ting</name>
+    </author>
+    <arxiv:doi>10.1142/S0218348X21500249</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1142/S0218348X21500249" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1604.08014v5</id>
+    <title>Fractal Tube Formulas for Compact Sets and Relative Fractal Drums: Oscillations, Complex Dimensions and Fractality</title>
+    <updated>2018-03-20T10:38:43Z</updated>
+    <link href="https://arxiv.org/abs/1604.08014v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1604.08014v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We establish pointwise and distributional fractal tube formulas for a large class of relative fractal drums in Euclidean spaces of arbitrary dimensions. A relative fractal drum (or RFD, in short) is an ordered pair $(A,Ω)$ of subsets of the Euclidean space (under some mild assumptions) which generalizes the notion of a (compact) subset and that of a fractal string. By a fractal tube formula for an RFD $(A,Ω)$, we mean an explicit expression for the volume of the $t$-neighborhood of $A$ intersected by $Ω$ as a sum of residues of a suitable meromorphic function (here, a fractal zeta function) over the complex dimensions of the RFD $(A,Ω)$. The complex dimensions of an RFD are defined as the poles of its meromorphically continued fractal zeta function (namely, the distance or the tube zeta function), which generalizes the well-known geometric zeta function for fractal strings. These fractal tube formulas generalize in a significant way to higher dimensions the corresponding ones previously obtained for fractal strings by the first author and van Frankenhuijsen and later on, by the first author, Pearse and Winter in the case of fractal sprays. They are illustrated by several interesting examples. These examples include fractal strings, the Sierpiński gasket and the 3-dimensional carpet, fractal nests and geometric chirps, as well as self-similar fractal sprays. We also propose a new definition of fractality according to which a bounded set (or RFD) is considered to be fractal if it possesses at least one nonreal complex dimension or if its fractal zeta function possesses a natural boundary. This definition, which extends to RFDs and arbitrary bounded subsets of $\mathbb{R}^N$ the previous one introduced in the context of fractal strings, is illustrated by the Cantor graph (or devil's staircase) RFD, which is shown to be `subcritically fractal'.</summary>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.MG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-04-27T10:48:12Z</published>
+    <arxiv:comment>90 pages (because of different style file), 5 figures, corrected typos, updated references</arxiv:comment>
+    <arxiv:primary_category term="math-ph"/>
+    <arxiv:journal_ref>J. Fractal Geom. 5 (2018), 1-119</arxiv:journal_ref>
+    <author>
+      <name>Michel L. Lapidus</name>
+      <arxiv:affiliation>University of California, Riverside</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Goran Radunović</name>
+      <arxiv:affiliation>University of Zagreb</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Darko Žubrinić</name>
+      <arxiv:affiliation>University of Zagreb</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.4171/JFG/57</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.4171/JFG/57" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'oxide & fractal' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'oxide & fractal' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

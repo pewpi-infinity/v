@@ -1,0 +1,192 @@
+[93msound & signal[0m
+Hash #75/1000
+Generated: 2025-11-30T07:05:13.270356
+Value Estimate: $30578
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'sound & signal', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'sound & signal' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/2103.07390v1</id>
+    <title>Signal Representations for Synthesizing Audio Textures with Generative Adversarial Networks</title>
+    <updated>2021-03-12T16:31:20Z</updated>
+    <link href="https://arxiv.org/abs/2103.07390v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.07390v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative Adversarial Networks (GANs) currently achieve the state-of-the-art sound synthesis quality for pitched musical instruments using a 2-channel spectrogram representation consisting of log magnitude and instantaneous frequency (the "IFSpectrogram"). Many other synthesis systems use representations derived from the magnitude spectra, and then depend on a backend component to invert the output magnitude spectrograms that generally result in audible artefacts associated with the inversion process. However, for signals that have closely-spaced frequency components such as non-pitched and other noisy sounds, training the GAN on the 2-channel IFSpectrogram representation offers no advantage over the magnitude spectra based representations. In this paper, we propose that training GANs on single-channel magnitude spectra, and using the Phase Gradient Heap Integration (PGHI) inversion algorithm is a better comprehensive approach for audio synthesis modeling of diverse signals that include pitched, non-pitched, and dynamically complex sounds. We show that this method produces higher-quality output for wideband and noisy sounds, such as pops and chirps, compared to using the IFSpectrogram. Furthermore, the sound quality for pitched sounds is comparable to using the IFSpectrogram, even while using a simpler representation with half the memory requirements.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-03-12T16:31:20Z</published>
+    <arxiv:comment>Submitted to Sound and Music Computing Conference (SMC) 2021</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Sound and Music Computing 2021</arxiv:journal_ref>
+    <author>
+      <name>Chitralekha Gupta</name>
+    </author>
+    <author>
+      <name>Purnima Kamath</name>
+    </author>
+    <author>
+      <name>Lonce Wyse</name>
+    </author>
+    <arxiv:doi>10.5281/zenodo.5054145</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.5281/zenodo.5054145" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2105.10781v2</id>
+    <title>Quanta in sound, the sound of quanta: a voice-informed quantum theoretical perspective on sound</title>
+    <updated>2022-05-07T16:30:40Z</updated>
+    <link href="https://arxiv.org/abs/2105.10781v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2105.10781v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Humans have a privileged, embodied way to explore the world of sounds, through vocal imitation. The Quantum Vocal Theory of Sounds (QVTS) starts from the assumption that any sound can be expressed and described as the evolution of a superposition of vocal states, i.e., phonation, turbulence, and supraglottal myoelastic vibrations. The postulates of quantum mechanics, with the notions of observable, measurement, and time evolution of state, provide a model that can be used for sound processing, in both directions of analysis and synthesis. QVTS can give a quantum-theoretic explanation to some auditory streaming phenomena, eventually leading to practical solutions of relevant sound-processing problems, or it can be creatively exploited to manipulate superpositions of sonic elements. Perhaps more importantly, QVTS may be a fertile ground to host a dialogue between physicists, computer scientists, musicians, and sound designers, possibly giving us unheard manifestations of human creativity.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-05-22T18:06:47Z</published>
+    <arxiv:comment>34 pages, 16 figures. Pre-publication draft (2021) of: Mannone, M., Rocchesso, D. (2022). Quanta in Sound, the Sound of Quanta: A Voice-Informed Quantum Theoretical Perspective on Sound. In: Miranda, E. R. (eds) Quantum Computing in the Arts and Humanities. Springer, Cham</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Maria Mannone</name>
+    </author>
+    <author>
+      <name>Davide Rocchesso</name>
+    </author>
+    <arxiv:doi>10.1007/978-3-030-95538-0_6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-030-95538-0_6" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2202.10910v1</id>
+    <title>Sound Adversarial Audio-Visual Navigation</title>
+    <updated>2022-02-22T14:19:42Z</updated>
+    <link href="https://arxiv.org/abs/2202.10910v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.10910v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Audio-visual navigation task requires an agent to find a sound source in a realistic, unmapped 3D environment by utilizing egocentric audio-visual observations. Existing audio-visual navigation works assume a clean environment that solely contains the target sound, which, however, would not be suitable in most real-world applications due to the unexpected sound noise or intentional interference. In this work, we design an acoustically complex environment in which, besides the target sound, there exists a sound attacker playing a zero-sum game with the agent. More specifically, the attacker can move and change the volume and category of the sound to make the agent suffer from finding the sounding object while the agent tries to dodge the attack and navigate to the goal under the intervention. Under certain constraints to the attacker, we can improve the robustness of the agent towards unexpected sound attacks in audio-visual navigation. For better convergence, we develop a joint training mechanism by employing the property of a centralized critic with decentralized actors. Experiments on two real-world 3D scan datasets, Replica, and Matterport3D, verify the effectiveness and the robustness of the agent trained under our designed environment when transferred to the clean environment or the one containing sound attackers with random policy. Project: \url{https://yyf17.github.io/SAAVN}.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-22T14:19:42Z</published>
+    <arxiv:comment>This work aims to do an adversarial sound intervention for robust audio-visual navigation</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yinfeng Yu</name>
+    </author>
+    <author>
+      <name>Wenbing Huang</name>
+    </author>
+    <author>
+      <name>Fuchun Sun</name>
+    </author>
+    <author>
+      <name>Changan Chen</name>
+    </author>
+    <author>
+      <name>Yikai Wang</name>
+    </author>
+    <author>
+      <name>Xiaohong Liu</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2508.21412v1</id>
+    <title>Sampling Theory of Jointly Bandlimited Time-vertex Graph Signals</title>
+    <updated>2025-08-29T08:33:32Z</updated>
+    <link href="https://arxiv.org/abs/2508.21412v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.21412v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time-vertex graph signal (TVGS) models describe time-varying data with irregular structures. The bandlimitedness in the joint time-vertex Fourier spectral domain reflects smoothness in both temporal and graph topology. In this paper, we study the critical sampling of three types of TVGS including continuous-time signals, infinite-length sequences, and finite-length sequences in the time domain for each vertex on the graph. For a jointly bandlimited TVGS, we prove a lower bound on sampling density or sampling ratio, which depends on the measure of the spectral support in the joint time-vertex Fourier spectral domain. We also provide a lower bound on the sampling density or sampling ratio of each vertex on sampling sets for perfect recovery. To demonstrate that critical sampling is achievable, we propose the sampling and reconstruction procedures for the different types of TVGS. Finally, we show how the proposed sampling schemes can be applied to numerical as well as real datasets.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-29T08:33:32Z</published>
+    <arxiv:comment>This paper was published in Signal Processing, Elsevier</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <arxiv:journal_ref>Signal Processing, 2024, 222: 109522</arxiv:journal_ref>
+    <author>
+      <name>Hang Sheng</name>
+    </author>
+    <author>
+      <name>Hui Feng</name>
+    </author>
+    <author>
+      <name>Junhao Yu</name>
+    </author>
+    <author>
+      <name>Feng Ji</name>
+    </author>
+    <author>
+      <name>Bo Hu</name>
+    </author>
+    <arxiv:doi>10.1016/j.sigpro.2024.109522</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.sigpro.2024.109522" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2409.14043v1</id>
+    <title>ECHO: Environmental Sound Classification with Hierarchical Ontology-guided Semi-Supervised Learning</title>
+    <updated>2024-09-21T07:08:57Z</updated>
+    <link href="https://arxiv.org/abs/2409.14043v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.14043v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Environment Sound Classification has been a well-studied research problem in the field of signal processing and up till now more focus has been laid on fully supervised approaches. Over the last few years, focus has moved towards semi-supervised methods which concentrate on the utilization of unlabeled data, and self-supervised methods which learn the intermediate representation through pretext task or contrastive learning. However, both approaches require a vast amount of unlabelled data to improve performance. In this work, we propose a novel framework called Environmental Sound Classification with Hierarchical Ontology-guided semi-supervised Learning (ECHO) that utilizes label ontology-based hierarchy to learn semantic representation by defining a novel pretext task. In the pretext task, the model tries to predict coarse labels defined by the Large Language Model (LLM) based on ground truth label ontology. The trained model is further fine-tuned in a supervised way to predict the actual task. Our proposed novel semi-supervised framework achieves an accuracy improvement in the range of 1\% to 8\% over baseline systems across three datasets namely UrbanSound8K, ESC-10, and ESC-50.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-21T07:08:57Z</published>
+    <arxiv:comment>IEEE CONECCT 2024, Signal Processing and Pattern Recognition, Environmental Sound Classification, ESC</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Pranav Gupta</name>
+    </author>
+    <author>
+      <name>Raunak Sharma</name>
+    </author>
+    <author>
+      <name>Rashmi Kumari</name>
+    </author>
+    <author>
+      <name>Sri Krishna Aditya</name>
+    </author>
+    <author>
+      <name>Shwetank Choudhary</name>
+    </author>
+    <author>
+      <name>Sumit Kumar</name>
+    </author>
+    <author>
+      <name>Kanchana M</name>
+    </author>
+    <author>
+      <name>Thilagavathy R</name>
+    </author>
+    <arxiv:doi>10.1109/CONECCT62155.2024.10677303</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/CONECCT62155.2024.10677303" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'sound & signal' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'sound & signal' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

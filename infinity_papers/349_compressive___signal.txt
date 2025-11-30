@@ -1,0 +1,163 @@
+[93mcompressive & signal[0m
+Hash #349/1000
+Generated: 2025-11-30T07:17:14.020631
+Value Estimate: $18368
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'compressive & signal', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'compressive & signal' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/0812.3137v1</id>
+    <title>Compressive sensing: a paradigm shift in signal processing</title>
+    <updated>2008-12-16T19:53:30Z</updated>
+    <link href="https://arxiv.org/abs/0812.3137v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0812.3137v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We survey a new paradigm in signal processing known as "compressive sensing". Contrary to old practices of data acquisition and reconstruction based on the Shannon-Nyquist sampling principle, the new theory shows that it is possible to reconstruct images or signals of scientific interest accurately and even exactly from a number of samples which is far smaller than the desired resolution of the image/signal, e.g., the number of pixels in the image. This new technique draws from results in several fields of mathematics, including algebra, optimization, probability theory, and harmonic analysis. We will discuss some of the key mathematical ideas behind compressive sensing, as well as its implications to other fields: numerical analysis, information theory, theoretical computer science, and engineering.</summary>
+    <category term="math.HO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-12-16T19:53:30Z</published>
+    <arxiv:comment>A short survey of compressive sensing</arxiv:comment>
+    <arxiv:primary_category term="math.HO"/>
+    <author>
+      <name>Olga Holtz</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2210.08204v1</id>
+    <title>Compressive Sensing of ECG Signals using Plug-and-Play Regularization</title>
+    <updated>2022-10-15T05:55:30Z</updated>
+    <link href="https://arxiv.org/abs/2210.08204v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.08204v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Compressive Sensing (CS) has recently attracted attention for ECG data compression. In CS, an ECG signal is projected onto a small set of random vectors. Recovering the original signal from such compressed measurements remains a challenging problem. Traditional recovery methods are based on solving a regularized minimization problem, where a sparsity-promoting prior is used. In this paper, we propose an alternative iterative recovery algorithm based on the Plug-and-Play (PnP) method, which has recently become popular for imaging problems. In PnP, a powerful denoiser is used to implicitly perform regularization, instead of using hand-crafted regularizers; this has been found to be more successful than traditional methods. In this work, we use a PnP version of the Proximal Gradient Descent (PGD) algorithm for ECG recovery. To ensure mathematical convergence of the PnP algorithm, the signal denoiser in question needs to satisfy some technical conditions. We use a high-quality ECG signal denoiser fulfilling this condition by learning a Bayesian prior for small-sized signal patches. This guarantees that the proposed algorithm converges to a fixed point irrespective of the initialization. Importantly, through extensive experiments, we show that the reconstruction quality of the proposed method is superior to that of state-of-the-art methods.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-15T05:55:30Z</published>
+    <arxiv:comment>Accepted in Signal Processing, Elsevier</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Unni VS</name>
+    </author>
+    <author>
+      <name>Ruturaj Gavaskar</name>
+    </author>
+    <author>
+      <name>Kunal Narayan Chaudhury</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2508.21412v1</id>
+    <title>Sampling Theory of Jointly Bandlimited Time-vertex Graph Signals</title>
+    <updated>2025-08-29T08:33:32Z</updated>
+    <link href="https://arxiv.org/abs/2508.21412v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.21412v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time-vertex graph signal (TVGS) models describe time-varying data with irregular structures. The bandlimitedness in the joint time-vertex Fourier spectral domain reflects smoothness in both temporal and graph topology. In this paper, we study the critical sampling of three types of TVGS including continuous-time signals, infinite-length sequences, and finite-length sequences in the time domain for each vertex on the graph. For a jointly bandlimited TVGS, we prove a lower bound on sampling density or sampling ratio, which depends on the measure of the spectral support in the joint time-vertex Fourier spectral domain. We also provide a lower bound on the sampling density or sampling ratio of each vertex on sampling sets for perfect recovery. To demonstrate that critical sampling is achievable, we propose the sampling and reconstruction procedures for the different types of TVGS. Finally, we show how the proposed sampling schemes can be applied to numerical as well as real datasets.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-29T08:33:32Z</published>
+    <arxiv:comment>This paper was published in Signal Processing, Elsevier</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <arxiv:journal_ref>Signal Processing, 2024, 222: 109522</arxiv:journal_ref>
+    <author>
+      <name>Hang Sheng</name>
+    </author>
+    <author>
+      <name>Hui Feng</name>
+    </author>
+    <author>
+      <name>Junhao Yu</name>
+    </author>
+    <author>
+      <name>Feng Ji</name>
+    </author>
+    <author>
+      <name>Bo Hu</name>
+    </author>
+    <arxiv:doi>10.1016/j.sigpro.2024.109522</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.sigpro.2024.109522" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1210.5626v2</id>
+    <title>Compressed Sensing Signal Recovery via Forward-Backward Pursuit</title>
+    <updated>2013-07-06T10:16:35Z</updated>
+    <link href="https://arxiv.org/abs/1210.5626v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1210.5626v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recovery of sparse signals from compressed measurements constitutes an l0 norm minimization problem, which is unpractical to solve. A number of sparse recovery approaches have appeared in the literature, including l1 minimization techniques, greedy pursuit algorithms, Bayesian methods and nonconvex optimization techniques among others. This manuscript introduces a novel two stage greedy approach, called the Forward-Backward Pursuit (FBP). FBP is an iterative approach where each iteration consists of consecutive forward and backward stages. The forward step first expands the support estimate by the forward step size, while the following backward step shrinks it by the backward step size. The forward step size is larger than the backward step size, hence the initially empty support estimate is expanded at the end of each iteration. Forward and backward steps are iterated until the residual power of the observation vector falls below a threshold. This structure of FBP does not necessitate the sparsity level to be known a priori in contrast to the Subspace Pursuit or Compressive Sampling Matching Pursuit algorithms. FBP recovery performance is demonstrated via simulations including recovery of random sparse signals with different nonzero coefficient distributions in noisy and noise-free scenarios in addition to the recovery of a sparse image.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2012-10-20T14:21:17Z</published>
+    <arxiv:comment>accepted for publication in Digital Signal Processing</arxiv:comment>
+    <arxiv:primary_category term="cs.IT"/>
+    <arxiv:journal_ref>Digital Signal Processing 23 (2013), pp. 1539-1548</arxiv:journal_ref>
+    <author>
+      <name>Nazim Burak Karahanoglu</name>
+    </author>
+    <author>
+      <name>Hakan Erdogan</name>
+    </author>
+    <arxiv:doi>10.1016/j.dsp.2013.05.007</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.dsp.2013.05.007" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2109.11885v1</id>
+    <title>Towards Goal-Oriented Semantic Signal Processing: Applications and Future Challenges</title>
+    <updated>2021-09-24T11:12:24Z</updated>
+    <link href="https://arxiv.org/abs/2109.11885v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2109.11885v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Advances in machine learning technology have enabled real-time extraction of semantic information in signals which can revolutionize signal processing techniques and improve their performance significantly for the next generation of applications. With the objective of a concrete representation and efficient processing of the semantic information, we propose and demonstrate a formal graph-based semantic language and a goal filtering method that enables goal-oriented signal processing. The proposed semantic signal processing framework can easily be tailored for specific applications and goals in a diverse range of signal processing applications. To illustrate its wide range of applicability, we investigate several use cases and provide details on how the proposed goal-oriented semantic signal processing framework can be customized. We also investigate and propose techniques for communications where sensor data is semantically processed and semantic information is exchanged across a sensor network.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-09-24T11:12:24Z</published>
+    <arxiv:comment>44 pages, 29 figures, 3 tables. This preprint will be published in the Digital Signal Processing Journal's 30th anniversary issue on Future Signal Processing</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <arxiv:journal_ref>Digital Signal Processing, 2021, 103134. ISSN 1051-2004</arxiv:journal_ref>
+    <author>
+      <name>Mert Kalfa</name>
+    </author>
+    <author>
+      <name>Mehmetcan Gok</name>
+    </author>
+    <author>
+      <name>Arda Atalik</name>
+    </author>
+    <author>
+      <name>Busra Tegin</name>
+    </author>
+    <author>
+      <name>Tolga M. Duman</name>
+    </author>
+    <author>
+      <name>Orhan Arikan</name>
+    </author>
+    <arxiv:doi>10.1016/j.dsp.2021.103134</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.dsp.2021.103134" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'compressive & signal' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'compressive & signal' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

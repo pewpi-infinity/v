@@ -1,0 +1,156 @@
+[93mquantum & algorithm[0m
+Hash #118/1000
+Generated: 2025-11-30T07:07:08.830009
+Value Estimate: $6285
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'quantum & algorithm', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'quantum & algorithm' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/2209.11322v3</id>
+    <title>On proving the robustness of algorithms for early fault-tolerant quantum computers</title>
+    <updated>2025-02-13T21:01:28Z</updated>
+    <link href="https://arxiv.org/abs/2209.11322v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.11322v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The hope of the quantum computing field is that quantum architectures are able to scale up and realize fault-tolerant quantum computing. Due to engineering challenges, such ''cheap'' error correction may be decades away. In the meantime, we anticipate an era of ''costly'' error correction, or early fault-tolerant quantum computing. Costly error correction might warrant settling for error-prone quantum computations. This motivates the development of quantum algorithms which are robust to some degree of error as well as methods to analyze their performance in the presence of error. Several such algorithms have recently been developed; what is missing is a methodology to analyze their robustness. To this end, we introduce a randomized algorithm for the task of phase estimation and give an analysis of its performance under two simple noise models. In both cases the analysis leads to a noise threshold, below which arbitrarily high accuracy can be achieved by increasing the number of samples used in the algorithm. As an application of this general analysis, we compute the maximum ratio of the largest circuit depth and the dephasing scale such that performance guarantees hold. We calculate that the randomized algorithm can succeed with arbitrarily high probability as long as the required circuit depth is less than 0.916 times the dephasing scale.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-22T21:28:12Z</published>
+    <arxiv:comment>27 pages, 3 figures, 1 table, 1 algorithm. Submitted to QIP 2023, APS March Meetings 2023, Quantum</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 8, 1531 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Rutuja Kshirsagar</name>
+    </author>
+    <author>
+      <name>Amara Katabarwa</name>
+    </author>
+    <author>
+      <name>Peter D. Johnson</name>
+    </author>
+    <arxiv:doi>10.22331/q-2024-11-20-1531</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2024-11-20-1531" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2207.14810v3</id>
+    <title>Simplifying a classical-quantum algorithm interpolation with quantum singular value transformations</title>
+    <updated>2023-05-29T17:52:48Z</updated>
+    <link href="https://arxiv.org/abs/2207.14810v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2207.14810v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The problem of Phase Estimation (or Amplitude Estimation) admits a quadratic quantum speedup. Wang, Higgott and Brierley [2019, Phys. Rev. Lett. 122 140504] have shown that there is a continuous trade-off between quantum speedup and circuit depth (by defining a family of algorithms known as $α$-QPE). In this work, we show that the scaling of $α$-QPE can be naturally and succinctly derived within the framework of Quantum Singular Value Transformation (QSVT). From the QSVT perspective, a greater number of coherent oracle calls translates into a better polynomial approximation to the sign function, which is the key routine for solving Phase Estimation. The better the approximation to the sign function, the fewer samples one needs to determine the sign accurately. With this idea, we simplify the proof of $α$-QPE, while providing a new interpretation of the interpolation parameters, and show that QSVT is a promising framework for reasoning about classical-quantum interpolations.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-07-29T17:57:03Z</published>
+    <arxiv:comment>7 pages, 1 figure. Keywords: alpha-QPE, alpha-VQE, hybrid classical-quantum computing, quantum algorithms, quantum singular value transformation, limited coherence, oracle complexity</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Magano, D., &amp; Murça, M. (2022). Simplifying a classical-quantum algorithm interpolation with quantum singular value transformations. Phys. Rev. A, 106, 062419</arxiv:journal_ref>
+    <author>
+      <name>Duarte Magano</name>
+    </author>
+    <author>
+      <name>Miguel Murça</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.106.062419</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.106.062419" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2202.01054v4</id>
+    <title>Improved quantum algorithms for linear and nonlinear differential equations</title>
+    <updated>2024-01-27T01:57:37Z</updated>
+    <link href="https://arxiv.org/abs/2202.01054v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.01054v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present substantially generalized and improved quantum algorithms over prior work for inhomogeneous linear and nonlinear ordinary differential equations (ODE). Specifically, we show how the norm of the matrix exponential characterizes the run time of quantum algorithms for linear ODEs opening the door to an application to a wider class of linear and nonlinear ODEs. In Berry et al., (2017), a quantum algorithm for a certain class of linear ODEs is given, where the matrix involved needs to be diagonalizable. The quantum algorithm for linear ODEs presented here extends to many classes of non-diagonalizable matrices. The algorithm here is also exponentially faster than the bounds derived in Berry et al., (2017) for certain classes of diagonalizable matrices. Our linear ODE algorithm is then applied to nonlinear differential equations using Carleman linearization (an approach taken recently by us in Liu et al., (2021)). The improvement over that result is two-fold. First, we obtain an exponentially better dependence on error. This kind of logarithmic dependence on error has also been achieved by Xue et al., (2021), but only for homogeneous nonlinear equations. Second, the present algorithm can handle any sparse, invertible matrix (that models dissipation) if it has a negative log-norm (including non-diagonalizable matrices), whereas Liu et al., (2021) and Xue et al., (2021) additionally require normality.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.plasm-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-02T14:43:44Z</published>
+    <arxiv:comment>In the latest version, the use of rescaling in the quantum algorithm for nonlinear differential equations is clarified. The conditions for lemmas 16 and 17 are stated more clearly and a new lemma is added to the appendix</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 7, 913 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Hari Krovi</name>
+    </author>
+    <arxiv:doi>10.22331/q-2023-02-02-913</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2023-02-02-913" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2408.01762v1</id>
+    <title>Investigation on a quantum algorithm for linear differential equations</title>
+    <updated>2024-08-03T11:59:22Z</updated>
+    <link href="https://arxiv.org/abs/2408.01762v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.01762v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Ref.[BCOW17] introduced a pioneering quantum approach (coined BCOW algorithm) for solving linear differential equations with optimal error tolerance. Originally designed for a specific class of diagonalizable linear differential equations, the algorithm was extended by Krovi in [Kro23] to encompass broader classes, including non-diagonalizable and even singular matrices. Despite the common misconception, the original algorithm is indeed applicable to non-diagonalizable matrices, with diagonalisation primarily serving for theoretical analyses to establish bounds on condition number and solution error. By leveraging basic estimates from [Kro23], we derive bounds comparable to those outlined in the Krovi algorithm, thereby reinstating the advantages of the BCOW approach. Furthermore, we extend the BCOW algorithm to address time-dependent linear differential equations by transforming non-autonomous systems into higher-dimensional autonomous ones, a technique also applicable for the Krovi algorithm.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-03T11:59:22Z</published>
+    <arxiv:comment>quantum algorithm for ODEs</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Xiaojing Dong</name>
+    </author>
+    <author>
+      <name>Yizhe Peng</name>
+    </author>
+    <author>
+      <name>Qili Tang</name>
+    </author>
+    <author>
+      <name>Yin Yang</name>
+    </author>
+    <author>
+      <name>Yue Yu</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2302.02454v4</id>
+    <title>On low-depth algorithms for quantum phase estimation</title>
+    <updated>2023-10-28T18:37:12Z</updated>
+    <link href="https://arxiv.org/abs/2302.02454v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.02454v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantum phase estimation is one of the critical building blocks of quantum computing. For early fault-tolerant quantum devices, it is desirable for a quantum phase estimation algorithm to (1) use a minimal number of ancilla qubits, (2) allow for inexact initial states with a significant mismatch, (3) achieve the Heisenberg limit for the total resource used, and (4) have a diminishing prefactor for the maximum circuit length when the overlap between the initial state and the target state approaches one. In this paper, we prove that an existing algorithm from quantum metrology can achieve the first three requirements. As a second contribution, we propose a modified version of the algorithm that also meets the fourth requirement, which makes it particularly attractive for early fault-tolerant quantum devices.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-05T18:40:49Z</published>
+    <arxiv:comment>Accepted at Quantum</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Quantum 7, 1165 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Hongkang Ni</name>
+    </author>
+    <author>
+      <name>Haoya Li</name>
+    </author>
+    <author>
+      <name>Lexing Ying</name>
+    </author>
+    <arxiv:doi>10.22331/q-2023-11-06-1165</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.22331/q-2023-11-06-1165" title="doi"/>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'quantum & algorithm' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'quantum & algorithm' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

@@ -1,0 +1,467 @@
+[93moxide & gravity[0m
+Hash #365/1000
+Generated: 2025-11-30T07:17:59.077669
+Value Estimate: $1257
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'oxide & gravity', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'oxide & gravity' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• 
+    <id>http://arxiv.org/abs/2210.13095v3</id>
+    <title>The GRAVITY Young Stellar Object survey -- IX. Spatially resolved kinematics of hot hydrogen gas in the star/disk interaction region of T Tauri stars</title>
+    <updated>2022-11-23T11:44:23Z</updated>
+    <link href="https://arxiv.org/abs/2210.13095v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.13095v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Aims: We aim to spatially and spectrally resolve the Br-gamma hydrogen emission line with the methods of interferometry in order to examine the kinematics of the hydrogen gas emission region in the inner accretion disk of a sample of solar-like young stellar objects. The goal is to identify trends and categories among the sources of our sample and to discuss whether or not they can be tied to different origin mechanisms associated with Br-gamma emission in T Tauri stars, chiefly and most prominently magnetospheric accretion.
+  Methods: We observed a sample of seven T Tauri stars for the first time with VLTI GRAVITY, recording spectra and spectrally dispersed interferometric quantities across the Br-gamma line in the NIR K-band. We use them to extract the size of the Br-gamma emission region and the photocenter shifts. To assist in the interpretation, we also make use of radiative transfer models of magnetospheric accretion to establish a baseline of expected interferometric signatures if accretion is the primary driver of Br-gamma emission.
+  Results: From among our sample, we find that five of the seven T~Tauri stars show an emission region with a half-flux radius in the range broadly expected for magnetospheric truncation. Two of the five objects also show Br-gamma emission primarily originating from within the corotation radius, while two other objects exhibit extended emission on a scale beyond 10 R$_*$, one of them even beyond the K~band continuum half-flux radius of 11.3 R$_*$.
+  Conclusions: We find strong evidence to suggest that for the two weakest accretors in the sample, magnetospheric accretion is the primary driver of Br-gamma radiation. The results for the remaining sources imply either partial or strong contributions coming from spatially extended emission components in the form of outflows, such as stellar or disk winds.</summary>
+    <category term="astro-ph.SR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-24T10:26:58Z</published>
+    <arxiv:comment>Version corresponds to the one in A&amp;A production. The author list has been amended with "GRAVITY Collaboration" as first entry in keeping with the convention established for papers published by the GRAVITY consortium in recent years</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.SR"/>
+    <arxiv:journal_ref>A&amp;A 669, A59 (2023)</arxiv:journal_ref>
+    <author>
+      <name> GRAVITY Collaboration</name>
+    </author>
+    <author>
+      <name>J. A. Wojtczak</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Labadie</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Perraut</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Tessore</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Soulain</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Ganci</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Bouvier</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Dougados</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Alécian</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. Nowacki</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Cozzo</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+      <arxiv:affiliation>Dipartimento di Fisica &amp; Chimica, Università di Palermo, Palermo, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>W. Brandner</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Caratti o Garatti</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Dublin Institute for Advanced Studies, Dublin, Ireland</arxiv:affiliation>
+      <arxiv:affiliation>INAF - Osservatorio Astronomico di Capodimonte, Napoli, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Garcia</name>
+      <arxiv:affiliation>CENTRA, Centro de Astrofísica e Gravitação, Instituto Superior Técnico, Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation>Universidade do Porto, Faculdade de Engenharia, Porto, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Garcia Lopez</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Dublin Institute for Advanced Studies, Dublin, Ireland</arxiv:affiliation>
+      <arxiv:affiliation>School of Physics, University College Dublin, Belfield, Ireland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Sanchez-Bermudez</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Instituto de Astronomía, Universidad Nacional Autónoma de México, Ciudad de México, Mexico</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Amorim</name>
+      <arxiv:affiliation>CENTRA, Centro de Astrofísica e Gravitação, Instituto Superior Técnico, Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation>Universidade de Lisboa, Faculdade de Ciências, Campo Grande, Lisboa, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Benisty</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. -P. Berger</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Bourdarot</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Caselli</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Clénet</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. T. de Zeeuw</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Sterrewacht Leiden, Leiden University, Leiden, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Davies</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Drescher</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Duvert</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Eckart</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Max-Planck-Institute for Radio Astronomy, Bonn, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Eisenhauer</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Eupen</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>N. M. Föster-Schreiber</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Gendron</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Gillessen</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Grant</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Grellmann</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Heißel</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Th. Henning</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Hippler</name>
+      <arxiv:affiliation>Max Planck Institute for Astronomy, Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Horrobin</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Z. Hubert</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Jocou</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Kervella</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Labour</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Lapeyrère</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. -B. Le Bouquin</name>
+      <arxiv:affiliation>Univ. Grenoble Alpes, CNRS, IPAG, Grenoble, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Léna</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>D. Lutz</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Mang</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Ott</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Paumard</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Perrin</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Scheithauer</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Shangguan</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Shimizu</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Spezzano</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>O. Straub</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Straubmeier</name>
+      <arxiv:affiliation>I. Physikalisches Institut, Universität zu Köln, Köln, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Sturm</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. van Dishoeck</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+      <arxiv:affiliation>Sterrewacht Leiden, Leiden University, Leiden, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Vincent</name>
+      <arxiv:affiliation>LESIA, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Universités, UPMC Univ. Paris 06, Univ. Paris Diderot, Sorbonne Paris Cité, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Widmann</name>
+      <arxiv:affiliation>Max Planck Institute for Extraterrestrial Physics, Garching bei München, Germany</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1051/0004-6361/202244675</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1051/0004-6361/202244675" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2208.11988v1</id>
+    <title>Berry curvature induced anomalous Hall conductivity in magnetic topological oxide double perovskite Sr2FeMoO6</title>
+    <updated>2022-08-25T10:38:57Z</updated>
+    <link href="https://arxiv.org/abs/2208.11988v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2208.11988v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Oxide materials exhibit several novel structural, magnetic, and electronic properties. Their stability under ambient conditions, easy synthesis, and high transition temperatures provide such systems with an ideal ground for realizing topological properties and real-life technological applications. However, experimental evidence of topological states in oxide materials is rare. In this study, we have synthesized single crystals of oxide double perovskite Sr2FeMoO6 and revealed its topological nature by investigating its structural, magnetic, and electronic properties. We observed that the system crystallized in the cubic space group Fm-3m, which is a half-metallic ferromagnet. Transport measurements show an anomalous Hall effect, and it is evident that the Hall contribution originates from the Berry curvature. Assuming a shift of the Fermi energy towards the conduction band, the contribution of the anomalous Hall effect is enhanced owing to the presence of a gaped nodal line. This study can be used to explore and realize the topological properties of bulk oxide systems.</summary>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-08-25T10:38:57Z</published>
+    <arxiv:comment>Topological quantum material, Oxide topological material</arxiv:comment>
+    <arxiv:primary_category term="cond-mat.mtrl-sci"/>
+    <author>
+      <name>Tirthankar Chakraborty</name>
+    </author>
+    <author>
+      <name>Kartik Samanta</name>
+    </author>
+    <author>
+      <name>Satya N. Guin</name>
+    </author>
+    <author>
+      <name>Jonathan Noky</name>
+    </author>
+    <author>
+      <name>Iñigo Robredo</name>
+    </author>
+    <author>
+      <name>Suchitra Prasad</name>
+    </author>
+    <author>
+      <name>Juergen Kuebler</name>
+    </author>
+    <author>
+      <name>Chandra Shekhar</name>
+    </author>
+    <author>
+      <name>Maia G. Vergniory</name>
+    </author>
+    <author>
+      <name>Claudia Felser</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1901.09340v1</id>
+    <title>A simple INDIUM TIN OXIDE/glass DRA</title>
+    <updated>2019-01-27T09:22:38Z</updated>
+    <link href="https://arxiv.org/abs/1901.09340v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1901.09340v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A novel Dielectric Resonator Antenna, simply made of INDIUM TIN OXIDE coated glass slides placed on a microstrip transmission line, for communication applications is presented. Changes in the bandwidth and gain of the antenna are observed by modifying the dimensions of the INDIUM TIN OXIDE coated glass slides. Changes in gain, directivity and reflection coefficient are observed. A parametric study is conducted on the size of the DRA to understand the effect on bandwidth, reflection coefficient and gain.</summary>
+    <category term="physics.app-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-01-27T09:22:38Z</published>
+    <arxiv:comment>INDIUM TIN OXIDE, DRA, directivity, gain, bandwidth, WLAN, WiMAX</arxiv:comment>
+    <arxiv:primary_category term="physics.app-ph"/>
+    <author>
+      <name>Vivek Parimi</name>
+    </author>
+    <author>
+      <name>Chia Hao Ku</name>
+    </author>
+    <author>
+      <name>Abhirup Datta</name>
+    </author>
+    <author>
+      <name>Sajal Biring</name>
+    </author>
+    <author>
+      <name>Somaditya Sen</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2211.11796v3</id>
+    <title>Teleparallel Newton--Cartan gravity</title>
+    <updated>2023-04-24T10:43:30Z</updated>
+    <link href="https://arxiv.org/abs/2211.11796v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.11796v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We discuss a teleparallel version of Newton--Cartan gravity. This theory arises as a formal large-speed-of-light limit of the teleparallel equivalent of general relativity (TEGR). Thus, it provides a geometric formulation of the Newtonian limit of TEGR, similar to standard Newton--Cartan gravity being the Newtonian limit of general relativity. We show how by a certain gauge-fixing the standard formulation of Newtonian gravity can be recovered.</summary>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-21T19:01:12Z</published>
+    <arxiv:comment>28+4+1 pages (main text, references, appendix), published in Classical and Quantum Gravity. v2: extended discussions, added references, corrected typos. v3: corrected typo</arxiv:comment>
+    <arxiv:primary_category term="gr-qc"/>
+    <arxiv:journal_ref>Classical and Quantum Gravity 40, 105008 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Philip K. Schwartz</name>
+    </author>
+    <arxiv:doi>10.1088/1361-6382/accc02</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1361-6382/accc02" title="doi"/>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2006.08414v2</id>
+    <title>Infrared wavefront sensing for adaptive optics assisted Galactic Center observations with the VLT interferometer and GRAVITY: operation and results</title>
+    <updated>2020-07-15T10:00:16Z</updated>
+    <link href="https://arxiv.org/abs/2006.08414v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2006.08414v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This article describes the operation of the near-infrared wavefront sensing based Adaptive Optics (AO) system CIAO. The Coudé Infrared Adaptive Optics (CIAO) system is a central auxiliary component of the Very Large Telescope (VLT) interferometer (VLTI). It enables in particular the observations of the Galactic Center (GC) using the GRAVITY instrument. GRAVITY is a highly specialized beam combiner, a device that coherently combines the light of the four 8-m telescopes and finally records interferometric measurements in the K-band on 6 baselines simultaneously. CIAO compensates for phase disturbances caused by atmospheric turbulence, which all four 8 m Unit Telescopes (UT) experience during observation. Each of the four CIAO units generates an almost diffraction-limited image quality at its UT, which ensures that maximum flux of the observed stellar object enters the fibers of the GRAVITY beam combiner. We present CIAO performance data obtained in the first 3 years of operation as a function of weather conditions. We describe how CIAO is configured and used for observations with GRAVITY. In addition, we focus on the outstanding features of the near-infrared sensitive Saphira detector, which is used for the first time on Paranal, and show how it works as a wavefront sensor detector.</summary>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-06-15T14:05:26Z</published>
+    <arxiv:comment>12 pages, 8 figures, accepted for publication in Instruments (open access journal from mdpi)</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.IM"/>
+    <author>
+      <name>Stefan Hippler</name>
+    </author>
+    <author>
+      <name>Wolfgang Brandner</name>
+    </author>
+    <author>
+      <name>Silvia Scheithauer</name>
+    </author>
+    <author>
+      <name>Martin Kulas</name>
+    </author>
+    <author>
+      <name>Johana Panduro</name>
+    </author>
+    <author>
+      <name>Peter Bizenberger</name>
+    </author>
+    <author>
+      <name>Henry Bonnet</name>
+    </author>
+    <author>
+      <name>Casey Deen</name>
+    </author>
+    <author>
+      <name>Françoise Delplancke-Ströbele</name>
+    </author>
+    <author>
+      <name>Frank Eisenhauer</name>
+    </author>
+    <author>
+      <name>Gert Finger</name>
+    </author>
+    <author>
+      <name>Zoltan Hubert</name>
+    </author>
+    <author>
+      <name>Johann Kolb</name>
+    </author>
+    <author>
+      <name>Eric Müller</name>
+    </author>
+    <author>
+      <name>Laurent Pallanca</name>
+    </author>
+    <author>
+      <name>Julien Woillez</name>
+    </author>
+    <author>
+      <name>Gérard Zins</name>
+    </author>
+    <author>
+      <name>GRAVITY Collaboration</name>
+    </author>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'oxide & gravity' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'oxide & gravity' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---

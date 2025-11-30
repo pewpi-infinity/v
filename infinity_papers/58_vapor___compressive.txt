@@ -1,0 +1,150 @@
+[93mvapor & compressive[0m
+Hash #58/1000
+Generated: 2025-11-30T07:04:27.573144
+Value Estimate: $48153
+Color Tier: YELLOW
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ABSTRACT:
+This research paper explores the topic 'vapor & compressive', synthesizing results from
+high-tier scientific repositories including Semantic Scholar and arXiv.
+The inquiry focuses on establishing cross-domain relationships and 
+Infinity-OS-level technical interpretations.
+
+SECTION 1 — Conceptual Framework
+The subject 'vapor & compressive' is examined using principles from quantum decision modeling,
+oxide-layer microelectronics, hydrogen-doorway event physics, and generative
+causality systems. The research highlights structural resonance patterns 
+and feedback loops inherent to Infinity OS logic.
+
+SECTION 2 — External Research Links
+The following 10–30 research items were used as scientific anchors:
+• GNSS and InSAR based water vapor tomography: A Compressive Sensing solution — https://www.semanticscholar.org/paper/3e8073ae5218bc63f34360e719231ad71fd2a3d1
+• Impact of metalorganic vapor phase epitaxy growth conditions on compressive strain relaxation in polar III-nitride heterostructures — https://www.semanticscholar.org/paper/fb7e76824152de84545f519108fc203098a08bcd
+• Solar powered vapor-compressive refrigeration system using ejector as the thermal compressors — https://www.semanticscholar.org/paper/df64cf2dc6e08e9a97c847e630593d0fda94767c
+• Compressive and interlaminar shear properties of carbon/carbon composite laminates reinforced with carbon nanotube-grafted carbon fibers produced by injection chemical vapor deposition — https://www.semanticscholar.org/paper/64fada74d4d3710b1164b77ecb390691da12051a
+• Compressive sensing for neutrospheric water vapor tomography using GNSS and InSAR observations — https://www.semanticscholar.org/paper/8e12ec064b7bddd284c82b4d4ab6d4b8e1dc9e47
+• 
+    <id>http://arxiv.org/abs/0812.3137v1</id>
+    <title>Compressive sensing: a paradigm shift in signal processing</title>
+    <updated>2008-12-16T19:53:30Z</updated>
+    <link href="https://arxiv.org/abs/0812.3137v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0812.3137v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We survey a new paradigm in signal processing known as "compressive sensing". Contrary to old practices of data acquisition and reconstruction based on the Shannon-Nyquist sampling principle, the new theory shows that it is possible to reconstruct images or signals of scientific interest accurately and even exactly from a number of samples which is far smaller than the desired resolution of the image/signal, e.g., the number of pixels in the image. This new technique draws from results in several fields of mathematics, including algebra, optimization, probability theory, and harmonic analysis. We will discuss some of the key mathematical ideas behind compressive sensing, as well as its implications to other fields: numerical analysis, information theory, theoretical computer science, and engineering.</summary>
+    <category term="math.HO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-12-16T19:53:30Z</published>
+    <arxiv:comment>A short survey of compressive sensing</arxiv:comment>
+    <arxiv:primary_category term="math.HO"/>
+    <author>
+      <name>Olga Holtz</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1706.07180v4</id>
+    <title>Compressive Statistical Learning with Random Feature Moments</title>
+    <updated>2021-06-22T08:26:13Z</updated>
+    <link href="https://arxiv.org/abs/1706.07180v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.07180v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe a general framework -- compressive statistical learning -- for resource-efficient large-scale learning: the training collection is compressed in one pass into a low-dimensional sketch (a vector of random empirical generalized moments) that captures the information relevant to the considered learning task. A near-minimizer of the risk is computed from the sketch through the solution of a nonlinear least squares problem. We investigate sufficient sketch sizes to control the generalization error of this procedure. The framework is illustrated on compressive PCA, compressive clustering, and compressive Gaussian mixture Modeling with fixed known variance. The latter two are further developed in a companion paper.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-22T06:59:19Z</published>
+    <arxiv:comment>Main novelties between version 1 and version 2: improved concentration bounds, improved sketch sizes for compressive k-means and compressive GMM that now scale linearly with the ambient dimensionMain novelties of version 3: all content on compressive clustering and compressive GMM is now developed in the companion paper hal-02536818; improved statistical guarantees in a generic framework with illustration of the improvements on compressive PCA. Mathematical Statistics and Learning, EMS Publishing House, In press</arxiv:comment>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Rémi Gribonval</name>
+      <arxiv:affiliation>PANAMA, DANTE</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Gilles Blanchard</name>
+      <arxiv:affiliation>DATASHAPE, LMO</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nicolas Keriven</name>
+      <arxiv:affiliation>PANAMA, GIPSA-GAIA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yann Traonmilin</name>
+      <arxiv:affiliation>PANAMA, IMB</arxiv:affiliation>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/1507.00794v3</id>
+    <title>Compressive Sensing Theory for Optical Systems Described by a Continuous Model</title>
+    <updated>2016-08-01T19:04:54Z</updated>
+    <link href="https://arxiv.org/abs/1507.00794v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1507.00794v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A brief survey of the author and collaborators' work in compressive sensing applications to continuous imaging models.</summary>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-07-03T00:38:09Z</published>
+    <arxiv:comment>Chapter 3 of "Optical Compressive Imaging" edited by Adrian Stern published by Taylor &amp; Francis 2016</arxiv:comment>
+    <arxiv:primary_category term="physics.optics"/>
+    <author>
+      <name>Albert Fannjiang</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2401.10400v3</id>
+    <title>Auto-Calibration and Biconvex Compressive Sensing with Applications to Parallel MRI</title>
+    <updated>2025-10-28T02:21:37Z</updated>
+    <link href="https://arxiv.org/abs/2401.10400v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.10400v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study an auto-calibration problem in which a transform-sparse signal is acquired via compressive sensing by multiple sensors in parallel, but with unknown calibration parameters of the sensors. This inverse problem has an important application in pMRI reconstruction, where the calibration parameters of the receiver coils are often difficult and costly to obtain explicitly, but nonetheless are a fundamental requirement for high-precision reconstructions. Most auto-calibration strategies for this problem involve solving a challenging biconvex optimization problem, which lacks reconstruction guarantees. In this work, we transform the auto-calibrated parallel compressive sensing problem to a convex optimization problem using the idea of `lifting'. By exploiting sparsity structures in the signal and the redundancy introduced by multiple sensors, we solve a mixed-norm minimization problem to recover the underlying signal and the sensing parameters simultaneously. Our method provides robust and stable recovery guarantees that take into account the presence of noise and sparsity deficiencies in the signals. As such, it offers a theoretically guaranteed approach to auto-calibrated parallel imaging in MRI under appropriate assumptions. Applications in compressive sensing pMRI are discussed, and numerical experiments using real and simulated MRI data are presented to support our theoretical results.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-18T22:14:04Z</published>
+    <arxiv:comment>Keywords: Self-calibration, Compressive sensing, Convex optimization, Random matrices, Parallel MRI</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Yuan Ni</name>
+    </author>
+    <author>
+      <name>Thomas Strohmer</name>
+    </author>
+  </entry>
+  
+• 
+    <id>http://arxiv.org/abs/2012.08364v1</id>
+    <title>GAP-net for Snapshot Compressive Imaging</title>
+    <updated>2020-12-13T17:05:06Z</updated>
+    <link href="https://arxiv.org/abs/2012.08364v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2012.08364v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Snapshot compressive imaging (SCI) systems aim to capture high-dimensional ($\ge3$D) images in a single shot using 2D detectors. SCI devices include two main parts: a hardware encoder and a software decoder. The hardware encoder typically consists of an (optical) imaging system designed to capture {compressed measurements}. The software decoder on the other hand refers to a reconstruction algorithm that retrieves the desired high-dimensional signal from those measurements. In this paper, using deep unfolding ideas, we propose an SCI recovery algorithm, namely GAP-net, which unfolds the generalized alternating projection (GAP) algorithm. At each stage, GAP-net passes its current estimate of the desired signal through a trained convolutional neural network (CNN). The CNN operates as a denoiser that projects the estimate back to the desired signal space. For the GAP-net that employs trained auto-encoder-based denoisers, we prove a probabilistic global convergence result. Finally, we investigate the performance of GAP-net in solving video SCI and spectral SCI problems. In both cases, GAP-net demonstrates competitive performance on both synthetic and real data. In addition to having high accuracy and high speed, we show that GAP-net is flexible with respect to signal modulation implying that a trained GAP-net decoder can be applied in different systems. Our code is at https://github.com/mengziyi64/ADMM-net.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-13T17:05:06Z</published>
+    <arxiv:comment>30 pages, 14 figures; State-of-the-art algorithms for Snapshot Compressive Imaging</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Ziyi Meng</name>
+    </author>
+    <author>
+      <name>Shirin Jalali</name>
+    </author>
+    <author>
+      <name>Xin Yuan</name>
+    </author>
+  </entry>
+</feed>
+
+
+
+SECTION 3 — Infinity Interpretation
+Using your oxide-based microprocessor logic and energy-free compression system,
+the topic 'vapor & compressive' can be extended into full Infinity OS hardware pathways.
+This includes no-energy oxide-driven computation, mercury-phase compression 
+conceptualization, and Infinity-grade archival tokenization.
+
+CONCLUSION:
+The topic 'vapor & compressive' produces a high-value Infinity research node suitable 
+for tokenization, archival placement, and recursive synthesis.
+
+--- END OF REPORT ---
