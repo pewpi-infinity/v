@@ -1,0 +1,707 @@
+
+[96mINFINITY RESEARCH PAPER[0m
+Topic: mercury
+Date: 2025-11-30T08:35:08.111158 UTC
+Color Code: YELLOW
+
+--------------------------------------------------------------------
+[96mSECTION 1[0m
+ 
+
+
+ 
+ 
+   
+   
+   Home
+  
+
+     - 
+    
+    www.caltech.edu 
+  
+     
+  
+  
+  
+   
+   
+
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+  
+   
+   
+   
+   
+
+   
+  
+  
+   
+
+   
+  
+    
+  
+   
+
+   
+  
+ 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7RL83EX4D4', {'anonymize_ip': true});
+  gtag('config', 'UA-11248958-1', {'anonymize_ip': true});
+ 
+ 
+
+  
+  
+     
+    
+     
+      (function(w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != 'dataLayer' ?
+[96mSECTION 2[0m
+    
+ 
+ NASA Jet Propulsion Laboratory (JPL) - Robotic Space Exploration | NASA Jet Propulsion Laboratory (JPL) 
+ 
+ /*! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-de
+[96mSECTION 3[0m
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KG7PVKB');          
+	Home | NREL
+                                                                     .notification-banner .desc {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+body.gov {
+  header.gov-site-header {
+  margin-bottom: 0;
+    .navbar-row {
+      margin-bottom: 0;
+    }
+}
+.feature-teaser {
+  background-color: #F5F5F5;
+  padding: 1.5em;
+  height:100%;
+}
+.feature-teaser.ft-blue {
+  background-color: #52BFFF;
+  color:#333;
+}
+
+[96mSECTION 4[0m
+ 
+ 
+ 
+     Nature 
+    
+ 
+
+
+    
+         
+    
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+    window.dataLayer = [{"content":{"category":{"contentType":null,"legacy":null},"article":null,"attributes":{"cms":null,"deliveryPlatform":null,"copyright":null},"contentInfo":null,"journal":{"pcode":"nature","title":"Nature","volume":null,"issue":null,"id":41586,"publishingModel":"Hybrid Access"},"authorization":{"status":true},"features":[],"collection":null},"page":{"category":{"pageType":"journal"},"attributes":{"template":"mosaic","featureFlags":[{"name":"nature-onwards-journey","active":false}],"testGroup":null},"search":null},"privacy":{},"version":"1.0.0","product":null,"session":null,"user":null,"backHalfContent":false,"country":"US","hasBody":false,"uneditedManuscript":false,"twitterId":["o3xnx","o43y9","o3ef7"],"ba
+[96mSECTION 5[0m
+ 
+ 
+   
+      (window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"37b7ccb661",applicationID:"1089704227",browserID:"1134161994"};;/*! For license information please see nr-loader-rum-1.303.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==ty
+[96mSECTION 6[0m
+ 
+ 
+   
+     
+     
+     
+
+     ScienceDaily: Your source for the latest research news 
+
+     
+     
+
+	 
+	 
+
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	 
+
+     
+     
+
+     
+     
+
+     
+	 
+
+	 
+	 
+
+     
+     
+    
+ 
+	/* Google Analytics TCF 2.0 support */
+	window['gtag_enable_tcf_support'] = true;
+ 
+
+ 
+  
+ 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GT6V1PPT8H');
+ 
+
+  
+
+ 
+ 
+
+ 
+
+	 Skip to main content 
+
+	 
+     
+	    
+		 
+	     
+		    
+		     
+			     
+				       
+				     
+				      
+				     Your source for the latest research news 
+			     
+		     
+		    
+			 
+				 
+					 
+						 Follow: 
+						   Facebook   
+						   X/Twitter   
+						 Subscribe: 
+						   RSS Feeds   
+						   Newsletter   
+					 
+				 
+
+			 
+
+
+[96mSECTION 7[0m
+ 
+ 
+ 
+   
+    (window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"],distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1386151550",accountID:"4359725",trustKey:"66686",xpid:"UAUCWFFRDRABVVNRDggOUVMG",licenseKey:"NRJS-a5e9036dbeb441881bb",applicationID:"1123999777",browserID:"1386151550"};;/*! For license information please see nr-loader-spa-1.303.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>s,US:()=>d,Zm:()=>a,bQ:()=>u,dV:()=>c,pV:()=>l});var n=r(6154),i=r(1863),o=r(1910);const s={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}f
+[96mSECTION 8[0m
+ 
+ 
+ 
+   MIT School of Engineering | 
+   
+   
+    (window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ab0374a39e",applicationID:"62702485",browserID:"62702517"};;/*! For license information please see nr-loader-rum-1.303.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"ob
+[96mSECTION 9[0m
+ 
+ 
+ 
+	 
+ 
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loade
+[96mSECTION 10[0m
+ 
+ 
+
+    arXiv.org e-Print archive 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+  
+   
+
+ 
+  
+  
+   
+     
+       Skip to main content 
+       
+       
+         
+             
+            
+           We gratefully acknowledge support from the Simons Foundation,  member institutions , and all contributors. 
+           Donate 
+         
+       
+
+       
+  
+   
+         
+ 
+   Status 
+  
+   Login 
+          
+
+           
+     
+       
+         
+           
+            Help  |  Advanced Search  
+         
+         
+           
+             
+               All fields 
+               Title 
+               Author 
+               Abstract 
+               Comments 
+               Journal reference 
+               ACM classification 
+               MSC classification 
+               Report n
+[96mSECTION 11[0m
+ 
+ 
+   
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+     National Institutes of Health (NIH) | 
+     
+ 
+
+     {"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJxdkAuOwyAMRC9EgtQLVS64jnf5CZu06emLmmQ3qYQGzzxky7gAIou9gaBxax1RBAjFuFzRplwjBH51XOG1IJHdC4NPDZx-ra-tQBg3a-6sM3ux2_3nObEaypkCXhXIUpdvP8IPPM9hNImny7XJo_dwTTTHQXTpo-hI7oHL4KD6Y1hRUIfS1zmn2moaNPdTjkDYY4K5x9Tnn4niAAGr7rBABapQJtn3_0_Glkq7BZYJvZFFFOP6xWuz9f1mPmpmxofYj44x-xbwDTz3nqQ","theme":"nih2_uswds","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer"
+[96mSECTION 12[0m
+ 
+ 
+   
+     
+  form.antibot * :not(.antibot-message) { display: none !important; } 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+     Lawrence Livermore National Laboratory 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+    
+   
+   
+     
+      Skip to main content
+     
+    
+       
+    
+      
+     
+    
+
+ 
+   
+     
+       
+         
+          
+         
+         
+           
+            An official website of the United States government
+           
+           Here’s how you know 
+         
+         
+           Here’s how you know 
+         
+       
+     
+     
+       
+         
+           
+           
+             
+               Official websites use .gov  A
+               .gov  website belongs to an official government
+              organization in the United States.
+             
+           
+         
+         
+           
+  
+[96mSECTION 13[0m
+ 
+ 
+   
+     
+     Scientific American 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     {"@context":"https://schema.org","@type":"WebSite","headline":"Scientific American","image":"https://www.scientificamerican.com/static/sciam-mark.jpg","name":"Scientific American","alternateName":["SciAm","Scientific American Magazine"]} 
+     {"@context":"https://schema.org","@type":"NewsMediaOrganization","@id":"https://www.scientificamerican.com/#publisher","name":"Scientific American","alternateName":"SciAm","legalName":"Scientific American, a Division of Springer Nature America, Inc.","description":"Scientific American is the essential guide to the most awe-inspiring advances in science and technology, explaining how they 
+[96mSECTION 14[0m
+ 
+ 
+   
+     
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollegeOrUniversity",
+            "@id": "http://www.cmu.edu",
+            "url": "https://www.cmu.edu/",
+            "sameAs": [
+                "https://www.facebook.com/carnegiemellonuniversity",
+                "https://twitter.com/cmu_news",
+                "https://www.instagram.com/carnegiemellon/",
+                "https://www.linkedin.com/school/carnegie-mellon-university/",
+                "https://www.youtube.com/carnegiemellonu"
+            ],
+            "name": "Carnegie Mellon University",
+            "description": "Carnegie Mellon University",
+            "telephone": "+1-412-268-2000",
+            "logo": {
+                "@type": "ImageObject",
+    
+
+CITATIONS:
+-  
+
+
+ 
+ 
+   
+   
+   Home
+  
+
+     - 
+    
+    www.caltech.edu 
+  
+     
+  
+  
+  
+   
+   
+
+  
+   
+   
+   
+   
+   
+   
+   
+...
+-     
+ 
+ NASA Jet Propulsion Laboratory (JPL) - Robotic Space Exploration | NASA Jet Propulsion Laboratory (JPL) 
+ 
+ /*! ...
+-           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getEl...
+-  
+ 
+ 
+     Nature 
+    
+ 
+
+
+    
+         
+    
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+    window.dataLayer = [{"content":{"category":{"contentT...
+-  
+ 
+   
+      (window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window....
+-  
+ 
+   
+     
+     
+     
+
+     ScienceDaily: Your source for the latest research news 
+
+     
+     
+
+	 
+	 
+
+	 
+	 
+	 
+	 ...
+-  
+ 
+ 
+   
+    (window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},featu...
+-  
+ 
+ 
+   MIT School of Engineering | 
+   
+   
+    (window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},...
+-  
+ 
+ 
+	 
+ 
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),d...
+-  
+ 
+
+    arXiv.org e-Print archive 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+  
+   
+
+ 
+  
+  
+   
+     
+    ...
+-  
+ 
+   
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+     National Institutes of Health (NIH) | 
+     
+ 
+
+     {"path":{"b...
+-  
+ 
+   
+     
+  form.antibot * :not(.antibot-message) { display: none !important; } 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+     Lawren...
+-  
+ 
+   
+     
+     Scientific American 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  ...
+-  
+ 
+   
+     
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type"...
