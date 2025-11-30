@@ -1,0 +1,2 @@
+[2025-11-30 02:12:45.438470] generated_topics.json stalled — restarting cart001_infinity_research_boot.py
+[2025-11-30 02:12:45.697084] research_stage stalled — restarting cart002_infinity_research_scraper.py

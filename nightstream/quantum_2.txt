@@ -1,0 +1,57 @@
+∞ Infinity Cycle: 2
+Topic: quantum
+Color: UNKNOWN
+Hash: 7e9b3fd6b368f94218a398f4303da58ed30ac61e620bd8193a5634a5232aef8a
+Time: 2025-11-30 02:27:55.252377
+
+https://export.arxiv.org/api/query?search_query=all:quantum&start=0&max_results=1
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/+0YwkY7UmS8g5VyzFpDWVe7OBj8</id>
+  <title>arXiv Query: search_query=all:quantum&amp;id_list=&amp;start=0&amp;max_results=1</title>
+  <updated>2025-11-30T08:25:02Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:quantum&amp;start=0&amp;max_results=1&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>1</opensearch:itemsPerPage>
+  <opensearch:totalResults>447983</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2307.02593v2</id>
+    <title>Superpositions of thermalisations in relativistic quantum field theory</title>
+    <updated>2025-02-04T23:33:19Z</updated>
+    <link href="https://arxiv.org/abs/2307.02593v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.02593v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent results in relativistic quantum information and quantum thermodynamics have independently shown that in the q
+
+https://core.ac.uk/search?q=quantum
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" type="image/png" sizes="64x64" href="https://core.ac.uk/favicon/favicon-64px.png"/><link rel="icon" type="image/png" sizes="128x128" href="https://core.ac.uk/favicon/favicon-128px.png"/><link rel="icon" type="image/png" sizes="256x256" href="https://core.ac.uk/favicon/favicon-256px.png"/><link rel="icon" type="image/png" sizes="512x512" href="https://core.ac.uk/favicon/favicon-512px.png"/><link rel="icon" sizes="any" type="image/svg+xml" href="https://core.ac.uk/favicon/favicon.svg"/><title>Search CORE</title><meta name="next-head-count" content="8"/><link rel="preload" href="/static/search/_next/static/css/8468c7fbb30abfe64073.css" as="style"/><link rel="stylesheet" href="/static/search/_next/static/css/8468c7fbb30abfe64073.css" data-n-g=""/><link rel="preload" href="/static/search/_next/static/css/0f1c98dbd4e93e3196e6.css" as="style"/><link rel="stylesheet" href="/static/search/_next/static/css/0f1c98dbd4e93e3196e6.css" data-n-p=""/><noscript data-n-css=""></noscript><link rel="preload" href="/static/search/_next/static/chunks/webpack-2ba9da792e9f83a41222.js" as=
+
+https://ar5iv.org/search/?query=quantum
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" />
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8" />
+  <title>404 - No such document!</title>
+  <meta name="description" content="A generic page for a missing document in ar5iv">
+  <meta name="language" content="English">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link media="all" rel="stylesheet" href="&#x2F;assets&#x2F;ar5iv-fonts.0.8.4.css">
+  <link media="all" rel="stylesheet" href="&#x2F;assets&#x2F;ar5iv.0.8.4.css">
+  <link media="all" rel="stylesheet" href="&#x2F;assets&#x2F;ar5iv-site.0.2.2.css">
+</head>
+
+<body>
+  <div class="ltx_page_main">
+    <div class="ltx_page_content">
+      <article class="ltx_document">
+        <h1 class="ltx_title ltx_title_document"><img src="/assets/ar5iv.png" height="64"> <br>No document for <span
+            class="ltx_font_bold">search&#x2F;</span>
+        </h1>
+
+        <section id="S1" class="ltx_section" style="margin-top: 5rem;">
+          <div class="ltx_para">
+            <p class="ltx_p">We are usually at least a month behind the live arXiv article list.</p>
+            <p class="ltx_p">Also,
+

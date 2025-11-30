@@ -1,0 +1,191 @@
+∞ Infinity Research Paper ∞
+============================================
+Topic: hydrogen harmonic
+Generated: 2025-11-30 02:32:36.371481
+--------------------------------------------
+
+
+### Source: arxiv
+--------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/MYwn+60uN5HXO/WBnZxiZl6pBL0</id>
+  <title>arXiv Query: search_query=all:hydrogen OR all:harmonic&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <updated>2025-11-30T08:21:19Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:hydrogen+OR+all:harmonic&amp;start=0&amp;max_results=3&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>65615</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/nucl-ex/0101007v1</id>
+    <title>Time-of-Flight Spectroscopy of Muonic Hydrogen Atoms and Molecules</title>
+    <updated>2001-01-22T15:48:13Z</updated>
+    <link href="https://arxiv.org/abs/nucl-ex/0101007v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/nucl-ex/0101007v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Studies of muonic hydrogen atoms and molecules have been performed traditionally in bulk targets of gas, liquid or solid. At TRIUMF, Canada's meson facility, we have developed a new type of target system using multilayer thin films of solid hydrogen, which provides a beam of muonic hydrogen atoms in vacuum. Using the time-of-flight of the muonic atoms, the energy-dependent information of muonic reactions are obtained in direct manner. We discuss some unique measurements enabled by the new technique, with emphasis on processes relevant to muon catalyzed fusion.</summary>
+    <category term="nucl-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.atom-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2001-01-22T15:48:13Z</published>
+    <arxiv:comment>Contribution to Hydrogen Atom II --- Precise Physics with Simple Atomic Systems (Springer, Berlin)</arxiv:comment>
+    <arxiv:primary_category term="nucl-ex"/>
+    <author>
+      <name> TRIUMF Muonic Hydrogen Collaboration</name>
+    </author>
+    <author>
+      <name>M. C. Fujiwara</name>
+    </author>
+    <author>
+      <name>A. Adamczak</name>
+    </author>
+    <author>
+      <name>J. M. Bailey</name>
+    </author>
+    <author>
+      <name>G. A. Beer</name>
+    </author>
+    <author>
+      <name>J. L.
+
+
+### Source: mit_ocw
+--------------------------------------------
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMQZ25T');</script>
+    
+  
+  
+
+
+
+
+    
+    <link href="/static_shared/css/www.3863f.css" rel="stylesheet">
+    
+
+    
+    <link href="/static_shared/css/common.3863f.css" rel="stylesheet">
+    
+
+<link
+href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+rel="stylesheet"
+type="text/css"
+/>
+
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity">
+  <meta name="keywords" content="opencourseware,MIT OCW,courseware,MIT opencourseware,Free Courses,class notes,class syllabus,class materials,tutorials,online courses,MIT courses">
+  
+  <meta property="og:site_name" content="MIT OpenCourseWare">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ocw.mit.edu/search/" />
+  <meta property="og:title" content="Search | MIT OpenCourseWare | Free Online Course Materials" />
+  <meta property="og:description" content="MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity" />
+
+  <meta property="og:image" content="https://ocw.mit.edu/static_shared/images/ocw_logo_white_on_black.dc6662ab918cec1c2f31.png" />
+
+
+  <link rel="canonical" href="https://ocw.mit.edu/search/" />
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type" : "WebPage",
+        "name": "MIT OpenCourseWare",
+        "description": "MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity",
+        "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "publisher": {
+          "@type": "CollegeOrUniversity",
+          "name": "MIT OpenCourseWare"
+        }
+      }
+  </script>
+
+  <title>Search | MIT OpenCourseWare | Free Online Course Materials</title>
+ 
+
+
+### Source: harvard_dash
+--------------------------------------------
+HTTP 404
+
+
+### Source: nasa_ads
+--------------------------------------------
+HTTP 401
+
+
+### Source: ibm_research
+--------------------------------------------
+HTTP 404
+
+
+### Source: nature
+--------------------------------------------
+<!DOCTYPE html>
+<html lang="en" class="grade-c">
+<head>
+    <title>hydrogen harmonic | Nature Search Results</title>
+    
+<link rel="preconnect" href="https://cmp.nature.com" crossorigin>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5,user-scalable=yes">
+
+<script data-test="dataLayer">
+    window.dataLayer = [{"content":{"category":{"contentType":null,"legacy":null},"article":null,"attributes":null,"contentInfo":null,"journal":null,"authorization":{"status":true},"features":[],"collection":null},"page":{"category":{"pageType":"search_results"},"attributes":{"template":"mosaic","featureFlags":[{"name":"nature-onwards-journey","active":false}],"testGroup":null},"search":{"keywords":"hydrogen harmonic","articleType":null,"journal":null,"subject":null,"dateRange":null,"sortOrder":"Relevance"}},"privacy":{},"version":"1.0.0","product":{"jobPost":null},"session":null,"user":null,"backHalfContent":false,"country":"US","hasBody":false,"uneditedManuscript":false,"twitterId":["o3xnx","o43y9","o3ef7"],"baiduId":"d38bce82bcb44717ccc29a90c4b781ea","japan":false}];
+    window.dataLayer.push({
+        ga4MeasurementId: 'G-ERRNTNZ807',
+        ga360TrackingId: 'UA-71668177-1',
+        twitterId: ['3xnx', 'o43y9', 'o3ef7'],
+        baiduId: 'd38bce82bcb44717ccc29a90c4b781ea',
+        ga4ServerUrl: 'https://collect.nature.com',
+        imprint: 'nature'
+    });
+</script>
+
+<script>
+    (function(w, d) {
+        w.config = w.config || {};
+        w.config.mustardcut = false;
+
+        
+        if (w.matchMedia && w.matchMedia('only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)').matches) {
+            w.config.mustardcut = true;
+            d.classList.add('js');
+            d.classList.remove('grade-c');
+            d.classList.remove('no-js');
+        }
+    })(window, document.documentElement);
+</script>
+ 
+
+
+ 
+    <link href="/static/css/grade-c-c8a47957e2.css" rel="stylesheet"/>
+    <link data-test="custom-css" href="/static/css/search/search-150-535b6ab454.css" rel="stylesheet"  media="only print, only all and (prefers-color-scheme: no-preference), only all and (prefers-color-scheme: light), only all and (prefers-color-scheme: dark)" />
+
+
+
+
+    <style>
+        .c-header {
+            border-bottom: 5px solid #d9d9d9;
+        }
+    </s
+
+
+============================================
+End of Paper
