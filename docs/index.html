@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>∞ Infinity Research Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      background: radial-gradient(circle at top, #041b3b, #020818 55%, #000000);
+      color: #e5f1ff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .shell {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 16px 12px 40px;
+    }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #e5f1ff;
+      text-shadow: 0 0 8px rgba(80, 150, 255, 0.8);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .title span.symbol { font-size: 1.5rem; }
+    .badge {
+      background: linear-gradient(135deg, #1f5fff, #3f8bff);
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 0 12px rgba(70, 130, 255, 0.75);
+    }
+    /* Auth buttons container */
+    .auth-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .auth-btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(100, 200, 100, 0.8);
+      background: radial-gradient(circle at top left, rgba(80, 200, 120, 0.35), #041226);
+      color: #e5fff0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(80, 200, 120, 0.6);
+      transition: all 0.15s ease-out;
+    }
+    .auth-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 16px rgba(80, 200, 120, 0.9);
+    }
+    .auth-btn.logout {
+      border-color: rgba(255, 100, 100, 0.8);
+      background: radial-gradient(circle at top left, rgba(255, 100, 100, 0.35), #041226);
+      color: #ffe5e5;
+      box-shadow: 0 0 10px rgba(255, 100, 100, 0.6);
+    }
+    .auth-btn.logout:hover {
+      box-shadow: 0 0 16px rgba(255, 100, 100, 0.9);
+    }
+    .auth-btn.build-token {
+      border-color: rgba(255, 200, 50, 0.8);
+      background: radial-gradient(circle at top left, rgba(255, 200, 50, 0.35), #041226);
+      color: #fffde5;
+      box-shadow: 0 0 10px rgba(255, 200, 50, 0.6);
+    }
+    .auth-btn.build-token:hover {
+      box-shadow: 0 0 16px rgba(255, 200, 50, 0.9);
+    }
+    .auth-btn.hidden { display: none; }
+    /* User info display */
+    .user-info {
+      background: rgba(0, 50, 100, 0.5);
+      border: 1px solid rgba(100, 180, 255, 0.6);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      display: none;
+    }
+    .user-info.visible { display: block; }
+    .user-info .username {
+      font-weight: 700;
+      color: #9fd4ff;
+    }
+    .user-info .token-count {
+      color: #7fff7f;
+      font-weight: 600;
+    }
+    .role-button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(40, 120, 255, 0.8);
+      background: radial-gradient(circle at top left, rgba(80, 160, 255, 0.35), #041226);
+      color: #f4f7ff;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.9),
+        0 0 14px rgba(30, 120, 255, 0.7);
+      transition: all 0.15s ease-out;
+    }
+    .role-button span.color-tag {
+      opacity: 0.85;
+      font-weight: 500;
+    }
+    .role-button:hover {
+      transform: translateY(-1px);
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 1),
+        0 0 20px rgba(70, 180, 255, 0.9);
+    }
+    .role-button.active {
+      background: radial-gradient(circle at top, #0d1f4a, #020817);
+      border-color: #72d6ff;
+      box-shadow:
+        0 0 0 1px rgba(90, 210, 255, 0.7),
+        0 0 26px rgba(90, 210, 255, 0.9);
+    }
+    .role-button.active span.color-tag {
+      text-decoration: underline;
+    }
+    /* Dynamic color-coded button borders */
+    .role-button[data-role="engineer"] { border-color: #22c55e; }
+    .role-button[data-role="engineer"].active { border-color: #22c55e; box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.7), 0 0 26px rgba(34, 197, 94, 0.6); }
+    .role-button[data-role="ceo"] { border-color: #f97316; }
+    .role-button[data-role="ceo"].active { border-color: #f97316; box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.7), 0 0 26px rgba(249, 115, 22, 0.6); }
+    .role-button[data-role="import"] { border-color: #3b82f6; }
+    .role-button[data-role="import"].active { border-color: #3b82f6; box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.7), 0 0 26px rgba(59, 130, 246, 0.6); }
+    .role-button[data-role="investigate"] { border-color: #ec4899; }
+    .role-button[data-role="investigate"].active { border-color: #ec4899; box-shadow: 0 0 0 1px rgba(236, 72, 153, 0.7), 0 0 26px rgba(236, 72, 153, 0.6); }
+    .role-button[data-role="routes"] { border-color: #ef4444; }
+    .role-button[data-role="routes"].active { border-color: #ef4444; box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.7), 0 0 26px rgba(239, 68, 68, 0.6); }
+    .role-button[data-role="data"] { border-color: #eab308; }
+    .role-button[data-role="data"].active { border-color: #eab308; box-shadow: 0 0 0 1px rgba(234, 179, 8, 0.7), 0 0 26px rgba(234, 179, 8, 0.6); }
+    .role-button[data-role="assimilation"] { border-color: #a855f7; }
+    .role-button[data-role="assimilation"].active { border-color: #a855f7; box-shadow: 0 0 0 1px rgba(168, 85, 247, 0.7), 0 0 26px rgba(168, 85, 247, 0.6); }
+    /* View Mode Toggle Styles */
+    .view-mode-toggle {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: rgba(10, 20, 40, 0.8);
+      border-radius: 12px;
+      border: 1px solid rgba(100, 160, 255, 0.4);
+      margin-bottom: 14px;
+    }
+    .toggle-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #a0c8ff;
+    }
+    .toggle-buttons {
+      display: flex;
+      gap: 6px;
+    }
+    .toggle-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      border: 1px solid rgba(100, 160, 255, 0.5);
+      border-radius: 8px;
+      background: rgba(30, 60, 100, 0.5);
+      color: #d0e0ff;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .toggle-btn:hover {
+      background: rgba(60, 100, 160, 0.6);
+      border-color: rgba(120, 180, 255, 0.7);
+    }
+    .toggle-btn.active {
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border-color: #60a5fa;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    }
+    .highlight-word {
+      border-radius: 2px;
+      padding: 0 2px;
+    }
+    .highlight-sentence {
+      border-radius: 4px;
+    }
+    .panel {
+      margin-top: 18px;
+      padding: 16px 16px 24px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top left, rgba(67, 132, 255, 0.35), #020818);
+      border: 1px solid rgba(70, 150, 255, 0.9);
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.9),
+        0 0 22px rgba(60, 130, 255, 0.7);
+      position: relative;
+      overflow: hidden;
+    }
+    .panel-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+    }
+    .panel-subtitle {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+    .loading {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+    .dot-pulse {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #9fd4ff;
+      box-shadow:
+        0 0 8px rgba(159, 212, 255, 0.9),
+        0 0 18px rgba(159, 212, 255, 0.9);
+      animation: dotPulse 1s infinite alternate;
+      margin-left: 4px;
+    }
+    @keyframes dotPulse {
+      from { transform: scale(0.8); opacity: 0.6; }
+      to { transform: scale(1.4); opacity: 1; }
+    }
+    .link-list {
+      list-style: none;
+      margin-top: 8px;
+      padding-bottom: 42px;
+      max-height: 260px;
+      overflow-y: auto;
+    }
+    .token-card {
+      margin-bottom: 10px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      background: rgba(2, 10, 32, 0.9);
+      border: 1px solid rgba(130, 190, 255, 0.6);
+      box-shadow: 0 0 10px rgba(40, 90, 180, 0.8);
+    }
+    .token-hash {
+      font-size: 0.78rem;
+      letter-spacing: 0.03em;
+      opacity: 0.9;
+      margin-bottom: 2px;
+    }
+    .token-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .token-meta {
+      font-size: 0.78rem;
+      opacity: 0.75;
+    }
+    .token-actions {
+      margin-top: 4px;
+    }
+    .token-link {
+      font-size: 0.8rem;
+      color: #a7d3ff;
+      text-decoration: none;
+    }
+    .token-link:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
+    .chat-fab {
+      position: absolute;
+      right: 16px;
+      bottom: 12px;
+      width: 60px;
+      height: 60px;
+      border-radius: 999px;
+      background: radial-gradient(circle at top left, #ffffff, #e0f2ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 0 0 2px rgba(10, 40, 80, 1),
+        0 0 24px rgba(120, 200, 255, 0.9);
+      cursor: pointer;
+      z-index: 5;
+    }
+    .chat-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 1.3rem;
+    }
+
+    .bottom-nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      opacity: 0.7;
+    }
+    .nav-dot, .nav-square, .nav-arrow {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-dot-inner {
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      border: 2px solid #a0c9ff;
+    }
+    .nav-square-inner {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      border: 2px solid #a0c9ff;
+    }
+    .nav-arrow-inner {
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 12px solid #a0c9ff;
+    }
+
+    /* Chat panel */
+    .chat-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+    .chat-overlay.open {
+      display: flex;
+    }
+    .chat-panel {
+      width: 92%;
+      max-width: 420px;
+      max-height: 80vh;
+      background: radial-gradient(circle at top, #071736, #020712);
+      border-radius: 20px;
+      border: 1px solid rgba(120, 190, 255, 0.8);
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 1),
+        0 0 30px rgba(100, 180, 255, 0.9);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .chat-header {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(100, 170, 255, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chat-header-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .chat-close-btn {
+      background: transparent;
+      border: none;
+      color: #d4e3ff;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .chat-body {
+      flex: 1;
+      padding: 10px 12px;
+      overflow-y: auto;
+      font-size: 0.85rem;
+    }
+    .chat-msg {
+      margin-bottom: 8px;
+      max-width: 90%;
+      line-height: 1.3;
+    }
+    .chat-msg.me {
+      text-align: right;
+    }
+    .chat-msg.me span {
+      display: inline-block;
+      background: #2458ff;
+      color: #ffffff;
+      padding: 6px 9px;
+      border-radius: 12px 12px 2px 12px;
+      box-shadow: 0 0 10px rgba(40, 110, 255, 0.9);
+    }
+    .chat-msg.rogers span {
+      display: inline-block;
+      background: #050e24;
+      color: #e7f0ff;
+      padding: 6px 9px;
+      border-radius: 12px 12px 12px 2px;
+      border: 1px solid rgba(110, 180, 255, 0.7);
+      box-shadow: 0 0 10px rgba(40, 90, 170, 0.85);
+    }
+    .chat-footer {
+      padding: 8px 8px 10px;
+      border-top: 1px solid rgba(100, 170, 255, 0.5);
+      display: flex;
+      gap: 6px;
+    }
+    .chat-input {
+      flex: 1;
+      border-radius: 999px;
+      border: 1px solid rgba(110, 180, 255, 0.8);
+      padding: 6px 10px;
+      background: #030814;
+      color: #e5f1ff;
+      font-size: 0.85rem;
+    }
+    .chat-send-btn {
+      border-radius: 999px;
+      border: none;
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #2f7bff, #6fd0ff);
+      color: #020713;
+      cursor: pointer;
+      box-shadow: 0 0 12px rgba(80, 170, 255, 0.9);
+    }
+
+    @media (max-width: 360px) {
+      .shell { padding-inline: 8px; }
+      .link-list { max-height: 220px; }
+    }
+
+    /* Login Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 30;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      width: 90%;
+      max-width: 360px;
+      background: radial-gradient(circle at top, #071736, #020712);
+      border-radius: 20px;
+      border: 1px solid rgba(100, 200, 100, 0.8);
+      box-shadow: 0 0 30px rgba(100, 200, 100, 0.7);
+      padding: 20px;
+    }
+    .modal-box h2 {
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+      color: #9fd4ff;
+    }
+    .modal-input {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(100, 180, 255, 0.6);
+      background: #030814;
+      color: #e5f1ff;
+      font-size: 0.9rem;
+    }
+    .modal-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .modal-btn {
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .modal-btn.primary {
+      background: linear-gradient(135deg, #2f7bff, #6fd0ff);
+      color: #020713;
+    }
+    .modal-btn.secondary {
+      background: rgba(100, 100, 100, 0.3);
+      color: #e5f1ff;
+      border: 1px solid rgba(100, 100, 100, 0.5);
+    }
+    .modal-error {
+      color: #ff6b6b;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+      display: none;
+    }
+    .modal-error.visible { display: block; }
+
+    /* Token Builder Terminal */
+    .terminal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 25;
+    }
+    .terminal-overlay.open { display: flex; }
+    .terminal-box {
+      width: 95%;
+      max-width: 500px;
+      max-height: 85vh;
+      background: #0a0a0a;
+      border-radius: 12px;
+      border: 2px solid #00ff00;
+      box-shadow: 0 0 40px rgba(0, 255, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .terminal-header {
+      padding: 8px 14px;
+      background: #1a1a1a;
+      border-bottom: 1px solid #00ff00;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .terminal-title {
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 0.9rem;
+    }
+    .terminal-close {
+      background: transparent;
+      border: none;
+      color: #ff4444;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .terminal-body {
+      flex: 1;
+      padding: 12px;
+      overflow-y: auto;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #00ff00;
+      line-height: 1.5;
+    }
+    .terminal-line {
+      margin-bottom: 4px;
+    }
+    .terminal-line.system { color: #00aaff; }
+    .terminal-line.error { color: #ff4444; }
+    .terminal-line.success { color: #00ff00; }
+    .terminal-line.value { color: #ffaa00; font-weight: bold; }
+    .terminal-input-area {
+      padding: 10px;
+      border-top: 1px solid #333;
+      background: #0d0d0d;
+    }
+    .terminal-textarea {
+      width: 100%;
+      height: 80px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 0.85rem;
+      padding: 8px;
+      resize: none;
+    }
+    .terminal-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .terminal-btn {
+      flex: 1;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #00ff00;
+      background: rgba(0, 255, 0, 0.1);
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .terminal-btn:hover {
+      background: rgba(0, 255, 0, 0.2);
+    }
+    .terminal-btn.mega {
+      border-color: #ffaa00;
+      color: #ffaa00;
+      background: rgba(255, 170, 0, 0.1);
+    }
+    .terminal-btn.mega:hover {
+      background: rgba(255, 170, 0, 0.2);
+    }
+    .file-input-hidden {
+      display: none;
+    }
+    .token-result {
+      background: rgba(0, 255, 0, 0.1);
+      border: 1px solid #00ff00;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .token-result .hash {
+      font-size: 0.75rem;
+      word-break: break-all;
+    }
+    .token-result .value {
+      font-size: 1.1rem;
+      color: #ffaa00;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="header-row">
+      <div class="title">
+        <span class="symbol">∞</span>
+        <span>Infinity Research Portal</span>
+      </div>
+      <div class="badge">Pewpi</div>
+    </div>
+
+    <!-- AUTH BUTTONS -->
+    <div class="auth-row">
+      <button class="auth-btn" id="signInBtn">Sign In</button>
+      <button class="auth-btn logout hidden" id="logoutBtn">Logout</button>
+      <button class="auth-btn build-token" id="buildTokenBtn">Build Your Own Token</button>
+    </div>
+
+    <!-- USER INFO DISPLAY -->
+    <div class="user-info" id="userInfo">
+      Welcome, <span class="username" id="displayUsername"></span> | 
+      Token Count: <span class="token-count" id="displayTokenCount">0</span>
+    </div>
+
+    <!-- ROLE BUTTONS -->
+    <button class="role-button" data-role="engineer">
+      Engineer <span class="color-tag">(Green)</span>
+    </button>
+    <button class="role-button" data-role="ceo">
+      CEO <span class="color-tag">(Orange)</span>
+    </button>
+    <button class="role-button" data-role="import">
+      Import <span class="color-tag">(Blue)</span>
+    </button>
+    <button class="role-button" data-role="investigate">
+      Investigate <span class="color-tag">(Pink)</span>
+    </button>
+    <button class="role-button" data-role="routes">
+      Routes <span class="color-tag">(Red)</span>
+    </button>
+    <button class="role-button" data-role="data">
+      Data <span class="color-tag">(Yellow)</span>
+    </button>
+    <button class="role-button" data-role="assimilation">
+      Assimilation <span class="color-tag">(Purple)</span>
+    </button>
+
+    <!-- OUTPUT PANEL -->
+    <div class="panel" id="portal-panel">
+      <!-- View Mode Toggle -->
+      <div class="view-mode-toggle" id="view-mode-toggle">
+        <span class="toggle-label">View Mode:</span>
+        <div class="toggle-buttons">
+          <button class="toggle-btn" data-mode="sentence" title="Highlight sentences by category">
+            Sentence
+          </button>
+          <button class="toggle-btn" data-mode="word" title="Highlight words by category">
+            Word
+          </button>
+          <button class="toggle-btn active" data-mode="plain" title="Plain text without highlighting">
+            Plain Text
+          </button>
+        </div>
+      </div>
+      
+      <div class="panel-title" id="panel-title">ENGINEER</div>
+      <div class="panel-subtitle" id="panel-subtitle">
+        Role feed: Green channel • <span id="panel-count">0</span> pages
+      </div>
+      <div class="loading" id="panel-loading">
+        Loading research index<span class="dot-pulse"></span>
+      </div>
+      <div class="error-message" id="error-message" style="display: none; color: #ff6b6b; padding: 10px; border: 1px solid #ff6b6b; border-radius: 8px; margin-bottom: 10px;"></div>
+      <ul class="link-list" id="panel-links"></ul>
+
+      <div class="chat-fab" id="chat-fab" title="Rogers">
+        <div class="chat-icon">💬</div>
+      </div>
+    </div>
+
+    <!-- Bottom nav shapes -->
+    <div class="bottom-nav">
+      <div class="nav-arrow"><div class="nav-arrow-inner"></div></div>
+      <div class="nav-dot"><div class="nav-dot-inner"></div></div>
+      <div class="nav-square"><div class="nav-square-inner"></div></div>
+    </div>
+  </div>
+
+  <!-- Chat overlay -->
+  <div class="chat-overlay" id="chat-overlay">
+    <div class="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-title">Rogers • Infinity Research Line</div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close">×</button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="chat-msg rogers">
+          <span>Channel online. Pick a role, then tell me what you want to drill into.</span>
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input class="chat-input" id="chat-input" type="text" placeholder="Ask Rogers about this channel..." />
+        <button class="chat-send-btn" id="chat-send">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <h2>∞ Pewpi Sign In</h2>
+      <div class="modal-error" id="loginError"></div>
+      <input type="text" class="modal-input" id="loginUsername" placeholder="Username" />
+      <input type="password" class="modal-input" id="loginPassword" placeholder="Password" />
+      <div class="modal-actions">
+        <button class="modal-btn secondary" id="loginCancel">Cancel</button>
+        <button class="modal-btn secondary" id="showRegister">Register</button>
+        <button class="modal-btn primary" id="loginSubmit">Sign In</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal-overlay" id="registerModal">
+    <div class="modal-box">
+      <h2>∞ Register New User</h2>
+      <div class="modal-error" id="registerError"></div>
+      <input type="text" class="modal-input" id="registerUsername" placeholder="Choose Username" />
+      <input type="password" class="modal-input" id="registerPassword" placeholder="Choose Password" />
+      <input type="password" class="modal-input" id="registerConfirm" placeholder="Confirm Password" />
+      <div class="modal-actions">
+        <button class="modal-btn secondary" id="registerCancel">Cancel</button>
+        <button class="modal-btn primary" id="registerSubmit">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Token Builder Terminal -->
+  <div class="terminal-overlay" id="terminalOverlay">
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <span class="terminal-title">∞ BUILD YOUR OWN TOKEN ∞</span>
+        <button class="terminal-close" id="terminalClose">×</button>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="terminal-line system">[SYSTEM] Token Builder v1.0 initialized</div>
+        <div class="terminal-line system">[SYSTEM] Paste text, upload file, or enter content below</div>
+        <div class="terminal-line system">[SYSTEM] Token values range: $90 - $964,590,650,869,860,860.97</div>
+        <div class="terminal-line">---</div>
+      </div>
+      <div class="terminal-input-area">
+        <textarea class="terminal-textarea" id="terminalInput" placeholder="Enter or paste your content here..."></textarea>
+        <input type="file" class="file-input-hidden" id="fileUpload" accept=".txt,.md,.json,.csv,.xml,.html" />
+        <div class="terminal-actions">
+          <button class="terminal-btn" id="uploadFileBtn">📁 Upload</button>
+          <button class="terminal-btn" id="buildTokenSubmit">⚡ Build Token</button>
+          <button class="terminal-btn mega" id="megaHashBtn">🔗 Mega Hash</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ========== PEWPI LOGIN - VIEW MODE TOGGLE & DYNAMIC BUTTONS ==========
+    const researchUrl = "research_index.json";
+    const categoryTokensUrl = "category_tokens.json";
+    const buttons = document.querySelectorAll(".role-button");
+    const panelTitle = document.getElementById("panel-title");
+    const panelSubtitle = document.getElementById("panel-subtitle");
+    const panelCount = document.getElementById("panel-count");
+    const panelLoading = document.getElementById("panel-loading");
+    const panelLinks = document.getElementById("panel-links");
+    const errorMessage = document.getElementById("error-message");
+
+    const chatOverlay = document.getElementById("chat-overlay");
+    const chatFab = document.getElementById("chat-fab");
+    const chatClose = document.getElementById("chat-close");
+    const chatBody = document.getElementById("chat-body");
+    const chatInput = document.getElementById("chat-input");
+    const chatSend = document.getElementById("chat-send");
+
+    let allRecords = [];
+    let currentRole = "engineer";
+    let currentViewMode = "plain";
+    let categoryConfig = null;
+
+    // Category keywords for highlighting (loaded from config or defaults)
+    const defaultCategoryKeywords = {
+      engineering: ['quantum', 'physics', 'electron', 'vector', 'tensor', 'algorithm', 'neural', 'lattice', 'atomic', 'photon'],
+      ceo: ['business', 'strategy', 'leadership', 'management', 'executive', 'market', 'revenue', 'growth'],
+      import: ['import', 'data', 'acquisition', 'transfer', 'source', 'stream', 'input'],
+      investigate: ['analysis', 'investigate', 'research', 'study', 'examine', 'explore', 'discover'],
+      routes: ['route', 'path', 'network', 'connection', 'channel', 'pipeline', 'flow'],
+      data: ['data', 'storage', 'database', 'information', 'record', 'archive', 'file'],
+      assimilation: ['integration', 'merge', 'combine', 'assimilate', 'synthesis', 'fusion', 'unity']
+    };
+
+    // Color map for categories
+    const categoryColors = {
+      engineering: '#22c55e',
+      engineer: '#22c55e',
+      ceo: '#f97316',
+      import: '#3b82f6',
+      investigate: '#ec4899',
+      routes: '#ef4444',
+      data: '#eab308',
+      assimilation: '#a855f7'
+    };
+
+    // ========== LOGGING UTILITY ==========
+    const PewpiLogger = {
+      log: function(level, msg, data) {
+        const timestamp = new Date().toISOString();
+        const prefix = `[PewpiLogin ${timestamp}] ${level.toUpperCase()}:`;
+        if (data) {
+          console.log(prefix, msg, data);
+        } else {
+          console.log(prefix, msg);
+        }
+      },
+      info: function(msg, data) { this.log('info', msg, data); },
+      warn: function(msg, data) { this.log('warn', msg, data); },
+      error: function(msg, data) { this.log('error', msg, data); },
+      debug: function(msg, data) { this.log('debug', msg, data); }
+    };
+
+    // ========== ERROR HANDLING ==========
+    function showError(message) {
+      PewpiLogger.error(message);
+      if (errorMessage) {
+        errorMessage.textContent = message;
+        errorMessage.style.display = "block";
+      }
+    }
+
+    function hideError() {
+      if (errorMessage) {
+        errorMessage.style.display = "none";
+      }
+    }
+
+    // ========== VIEW MODE TOGGLE ==========
+    function initViewModeToggle() {
+      const toggleBtns = document.querySelectorAll('.toggle-btn');
+      
+      toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const mode = btn.dataset.mode;
+          setViewMode(mode);
+          
+          // Update button states
+          toggleBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+      
+      PewpiLogger.info('View mode toggle initialized');
+    }
+
+    function setViewMode(mode) {
+      if (!['sentence', 'word', 'plain'].includes(mode)) {
+        PewpiLogger.warn('Invalid view mode, defaulting to plain:', mode);
+        mode = 'plain';
+      }
+      
+      currentViewMode = mode;
+      PewpiLogger.info('View mode changed to:', mode);
+      
+      // Re-render current role to apply highlighting
+      if (allRecords.length > 0) {
+        renderRole(currentRole);
+      }
+    }
+
+    function highlightText(text, mode) {
+      if (mode === 'plain' || !text) {
+        return text;
+      }
+      
+      if (mode === 'word') {
+        return highlightWords(text);
+      } else if (mode === 'sentence') {
+        return highlightSentences(text);
+      }
+      
+      return escapeHtml(text);
+    }
+
+    // HTML escape function to prevent XSS
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function highlightWords(content) {
+      // First escape the content to prevent XSS
+      let result = escapeHtml(content);
+      const keywords = categoryConfig?.categories 
+        ? Object.fromEntries(Object.entries(categoryConfig.categories).map(([k, v]) => [k, v.keywords || []]))
+        : defaultCategoryKeywords;
+      
+      for (const [category, kws] of Object.entries(keywords)) {
+        const color = categoryColors[category] || '#808080';
+        kws.forEach(keyword => {
+          const escapedKeyword = escapeHtml(keyword);
+          const regex = new RegExp('\\b(' + escapedKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')\\b', 'gi');
+          result = result.replace(regex, 
+            '<span class="highlight-word" style="background-color: ' + color + '40; border-bottom: 2px solid ' + color + ';">$1</span>');
+        });
+      }
+      return result;
+    }
+
+    function highlightSentences(content) {
+      const sentences = content.split(/(?<=[.!?])\s+/);
+      const keywords = categoryConfig?.categories 
+        ? Object.fromEntries(Object.entries(categoryConfig.categories).map(([k, v]) => [k, v.keywords || []]))
+        : defaultCategoryKeywords;
+      
+      return sentences.map(sentence => {
+        let bestCategory = null;
+        let bestScore = 0;
+        
+        const sentenceLower = sentence.toLowerCase();
+        for (const [category, kws] of Object.entries(keywords)) {
+          const score = kws.filter(kw => sentenceLower.includes(kw.toLowerCase())).length;
+          if (score > bestScore) {
+            bestScore = score;
+            bestCategory = category;
+          }
+        }
+        
+        // Escape the sentence to prevent XSS
+        const escapedSentence = escapeHtml(sentence);
+        
+        if (bestCategory && bestScore > 0) {
+          const color = categoryColors[bestCategory] || '#808080';
+          return '<span class="highlight-sentence" style="border-left: 4px solid ' + color + '; padding-left: 10px; display: block; background-color: ' + color + '15; margin: 4px 0;">' + escapedSentence + '</span>';
+        }
+        return escapedSentence;
+      }).join(' ');
+    }
+
+    // ========== BUTTON & ROLE MANAGEMENT ==========
+    function setActiveButton(roleKey) {
+      buttons.forEach(btn => {
+        if (btn.dataset.role === roleKey) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+      });
+    }
+
+    function roleSubtitle(roleKey) {
+      const map = {
+        engineer: "Green channel",
+        ceo: "Orange channel",
+        import: "Blue channel",
+        investigate: "Pink channel",
+        routes: "Red channel",
+        data: "Yellow channel",
+        assimilation: "Purple channel"
+      };
+      return map[roleKey] || "Channel";
+    }
+
+    function renderRole(roleKey) {
+      hideError();
+      currentRole = roleKey;
+      setActiveButton(roleKey);
+
+      const upper = roleKey.toUpperCase();
+      panelTitle.textContent = upper;
+
+      const sub = "Role feed: " + roleSubtitle(roleKey) + " • ";
+      panelSubtitle.innerHTML = sub + '<span id="panel-count">0</span> pages';
+      const countSpan = document.getElementById("panel-count");
+
+      panelLoading.style.display = "block";
+      panelLinks.innerHTML = "";
+
+      // Filter records - handle both 'engineer' and 'engineering' role names
+      const filtered = allRecords.filter(r => {
+        const role = (r.role || "data").toLowerCase();
+        const searchRole = roleKey.toLowerCase();
+        return role === searchRole || 
+               (searchRole === 'engineer' && role === 'engineering') ||
+               (searchRole === 'engineering' && role === 'engineer');
+      });
+      
+      const count = filtered.length;
+      countSpan.textContent = count.toString();
+
+      PewpiLogger.info(`Rendering role: ${roleKey}, found ${count} records`);
+
+      if (count === 0) {
+        setTimeout(() => {
+          panelLoading.style.display = "none";
+          const empty = document.createElement("li");
+          empty.className = "empty-message";
+          empty.textContent = "No research pages found for this role yet.";
+          empty.style.cssText = "color: #8899bb; font-style: italic; padding: 10px;";
+          panelLinks.appendChild(empty);
+        }, 200);
+        return;
+      }
+
+      setTimeout(() => {
+        panelLoading.style.display = "none";
+        filtered.forEach(rec => {
+          const li = document.createElement("li");
+          const card = document.createElement("div");
+          card.className = "token-card";
+          card.dataset.originalTitle = rec.title || "Untitled";
+
+          const hashLine = document.createElement("div");
+          hashLine.className = "token-hash";
+          hashLine.textContent = "HASH: " + (rec.hash || "").toString();
+
+          const titleLine = document.createElement("div");
+          titleLine.className = "token-title research-content";
+          // Apply highlighting based on current mode
+          const titleText = rec.title || "Untitled";
+          titleLine.innerHTML = highlightText(titleText, currentViewMode);
+          titleLine.dataset.originalText = titleText;
+
+          const meta = document.createElement("div");
+          meta.className = "token-meta";
+          const ts = rec.timestamp || "";
+          const src = rec.source_url || "";
+          const bits = [];
+          if (ts) bits.push(ts);
+          if (src) bits.push(src);
+          meta.textContent = bits.join(" • ");
+
+          const actions = document.createElement("div");
+          actions.className = "token-actions";
+          const link = document.createElement("a");
+          link.className = "token-link";
+          link.textContent = "Open research file";
+          link.href = rec.url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          actions.appendChild(link);
+
+          card.appendChild(hashLine);
+          card.appendChild(titleLine);
+          if (meta.textContent) card.appendChild(meta);
+          card.appendChild(actions);
+
+          li.appendChild(card);
+          panelLinks.appendChild(li);
+        });
+      }, 220);
+    }
+
+    // ========== DATA LOADING ==========
+    async function loadCategoryConfig() {
+      try {
+        const resp = await fetch(categoryTokensUrl, { cache: "no-store" });
+        if (resp.ok) {
+          categoryConfig = await resp.json();
+          PewpiLogger.info('Category config loaded', { categories: Object.keys(categoryConfig.categories || {}).length });
+        }
+      } catch (err) {
+        PewpiLogger.warn('Could not load category config, using defaults:', err.message);
+      }
+    }
+
+    async function loadIndex() {
+      panelLoading.style.display = "block";
+      hideError();
+      
+      try {
+        // Load category config first
+        await loadCategoryConfig();
+        
+        // Then load research index
+        const resp = await fetch(researchUrl, { cache: "no-store" });
+        if (!resp.ok) {
+          throw new Error("HTTP " + resp.status);
+        }
+        
+        const data = await resp.json();
+        if (!Array.isArray(data)) {
+          throw new Error("Index must be an array");
+        }
+        
+        allRecords = data;
+        PewpiLogger.info('Research index loaded', { records: allRecords.length });
+        renderRole(currentRole);
+        
+      } catch (err) {
+        PewpiLogger.error('Failed to load research index:', err.message);
+        panelLoading.style.display = "none";
+        showError("Failed to load research index: " + err.message);
+      }
+    }
+
+    // ========== EVENT LISTENERS ==========
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const roleKey = btn.dataset.role;
+        renderRole(roleKey);
+      });
+    });
+
+    // Chat wiring
+    function appendChatMessage(who, text) {
+      const div = document.createElement("div");
+      div.className = "chat-msg " + who;
+      const span = document.createElement("span");
+      span.textContent = text;
+      div.appendChild(span);
+      chatBody.appendChild(div);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    function rogersReply(userText) {
+      const short = userText.trim().slice(0, 140);
+      const channelLabel = roleSubtitle(currentRole);
+      const count = allRecords.filter(r => {
+        const role = (r.role || "data").toLowerCase();
+        const searchRole = currentRole.toLowerCase();
+        return role === searchRole || 
+               (searchRole === 'engineer' && role === 'engineering') ||
+               (searchRole === 'engineering' && role === 'engineer');
+      }).length;
+      const reply = [
+        "Channel: " + currentRole.toUpperCase() + " • " + channelLabel,
+        "Indexed pages in this lane: " + count,
+        "You said: \"" + short + "\"",
+        "Use the cards below to open the hashed research directly. Infinity rig stays off-Google."
+      ].join(" • ");
+      appendChatMessage("rogers", reply);
+    }
+
+    function sendChat() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      appendChatMessage("me", text);
+      chatInput.value = "";
+      setTimeout(() => rogersReply(text), 220);
+    }
+
+    chatFab.addEventListener("click", () => {
+      chatOverlay.classList.add("open");
+      setTimeout(() => chatInput.focus(), 80);
+    });
+    chatClose.addEventListener("click", () => {
+      chatOverlay.classList.remove("open");
+    });
+    chatOverlay.addEventListener("click", (e) => {
+      if (e.target === chatOverlay) {
+        chatOverlay.classList.remove("open");
+      }
+    });
+    chatSend.addEventListener("click", sendChat);
+    chatInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        sendChat();
+      }
+    });
+
+    // ========== INITIALIZATION ==========
+    initViewModeToggle();
+    loadIndex();
+
+    // ==================== PEWPI LOGIN SYSTEM ====================
+    const SESSION_KEY = 'pewpi_session';
+    const USERS_KEY = 'pewpi_users';
+
+    // DOM Elements - Auth
+    const signInBtn = document.getElementById('signInBtn');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const buildTokenBtn = document.getElementById('buildTokenBtn');
+    const userInfo = document.getElementById('userInfo');
+    const displayUsername = document.getElementById('displayUsername');
+    const displayTokenCount = document.getElementById('displayTokenCount');
+
+    // Login Modal
+    const loginModal = document.getElementById('loginModal');
+    const loginUsername = document.getElementById('loginUsername');
+    const loginPassword = document.getElementById('loginPassword');
+    const loginSubmit = document.getElementById('loginSubmit');
+    const loginCancel = document.getElementById('loginCancel');
+    const loginError = document.getElementById('loginError');
+    const showRegister = document.getElementById('showRegister');
+
+    // Register Modal
+    const registerModal = document.getElementById('registerModal');
+    const registerUsername = document.getElementById('registerUsername');
+    const registerPassword = document.getElementById('registerPassword');
+    const registerConfirm = document.getElementById('registerConfirm');
+    const registerSubmit = document.getElementById('registerSubmit');
+    const registerCancel = document.getElementById('registerCancel');
+    const registerError = document.getElementById('registerError');
+
+    // Terminal
+    const terminalOverlay = document.getElementById('terminalOverlay');
+    const terminalClose = document.getElementById('terminalClose');
+    const terminalBody = document.getElementById('terminalBody');
+    const terminalInput = document.getElementById('terminalInput');
+    const fileUpload = document.getElementById('fileUpload');
+    const uploadFileBtn = document.getElementById('uploadFileBtn');
+    const buildTokenSubmit = document.getElementById('buildTokenSubmit');
+    const megaHashBtn = document.getElementById('megaHashBtn');
+
+    // Helpers
+    function hashString(str) {
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+      }
+      return Math.abs(hash).toString(16).padStart(16, '0');
+    }
+
+    function sha256(message) {
+      // Simple hash for demo - in production use crypto.subtle
+      const msgBuffer = new TextEncoder().encode(message + Date.now());
+      let hash = 0x811c9dc5;
+      for (let i = 0; i < msgBuffer.length; i++) {
+        hash ^= msgBuffer[i];
+        hash = Math.imul(hash, 0x01000193);
+      }
+      return Math.abs(hash).toString(16).padStart(64, '0').slice(0, 64);
+    }
+
+    // Storage functions
+    function getUsers() {
+      const stored = localStorage.getItem(USERS_KEY);
+      return stored ? JSON.parse(stored) : {};
+    }
+
+    function saveUsers(users) {
+      localStorage.setItem(USERS_KEY, JSON.stringify(users));
+    }
+
+    function getSession() {
+      const stored = sessionStorage.getItem(SESSION_KEY);
+      return stored ? JSON.parse(stored) : null;
+    }
+
+    function saveSession(session) {
+      if (session) {
+        sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+      } else {
+        sessionStorage.removeItem(SESSION_KEY);
+      }
+    }
+
+    // Auth functions
+    function registerUser(username, password) {
+      const users = getUsers();
+      if (users[username]) {
+        return { success: false, error: 'Username already exists' };
+      }
+      users[username] = {
+        passwordHash: hashString(password),
+        tokenCount: 0,
+        tokensCreated: [],
+        megaHashes: [],
+        createdAt: new Date().toISOString()
+      };
+      saveUsers(users);
+      return { success: true };
+    }
+
+    function signIn(username, password) {
+      const users = getUsers();
+      if (!users[username]) {
+        return { success: false, error: 'User not found' };
+      }
+      if (users[username].passwordHash !== hashString(password)) {
+        return { success: false, error: 'Invalid password' };
+      }
+      const session = {
+        username,
+        token: sha256(username + Date.now()),
+        loginTime: new Date().toISOString()
+      };
+      saveSession(session);
+      return { success: true, session };
+    }
+
+    function logout() {
+      saveSession(null);
+      updateUI();
+    }
+
+    function getCurrentUser() {
+      const session = getSession();
+      if (!session) return null;
+      const users = getUsers();
+      return users[session.username] || null;
+    }
+
+    function updateTokenCount(increment = 1) {
+      const session = getSession();
+      if (!session) return;
+      const users = getUsers();
+      if (users[session.username]) {
+        users[session.username].tokenCount += increment;
+        saveUsers(users);
+        updateUI();
+      }
+    }
+
+    function addUserToken(tokenHash, value) {
+      const session = getSession();
+      if (!session) return;
+      const users = getUsers();
+      if (users[session.username]) {
+        users[session.username].tokensCreated.push({
+          hash: tokenHash,
+          value: value,
+          createdAt: new Date().toISOString()
+        });
+        users[session.username].tokenCount++;
+        saveUsers(users);
+        updateUI();
+      }
+    }
+
+    function addMegaHash(megaHash, value, components) {
+      const session = getSession();
+      if (!session) return;
+      const users = getUsers();
+      if (users[session.username]) {
+        users[session.username].megaHashes.push({
+          hash: megaHash,
+          value: value,
+          components: components,
+          createdAt: new Date().toISOString()
+        });
+        saveUsers(users);
+      }
+    }
+
+    // UI Update
+    function updateUI() {
+      const session = getSession();
+      const user = getCurrentUser();
+
+      if (session && user) {
+        signInBtn.classList.add('hidden');
+        logoutBtn.classList.remove('hidden');
+        userInfo.classList.add('visible');
+        displayUsername.textContent = session.username;
+        displayTokenCount.textContent = user.tokenCount;
+      } else {
+        signInBtn.classList.remove('hidden');
+        logoutBtn.classList.add('hidden');
+        userInfo.classList.remove('visible');
+      }
+    }
+
+    // Modal handlers
+    function showError(element, message) {
+      element.textContent = message;
+      element.classList.add('visible');
+    }
+
+    function clearError(element) {
+      element.textContent = '';
+      element.classList.remove('visible');
+    }
+
+    signInBtn.addEventListener('click', () => {
+      loginModal.classList.add('open');
+      clearError(loginError);
+      loginUsername.value = '';
+      loginPassword.value = '';
+      setTimeout(() => loginUsername.focus(), 100);
+    });
+
+    loginCancel.addEventListener('click', () => {
+      loginModal.classList.remove('open');
+    });
+
+    loginModal.addEventListener('click', (e) => {
+      if (e.target === loginModal) loginModal.classList.remove('open');
+    });
+
+    showRegister.addEventListener('click', () => {
+      loginModal.classList.remove('open');
+      registerModal.classList.add('open');
+      clearError(registerError);
+      registerUsername.value = '';
+      registerPassword.value = '';
+      registerConfirm.value = '';
+      setTimeout(() => registerUsername.focus(), 100);
+    });
+
+    loginSubmit.addEventListener('click', () => {
+      const username = loginUsername.value.trim();
+      const password = loginPassword.value;
+      if (!username || !password) {
+        showError(loginError, 'Please fill in all fields');
+        return;
+      }
+      const result = signIn(username, password);
+      if (result.success) {
+        loginModal.classList.remove('open');
+        updateUI();
+        terminalLog('system', `[AUTH] User "${username}" signed in successfully`);
+      } else {
+        showError(loginError, result.error);
+      }
+    });
+
+    registerCancel.addEventListener('click', () => {
+      registerModal.classList.remove('open');
+    });
+
+    registerModal.addEventListener('click', (e) => {
+      if (e.target === registerModal) registerModal.classList.remove('open');
+    });
+
+    registerSubmit.addEventListener('click', () => {
+      const username = registerUsername.value.trim();
+      const password = registerPassword.value;
+      const confirm = registerConfirm.value;
+      if (!username || !password || !confirm) {
+        showError(registerError, 'Please fill in all fields');
+        return;
+      }
+      if (password !== confirm) {
+        showError(registerError, 'Passwords do not match');
+        return;
+      }
+      if (password.length < 4) {
+        showError(registerError, 'Password must be at least 4 characters');
+        return;
+      }
+      const result = registerUser(username, password);
+      if (result.success) {
+        registerModal.classList.remove('open');
+        signIn(username, password);
+        updateUI();
+        terminalLog('success', `[AUTH] User "${username}" registered and signed in`);
+      } else {
+        showError(registerError, result.error);
+      }
+    });
+
+    logoutBtn.addEventListener('click', () => {
+      const session = getSession();
+      if (session) {
+        terminalLog('system', `[AUTH] User "${session.username}" logged out`);
+      }
+      logout();
+    });
+
+    // ==================== TOKEN BUILDER ====================
+    const BOOST_KEYWORDS = {
+      'quantum': 500, 'hydrogen': 500, 'fusion': 500, 'einstein': 500,
+      'relativity': 500, 'infinity': 500, 'neural': 450, 'photon': 450,
+      'plasma': 450, 'electron': 450, 'vector': 300, 'tensor': 300,
+      'gravity': 300, 'reactor': 300, 'lattice': 300, 'thermodynamics': 300,
+      'entropy': 300, 'ai': 150, 'algorithm': 150, 'compute': 150,
+      'research': 150, 'discovery': 150, 'patent': 150, 'proprietary': 150,
+      'data': 75, 'analysis': 75, 'model': 75, 'theory': 75, 'experiment': 75,
+      'kris': 10000, 'pewpi': 10000, 'hydra': 8000, 'osprey': 8000,
+      'classified': 15000, 'secret': 12000
+    };
+
+    const MIN_VALUE = 90;
+    const MAX_VALUE = 964590650869860860.97;
+
+    function scoreContent(text) {
+      const textLower = text.toLowerCase();
+      const words = textLower.split(/\s+/);
+      let score = 0;
+      const analysis = {
+        wordCount: words.length,
+        charCount: text.length,
+        keywordMatches: {}
+      };
+
+      // Base scores
+      score += text.length * 0.5;
+      score += words.length * 2;
+
+      // Keyword matching
+      for (const [keyword, bonus] of Object.entries(BOOST_KEYWORDS)) {
+        const count = (textLower.match(new RegExp(keyword, 'g')) || []).length;
+        if (count > 0) {
+          score += count * bonus;
+          analysis.keywordMatches[keyword] = { count, bonus: count * bonus };
+        }
+      }
+
+      // Depth bonus
+      if (text.length > 100) {
+        const depth = Math.floor(Math.log2(text.length) * 100);
+        score += depth;
+        analysis.depthBonus = depth;
+      }
+
+      // Complexity bonus
+      if (words.length > 0) {
+        const uniqueRatio = new Set(words).size / words.length;
+        const complexity = Math.floor(uniqueRatio * 1000);
+        score += complexity;
+        analysis.complexityBonus = complexity;
+      }
+
+      // Line count bonus
+      const lines = text.split('\n').length;
+      if (lines > 5) {
+        score += lines * 10;
+      }
+
+      return { score, analysis };
+    }
+
+    function calculateValue(score) {
+      if (score < 100) return MIN_VALUE + (score * 0.5);
+      if (score < 500) return 100 + (score * 2);
+      if (score < 2000) return 1000 + (score * 10);
+      if (score < 10000) return 20000 + (score * 100);
+      if (score < 100000) return 1000000 + (score * 5000);
+      if (score < 1000000) return 500000000 + (score * 100000);
+      
+      const base = 100000000000;
+      const multiplier = Math.log10(score) * 100000000000;
+      return Math.min(base + multiplier * (score / 1000000), MAX_VALUE);
+    }
+
+    function formatValue(value) {
+      if (value >= 1000000000000) return '$' + value.toLocaleString('en-US', { maximumFractionDigits: 2 });
+      if (value >= 1000000000) return '$' + (value / 1000000000).toFixed(2) + 'B';
+      if (value >= 1000000) return '$' + (value / 1000000).toFixed(2) + 'M';
+      if (value >= 1000) return '$' + (value / 1000).toFixed(2) + 'K';
+      return '$' + value.toFixed(2);
+    }
+
+    function generateTokenHash(text) {
+      return sha256(text + Date.now() + Math.random());
+    }
+
+    let createdTokens = [];
+
+    function buildToken(text, sourceType = 'text', filename = null) {
+      const tokenHash = generateTokenHash(text);
+      const { score, analysis } = scoreContent(text);
+      const value = calculateValue(score);
+
+      const token = {
+        hash: tokenHash,
+        timestamp: new Date().toISOString(),
+        sourceType,
+        filename,
+        score,
+        value,
+        valueFormatted: formatValue(value),
+        analysis
+      };
+
+      createdTokens.push(token);
+      addUserToken(tokenHash, value);
+
+      return token;
+    }
+
+    function generateMegaHash(tokenHashes) {
+      if (tokenHashes.length < 2) {
+        return { error: 'Need at least 2 tokens to create a mega hash' };
+      }
+
+      const selectedTokens = createdTokens.filter(t => tokenHashes.includes(t.hash));
+      if (selectedTokens.length < 2) {
+        return { error: 'Could not find enough matching tokens' };
+      }
+
+      let totalScore = selectedTokens.reduce((sum, t) => sum + t.score, 0);
+      const combinationBonus = tokenHashes.length * 1000000;
+      const synergyBonus = Math.pow(tokenHashes.length, 3) * 10000000;
+      const megaScore = totalScore + combinationBonus + synergyBonus;
+
+      const baseMegaValue = 963000000000; // $963 billion base
+      const scaleFactor = megaScore / 1000;
+      const megaValue = Math.min(baseMegaValue + (scaleFactor * 1000000000), MAX_VALUE);
+
+      const megaHash = sha256(tokenHashes.join('') + 'MEGA' + Date.now());
+
+      const mega = {
+        megaHash,
+        componentHashes: tokenHashes,
+        componentCount: tokenHashes.length,
+        combinedScore: megaScore,
+        value: megaValue,
+        valueFormatted: formatValue(megaValue),
+        type: 'MEGA_HASH'
+      };
+
+      addMegaHash(megaHash, megaValue, tokenHashes);
+
+      return mega;
+    }
+
+    // Terminal functions
+    function terminalLog(type, message) {
+      const line = document.createElement('div');
+      line.className = 'terminal-line ' + type;
+      line.textContent = message;
+      terminalBody.appendChild(line);
+      terminalBody.scrollTop = terminalBody.scrollHeight;
+    }
+
+    function showTokenResult(token) {
+      const resultDiv = document.createElement('div');
+      resultDiv.className = 'token-result';
+      resultDiv.innerHTML = `
+        <div class="hash">HASH: ${token.hash}</div>
+        <div>Score: ${token.score} | Words: ${token.analysis.wordCount} | Chars: ${token.analysis.charCount}</div>
+        <div class="value">VALUE: ${token.valueFormatted}</div>
+      `;
+      terminalBody.appendChild(resultDiv);
+      terminalBody.scrollTop = terminalBody.scrollHeight;
+    }
+
+    function showMegaResult(mega) {
+      const resultDiv = document.createElement('div');
+      resultDiv.className = 'token-result';
+      resultDiv.style.borderColor = '#ffaa00';
+      resultDiv.innerHTML = `
+        <div class="hash">MEGA HASH: ${mega.megaHash}</div>
+        <div>Components: ${mega.componentCount} | Combined Score: ${mega.combinedScore}</div>
+        <div class="value">MEGA VALUE: ${mega.valueFormatted}</div>
+      `;
+      terminalBody.appendChild(resultDiv);
+      terminalBody.scrollTop = terminalBody.scrollHeight;
+    }
+
+    // Terminal event handlers
+    buildTokenBtn.addEventListener('click', () => {
+      terminalOverlay.classList.add('open');
+      setTimeout(() => terminalInput.focus(), 100);
+    });
+
+    terminalClose.addEventListener('click', () => {
+      terminalOverlay.classList.remove('open');
+    });
+
+    terminalOverlay.addEventListener('click', (e) => {
+      if (e.target === terminalOverlay) terminalOverlay.classList.remove('open');
+    });
+
+    uploadFileBtn.addEventListener('click', () => {
+      fileUpload.click();
+    });
+
+    fileUpload.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      terminalLog('system', `[FILE] Reading: ${file.name}`);
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const content = event.target.result;
+        terminalInput.value = content;
+        terminalLog('success', `[FILE] Loaded ${content.length} characters from ${file.name}`);
+      };
+      reader.onerror = () => {
+        terminalLog('error', '[FILE] Error reading file');
+      };
+      reader.readAsText(file);
+      fileUpload.value = '';
+    });
+
+    buildTokenSubmit.addEventListener('click', () => {
+      const text = terminalInput.value.trim();
+      if (!text) {
+        terminalLog('error', '[ERROR] No content provided');
+        return;
+      }
+
+      terminalLog('system', '[PROCESS] Analyzing content...');
+      terminalLog('system', `[PROCESS] Content length: ${text.length} characters`);
+
+      const token = buildToken(text, 'text');
+
+      terminalLog('success', '[SUCCESS] Token generated!');
+      showTokenResult(token);
+
+      terminalInput.value = '';
+    });
+
+    megaHashBtn.addEventListener('click', () => {
+      if (createdTokens.length < 2) {
+        terminalLog('error', '[ERROR] Need at least 2 tokens to create a Mega Hash');
+        terminalLog('system', '[INFO] Current tokens: ' + createdTokens.length);
+        return;
+      }
+
+      terminalLog('system', '[MEGA] Combining ' + createdTokens.length + ' tokens...');
+
+      const hashes = createdTokens.map(t => t.hash);
+      const mega = generateMegaHash(hashes);
+
+      if (mega.error) {
+        terminalLog('error', '[ERROR] ' + mega.error);
+        return;
+      }
+
+      terminalLog('success', '[SUCCESS] MEGA HASH generated!');
+      terminalLog('value', '[VALUE] ' + mega.valueFormatted + ' (Minimum $963B+)');
+      showMegaResult(mega);
+    });
+
+    // Initialize UI
+    updateUI();
+    
+    // Export for external use
+    window.PewpiLogin = {
+      setViewMode: setViewMode,
+      getViewMode: () => currentViewMode,
+      renderRole: renderRole,
+      loadIndex: loadIndex,
+      categoryColors: categoryColors,
+      logger: PewpiLogger
+    };
+    
+    PewpiLogger.info('Pewpi Login Portal initialized');
+  </script>
+</body>
+</html>
