@@ -37,4 +37,116 @@
     <p>GitHub Pages online</p>
   </div>
 </body>
+<!-- C13B0_CHAT_WIDGET_BEGIN -->
+<style>
+  .c13b0-chatfab{position:fixed;right:18px;bottom:18px;z-index:99999;border-radius:999px;padding:12px 14px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.25);cursor:pointer;user-select:none}
+  .c13b0-chatpanel{position:fixed;right:18px;bottom:72px;width:min(520px,calc(100vw - 36px));height:min(560px,calc(100vh - 120px));z-index:99999;border-radius:18px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.35);display:none}
+  .c13b0-chathead{padding:10px 12px;font-weight:800;display:flex;align-items:center;justify-content:space-between}
+  .c13b0-chatbody{height:calc(100% - 94px);overflow:auto;padding:10px 12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px}
+  .c13b0-chatline{white-space:pre-wrap;margin:8px 0}
+  .c13b0-chatbar{display:flex;gap:8px;padding:10px 12px;border-top:1px solid rgba(255,255,255,.10)}
+  .c13b0-chatin{flex:1;border-radius:12px;padding:10px 12px;border:1px solid rgba(255,255,255,.12);outline:none}
+  .c13b0-chatbtn{border-radius:12px;padding:10px 12px;font-weight:800;border:0;cursor:pointer}
+</style>
+
+<div id="c13b0_chat_fab" class="c13b0-chatfab">🧱💬🧱 CHAT</div>
+
+<div id="c13b0_chat_panel" class="c13b0-chatpanel" role="dialog" aria-label="C13B0 Chat">
+  <div class="c13b0-chathead">
+    <div>🧱💬🧱 Repo Terminal</div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <small id="c13b0_chat_repo" style="opacity:.8">repo: (auto)</small>
+      <button id="c13b0_chat_close" class="c13b0-chatbtn">✕</button>
+    </div>
+  </div>
+  <div id="c13b0_chat_body" class="c13b0-chatbody"></div>
+  <div class="c13b0-chatbar">
+    <input id="c13b0_chat_in" class="c13b0-chatin" placeholder="Ask this repo... (returns tokenized answer)" />
+    <button id="c13b0_chat_send" class="c13b0-chatbtn">SEND</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Theme: tries to inherit page colors; keeps your design intact.
+  const fab = document.getElementById("c13b0_chat_fab");
+  const panel = document.getElementById("c13b0_chat_panel");
+  const body = document.getElementById("c13b0_chat_body");
+  const input = document.getElementById("c13b0_chat_in");
+  const send = document.getElementById("c13b0_chat_send");
+  const close = document.getElementById("c13b0_chat_close");
+  const repoLabel = document.getElementById("c13b0_chat_repo");
+
+  const repo = (location.pathname.split("/")[1] || "").trim(); // for org pages it’s the repo root on pages
+  repoLabel.textContent = "repo: " + (repo || "(root)");
+
+  // Minimal styling decisions; avoid fighting your CSS
+  fab.style.background = "rgba(0,0,0,.82)";
+  fab.style.color = "white";
+  panel.style.background = "rgba(0,0,0,.90)";
+  panel.style.color = "white";
+  document.querySelector(".c13b0-chathead").style.borderBottom = "1px solid rgba(255,255,255,.10)";
+  input.style.background = "rgba(255,255,255,.06)";
+  input.style.color = "white";
+  send.style.background = "rgba(255,255,255,.14)";
+  send.style.color = "white";
+  close.style.background = "rgba(255,255,255,.14)";
+  close.style.color = "white";
+
+  function line(txt){
+    const div=document.createElement("div");
+    div.className="c13b0-chatline";
+    div.textContent=txt;
+    body.appendChild(div);
+    body.scrollTop = body.scrollHeight;
+  }
+
+  function open(){ panel.style.display="block"; input.focus(); }
+  function shut(){ panel.style.display="none"; }
+
+  fab.addEventListener("click", open);
+  close.addEventListener("click", shut);
+  window.addEventListener("click",(e)=>{
+    if(panel.style.display==="block"){
+      // click outside closes
+      if(!panel.contains(e.target) && e.target!==fab) shut();
+    }
+  });
+
+  async function ask(){
+    const q=(input.value||"").trim();
+    if(!q) return;
+
+    line("> " + q);
+    input.value="";
+
+    // Router endpoint (you’ll create it in your router repo)
+    // expected response: { ok:true, repo:"x", answer:"...", token:{id:"...", value:"...", type:"..."} }
+    try{
+      const res = await fetch("/router/ask", {
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({ repo, query:q, t: Date.now() })
+      });
+      const data = await res.json();
+      if(!data || !data.ok){
+        line("⚠️ Router error: " + (data && data.error ? data.error : "unknown"));
+        return;
+      }
+      if(data.answer) line(data.answer);
+      if(data.token){
+        line("🧱🟡🧱 TOKEN → " + JSON.stringify(data.token));
+      } else {
+        line("🧱📍🧱 no token returned");
+      }
+    }catch(err){
+      line("⚠️ fetch failed: " + err);
+    }
+  }
+
+  send.addEventListener("click", ask);
+  input.addEventListener("keydown",(e)=>{ if(e.key==="Enter") ask(); });
+})();
+</script>
+<!-- C13B0_CHAT_WIDGET_END -->
 </html>
