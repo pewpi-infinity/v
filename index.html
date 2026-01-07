@@ -234,6 +234,7 @@
       height: 400px;
       overflow-y: auto;
       color: #00ff88;
+      outline: none;
     }
     
     .terminal-line {
@@ -401,7 +402,7 @@
           <span class="terminal-dot green"></span>
           <span class="terminal-title">Quantum Electron Cloud Synopsis</span>
         </div>
-        <div class="terminal-body" id="terminalBody">
+        <div class="terminal-body" id="terminalBody" tabindex="0">
           <div class="terminal-line info">Awaiting deployment initialization...</div>
         </div>
       </div>
@@ -464,7 +465,7 @@
         stage.classList.add('active');
         
         // Update progress bar
-        const progress = ((stageNum - 1) / 5) * 100;
+        const progress = ((stageNum - 1) / (6 - 1)) * 100;
         pipelineProgress.style.width = `${progress}%`;
       }, delay);
     }
@@ -483,7 +484,14 @@
     }
 
     async function deployToken(input) {
-      if (!input || deploymentInProgress) return;
+      if (!input) return;
+      if (deploymentInProgress) {
+        searchBox.placeholder = 'Deployment in progress...';
+        setTimeout(() => {
+          searchBox.placeholder = 'Enter your deployment seed...';
+        }, 2000);
+        return;
+      }
       
       deploymentInProgress = true;
       
@@ -504,7 +512,8 @@
       
       // Generate token
       addTerminalLine('> Initializing tokenization engine...', 'info');
-      const tokenId = await sha256(input + Date.now().toString());
+      const randomValue = crypto.getRandomValues(new Uint32Array(1))[0];
+      const tokenId = await sha256(input + Date.now().toString() + randomValue.toString());
       
       await new Promise(resolve => setTimeout(resolve, 500));
       addTerminalLine('> Token generated successfully', 'success');
@@ -609,7 +618,7 @@
       deploymentInProgress = false;
     }
 
-    searchBox.addEventListener('keypress', (e) => {
+    searchBox.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         const input = searchBox.value.trim();
         deployToken(input);
