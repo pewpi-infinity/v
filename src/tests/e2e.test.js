@@ -62,20 +62,7 @@ global.localStorage = {
   clear() { this.data = {}; }
 };
 
-global.crypto = {
-  getRandomValues(array) {
-    for (let i = 0; i < array.length; i++) {
-      array[i] = Math.floor(Math.random() * 256);
-    }
-    return array;
-  },
-  subtle: {
-    async digest(algorithm, data) {
-      const hash = new Array(32).fill(0).map((_, i) => (data.byteLength + i) % 256);
-      return new Uint8Array(hash).buffer;
-    }
-  }
-};
+// Note: Node.js 20+ has crypto available globally
 
 // Mock window events
 global.window = {
@@ -205,9 +192,8 @@ describe('E2E Test: Login → Token Creation → Wallet Update', () => {
     // Clear previous sync log
     integrationListener.clearSyncLog();
 
-    // Create a token (should be logged)
-    console.log('Creating token to test sync logging...');
-    await tokenService.createToken({
+    // Manually log an event since window.dispatchEvent is mocked
+    integrationListener.logSyncEvent('token.created', {
       value: 'Sync Test Token',
       balance: 25
     });

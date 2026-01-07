@@ -77,22 +77,7 @@ global.localStorage = {
   }
 };
 
-// Mock crypto for Node.js
-global.crypto = {
-  getRandomValues(array) {
-    for (let i = 0; i < array.length; i++) {
-      array[i] = Math.floor(Math.random() * 256);
-    }
-    return array;
-  },
-  subtle: {
-    async digest(algorithm, data) {
-      // Simple mock hash
-      const hash = new Array(32).fill(0).map((_, i) => (data.byteLength + i) % 256);
-      return new Uint8Array(hash).buffer;
-    }
-  }
-};
+// Note: Node.js 20+ has crypto available globally, no need to mock
 
 // Import TokenService after setting up mocks
 const { default: TokenService } = await import('../lib/token-service.js');
