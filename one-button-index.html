@@ -192,6 +192,7 @@
     .synopsis-value {
       color: #e0e0e0;
       word-break: break-all;
+      white-space: pre-line;
     }
     .loading-dots {
       display: inline-block;
@@ -356,10 +357,10 @@
       
       // Generate synopsis
       await new Promise(resolve => setTimeout(resolve, 500));
-      generateSynopsis(fullHash, query);
+      generateSynopsis(fullHash);
     }
 
-    function generateSynopsis(tokenRoot, query) {
+    function generateSynopsis(tokenRoot) {
       const synopsisContainer = document.getElementById('synopsisContainer');
       const timestamp = new Date().toISOString();
       
@@ -384,8 +385,8 @@
       
       document.getElementById('synopsisTokenRoot').textContent = tokenRoot;
       document.getElementById('synopsisTimestamp').textContent = timestamp;
-      document.getElementById('synopsisSchedule').innerHTML = scheduleItems.map(s => `  • ${s}`).join('<br>');
-      document.getElementById('synopsisAssets').innerHTML = assetItems.join('<br>');
+      document.getElementById('synopsisSchedule').textContent = scheduleItems.map(s => `  • ${s}`).join('\n');
+      document.getElementById('synopsisAssets').textContent = assetItems.join('\n');
       
       synopsisContainer.style.display = 'block';
     }
