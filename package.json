@@ -1,0 +1,24 @@
+{
+  "name": "@pewpi-infinity/v",
+  "version": "1.0.0",
+  "description": "Infinity Token System with Production Login, Wallet, and Sync",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "node --test src/tests/**/*.test.js",
+    "build": "echo 'No build step required for now'"
+  },
+  "dependencies": {
+    "dexie": "^3.2.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "tokens",
+    "wallet",
+    "authentication",
+    "p2p",
+    "sync"
+  ],
+  "author": "pewpi-infinity",
+  "license": "MIT"
+}
