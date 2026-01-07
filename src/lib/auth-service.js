@@ -37,12 +37,19 @@ class AuthService {
     const magicLink = this._buildMagicLink(token);
     
     if (this.devMode) {
-      // In dev mode, store the token and return it directly
-      this.magicLinkStore.set(token, {
+      // In dev mode, store the token in localStorage so it persists across page reloads
+      const linkData = {
         email,
         expires: Date.now() + 15 * 60 * 1000, // 15 minutes
         used: false
-      });
+      };
+      
+      this.magicLinkStore.set(token, linkData);
+      
+      // Also save to localStorage for dev mode
+      const allLinks = JSON.parse(localStorage.getItem('pewpi_magic_links') || '{}');
+      allLinks[token] = linkData;
+      localStorage.setItem('pewpi_magic_links', JSON.stringify(allLinks));
       
       console.log('[AuthService] Dev-mode magic link:', magicLink);
       console.log('[AuthService] Token:', token);
@@ -69,7 +76,14 @@ class AuthService {
    */
   async verifyMagicLink(token) {
     if (this.devMode) {
-      const linkData = this.magicLinkStore.get(token);
+      // Check memory store first
+      let linkData = this.magicLinkStore.get(token);
+      
+      // If not in memory, check localStorage (for page reloads)
+      if (!linkData) {
+        const allLinks = JSON.parse(localStorage.getItem('pewpi_magic_links') || '{}');
+        linkData = allLinks[token];
+      }
       
       if (!linkData) {
         throw new Error('Invalid or expired magic link');
@@ -80,12 +94,23 @@ class AuthService {
       }
       
       if (Date.now() > linkData.expires) {
+        // Clean up expired link
+        const allLinks = JSON.parse(localStorage.getItem('pewpi_magic_links') || '{}');
+        delete allLinks[token];
+        localStorage.setItem('pewpi_magic_links', JSON.stringify(allLinks));
         this.magicLinkStore.delete(token);
         throw new Error('Magic link expired');
       }
       
-      // Mark as used
+      // Mark as used in both stores
       linkData.used = true;
+      this.magicLinkStore.set(token, linkData);
+      
+      const allLinks = JSON.parse(localStorage.getItem('pewpi_magic_links') || '{}');
+      if (allLinks[token]) {
+        allLinks[token].used = true;
+        localStorage.setItem('pewpi_magic_links', JSON.stringify(allLinks));
+      }
       
       // Create or update user
       const user = await this._findOrCreateUser(linkData.email, 'magic-link');

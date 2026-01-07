@@ -4,8 +4,8 @@
   "description": "Infinity Token System with Production Login, Wallet, and Sync",
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
-    "test": "node --test src/tests/**/*.test.js",
+    "dev": "python3 -m http.server 8000",
+    "test": "node --test src/tests/*.test.js",
     "build": "echo 'No build step required for now'"
   },
   "dependencies": {

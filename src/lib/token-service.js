@@ -20,6 +20,13 @@ class TokenService {
    * Initialize Dexie database with localStorage fallback
    */
   async initDatabase() {
+    // Check if Dexie is available
+    if (!Dexie) {
+      console.warn('[TokenService] Dexie not available, using localStorage');
+      this.useLocalStorage = true;
+      return;
+    }
+    
     try {
       this.db = new Dexie('PewpiTokenDB');
       

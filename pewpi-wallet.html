@@ -62,10 +62,19 @@
   
   <!-- Main application script -->
   <script type="module">
-    // Import Dexie from CDN for browser usage
-    import Dexie from 'https://unpkg.com/dexie@3.2.4/dist/dexie.mjs';
+    // Try to import Dexie from CDN, fall back if blocked
+    let Dexie;
+    try {
+      const dexieModule = await import('https://unpkg.com/dexie@3.2.4/dist/dexie.mjs');
+      Dexie = dexieModule.default;
+      console.log('[PewpiApp] Dexie loaded from CDN');
+    } catch (err) {
+      console.warn('[PewpiApp] Dexie CDN blocked or unavailable, using localStorage fallback');
+      // Create a mock Dexie that signals to use localStorage
+      Dexie = null;
+    }
     
-    // Make Dexie available globally
+    // Make Dexie available globally (or null to trigger localStorage fallback)
     window.Dexie = Dexie;
     
     // Import main app
