@@ -2,151 +2,641 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Infinity</title>
+  <title>Infinity - Token Deploy System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
       margin: 0;
       background: #0b0b0b;
       color: #e6e6e6;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow-x: hidden;
+    }
+    
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      transition: all 0.5s ease;
+    }
+    
+    .main-wrapper.deployed {
+      justify-content: flex-start;
+      padding-top: 40px;
+    }
+    
+    .logo {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+      letter-spacing: -2px;
+    }
+    
+    .logo .infinity {
+      color: #00e5ff;
+    }
+    
+    .search-container {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+    
+    .search-box {
+      width: 100%;
+      padding: 16px 24px;
+      font-size: 16px;
+      border: 1px solid #333;
+      border-radius: 24px;
+      background: #1a1a1a;
+      color: #e6e6e6;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    
+    .search-box:focus {
+      border-color: #00e5ff;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+    }
+    
+    .mongoose-status {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 2rem;
+      font-size: 0.85rem;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .mongoose-status.visible {
+      opacity: 1;
+    }
+    
+    .cart-status {
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .cart-status.active {
+      border-color: #00e5ff;
+      background: rgba(0, 229, 255, 0.1);
+    }
+    
+    .cart-label {
+      opacity: 0.7;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .cart-name {
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    
+    .deployment-pipeline {
+      display: none;
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 20px;
+    }
+    
+    .deployment-pipeline.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    .pipeline-stages {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .pipeline-line {
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      right: 60px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 0;
+    }
+    
+    .pipeline-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(90deg, #00e5ff, #0099cc);
+      width: 0%;
+      transition: width 0.8s ease;
+    }
+    
+    .stage {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+    
+    .stage-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 2px solid #333;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      margin: 0 auto 8px;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
     }
-    .wrap {
-      text-align: center;
+    
+    .stage.active .stage-icon {
+      border-color: #00e5ff;
+      background: rgba(0, 229, 255, 0.1);
+      animation: pulse 1.5s infinite;
     }
-    h1 {
-      font-size: 3rem;
-      margin: 0;
+    
+    .stage.completed .stage-icon {
+      border-color: #00ff88;
+      background: rgba(0, 255, 136, 0.1);
     }
-    p {
-      opacity: 0.75;
-      margin-top: 0.5rem;
+    
+    .stage-label {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      font-weight: 500;
     }
-    .dot {
+    
+    .stage.active .stage-label {
+      opacity: 1;
       color: #00e5ff;
+    }
+    
+    .stage.completed .stage-label {
+      opacity: 1;
+      color: #00ff88;
+    }
+    
+    .terminal-window {
+      background: #000;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .terminal-header {
+      background: #1a1a1a;
+      padding: 12px 16px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .terminal-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    
+    .terminal-dot.red { background: #ff5f56; }
+    .terminal-dot.yellow { background: #ffbd2e; }
+    .terminal-dot.green { background: #27c93f; }
+    
+    .terminal-title {
+      margin-left: 12px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    
+    .terminal-body {
+      padding: 20px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      height: 400px;
+      overflow-y: auto;
+      color: #00ff88;
+      outline: none;
+    }
+    
+    .terminal-line {
+      margin: 4px 0;
+      animation: typeIn 0.3s ease;
+    }
+    
+    .terminal-line.info {
+      color: #00e5ff;
+    }
+    
+    .terminal-line.warning {
+      color: #ffbd2e;
+    }
+    
+    .terminal-line.success {
+      color: #00ff88;
+    }
+    
+    .terminal-line.token {
+      color: #ff5f56;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+    
+    .terminal-cursor {
+      display: inline-block;
+      width: 8px;
+      height: 16px;
+      background: #00ff88;
+      animation: blink 1s infinite;
+      margin-left: 4px;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.7);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(0, 229, 255, 0);
+      }
+    }
+    
+    @keyframes typeIn {
+      from {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    
+    .token-id-display {
+      margin-top: 20px;
+      padding: 16px;
+      background: rgba(0, 229, 255, 0.05);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      border-radius: 8px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      word-break: break-all;
+    }
+    
+    .token-label {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .token-value {
+      font-size: 1rem;
+      color: #00e5ff;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>∞ Infinity<span class="dot">.</span></h1>
-    <p>GitHub Pages online</p>
-  </div>
-</body>
-<!-- C13B0_CHAT_WIDGET_BEGIN -->
-<style>
-  .c13b0-chatfab{position:fixed;right:18px;bottom:18px;z-index:99999;border-radius:999px;padding:12px 14px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.25);cursor:pointer;user-select:none}
-  .c13b0-chatpanel{position:fixed;right:18px;bottom:72px;width:min(520px,calc(100vw - 36px));height:min(560px,calc(100vh - 120px));z-index:99999;border-radius:18px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.35);display:none}
-  .c13b0-chathead{padding:10px 12px;font-weight:800;display:flex;align-items:center;justify-content:space-between}
-  .c13b0-chatbody{height:calc(100% - 94px);overflow:auto;padding:10px 12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px}
-  .c13b0-chatline{white-space:pre-wrap;margin:8px 0}
-  .c13b0-chatbar{display:flex;gap:8px;padding:10px 12px;border-top:1px solid rgba(255,255,255,.10)}
-  .c13b0-chatin{flex:1;border-radius:12px;padding:10px 12px;border:1px solid rgba(255,255,255,.12);outline:none}
-  .c13b0-chatbtn{border-radius:12px;padding:10px 12px;font-weight:800;border:0;cursor:pointer}
-</style>
-
-<div id="c13b0_chat_fab" class="c13b0-chatfab">🧱💬🧱 CHAT</div>
-
-<div id="c13b0_chat_panel" class="c13b0-chatpanel" role="dialog" aria-label="C13B0 Chat">
-  <div class="c13b0-chathead">
-    <div>🧱💬🧱 Repo Terminal</div>
-    <div style="display:flex;gap:8px;align-items:center">
-      <small id="c13b0_chat_repo" style="opacity:.8">repo: (auto)</small>
-      <button id="c13b0_chat_close" class="c13b0-chatbtn">✕</button>
+  <div class="main-wrapper" id="mainWrapper">
+    <div class="logo">
+      <span class="infinity">∞</span> infinity
+    </div>
+    
+    <div class="search-container">
+      <input 
+        type="text" 
+        class="search-box" 
+        id="searchBox" 
+        placeholder="Enter your deployment seed..."
+        autocomplete="off"
+      >
+    </div>
+    
+    <div class="mongoose-status" id="mongooseStatus">
+      <div class="cart-status" id="memoryBismuth">
+        <div class="cart-label">Mongoose.os Cart</div>
+        <div class="cart-name">Memory Bismuth</div>
+      </div>
+      <div class="cart-status" id="hydrogenExchange">
+        <div class="cart-label">Mongoose.os Cart</div>
+        <div class="cart-name">Hydrogen Exchange</div>
+      </div>
+    </div>
+    
+    <div class="deployment-pipeline" id="deploymentPipeline">
+      <div class="pipeline-stages">
+        <div class="pipeline-line">
+          <div class="pipeline-progress" id="pipelineProgress"></div>
+        </div>
+        
+        <div class="stage" id="stage1">
+          <div class="stage-icon">🔐</div>
+          <div class="stage-label">Token</div>
+        </div>
+        
+        <div class="stage" id="stage2">
+          <div class="stage-icon">🔬</div>
+          <div class="stage-label">Research</div>
+        </div>
+        
+        <div class="stage" id="stage3">
+          <div class="stage-icon">📄</div>
+          <div class="stage-label">Webpage</div>
+        </div>
+        
+        <div class="stage" id="stage4">
+          <div class="stage-icon">📢</div>
+          <div class="stage-label">Advertising</div>
+        </div>
+        
+        <div class="stage" id="stage5">
+          <div class="stage-icon">💎</div>
+          <div class="stage-label">Value</div>
+        </div>
+        
+        <div class="stage" id="stage6">
+          <div class="stage-icon">📦</div>
+          <div class="stage-label">Assets</div>
+        </div>
+      </div>
+      
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">Quantum Electron Cloud Synopsis</span>
+        </div>
+        <div class="terminal-body" id="terminalBody" tabindex="0" role="log" aria-label="Terminal output - Quantum Electron Cloud Synopsis" aria-live="polite">
+          <div class="terminal-line info">Awaiting deployment initialization...</div>
+        </div>
+      </div>
+      
+      <div class="token-id-display" id="tokenDisplay" style="display: none;">
+        <div class="token-label">Token ID (SHA-256)</div>
+        <div class="token-value" id="tokenValue"></div>
+      </div>
     </div>
   </div>
-  <div id="c13b0_chat_body" class="c13b0-chatbody"></div>
-  <div class="c13b0-chatbar">
-    <input id="c13b0_chat_in" class="c13b0-chatin" placeholder="Ask this repo... (returns tokenized answer)" />
-    <button id="c13b0_chat_send" class="c13b0-chatbtn">SEND</button>
-  </div>
-</div>
 
-<script>
-(function(){
-  // Theme: tries to inherit page colors; keeps your design intact.
-  const fab = document.getElementById("c13b0_chat_fab");
-  const panel = document.getElementById("c13b0_chat_panel");
-  const body = document.getElementById("c13b0_chat_body");
-  const input = document.getElementById("c13b0_chat_in");
-  const send = document.getElementById("c13b0_chat_send");
-  const close = document.getElementById("c13b0_chat_close");
-  const repoLabel = document.getElementById("c13b0_chat_repo");
-
-  const repo = (location.pathname.split("/")[1] || "").trim(); // for org pages it’s the repo root on pages
-  repoLabel.textContent = "repo: " + (repo || "(root)");
-
-  // Minimal styling decisions; avoid fighting your CSS
-  fab.style.background = "rgba(0,0,0,.82)";
-  fab.style.color = "white";
-  panel.style.background = "rgba(0,0,0,.90)";
-  panel.style.color = "white";
-  document.querySelector(".c13b0-chathead").style.borderBottom = "1px solid rgba(255,255,255,.10)";
-  input.style.background = "rgba(255,255,255,.06)";
-  input.style.color = "white";
-  send.style.background = "rgba(255,255,255,.14)";
-  send.style.color = "white";
-  close.style.background = "rgba(255,255,255,.14)";
-  close.style.color = "white";
-
-  function line(txt){
-    const div=document.createElement("div");
-    div.className="c13b0-chatline";
-    div.textContent=txt;
-    body.appendChild(div);
-    body.scrollTop = body.scrollHeight;
-  }
-
-  function open(){ panel.style.display="block"; input.focus(); }
-  function shut(){ panel.style.display="none"; }
-
-  fab.addEventListener("click", open);
-  close.addEventListener("click", shut);
-  window.addEventListener("click",(e)=>{
-    if(panel.style.display==="block"){
-      // click outside closes
-      if(!panel.contains(e.target) && e.target!==fab) shut();
+  <script>
+    // SHA-256 implementation (native browser API)
+    async function sha256(message) {
+      const msgBuffer = new TextEncoder().encode(message);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+      return hashHex;
     }
-  });
 
-  async function ask(){
-    const q=(input.value||"").trim();
-    if(!q) return;
+    const searchBox = document.getElementById('searchBox');
+    const mainWrapper = document.getElementById('mainWrapper');
+    const mongooseStatus = document.getElementById('mongooseStatus');
+    const deploymentPipeline = document.getElementById('deploymentPipeline');
+    const terminalBody = document.getElementById('terminalBody');
+    const tokenDisplay = document.getElementById('tokenDisplay');
+    const tokenValue = document.getElementById('tokenValue');
+    const pipelineProgress = document.getElementById('pipelineProgress');
 
-    line("> " + q);
-    input.value="";
+    const TOTAL_STAGES = 6;
+    let deploymentInProgress = false;
 
-    // Router endpoint (you’ll create it in your router repo)
-    // expected response: { ok:true, repo:"x", answer:"...", token:{id:"...", value:"...", type:"..."} }
-    try{
-      const res = await fetch("/router/ask", {
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body: JSON.stringify({ repo, query:q, t: Date.now() })
-      });
-      const data = await res.json();
-      if(!data || !data.ok){
-        line("⚠️ Router error: " + (data && data.error ? data.error : "unknown"));
+    function addTerminalLine(text, className = '') {
+      const line = document.createElement('div');
+      line.className = `terminal-line ${className}`;
+      line.textContent = text;
+      terminalBody.appendChild(line);
+      terminalBody.scrollTop = terminalBody.scrollHeight;
+    }
+
+    function clearTerminal() {
+      terminalBody.innerHTML = '';
+    }
+
+    function activateStage(stageNum, delay = 0) {
+      setTimeout(() => {
+        const stage = document.getElementById(`stage${stageNum}`);
+        if (!stage) return;
+        
+        // Mark previous stages as completed
+        for (let i = 1; i < stageNum; i++) {
+          const prevStage = document.getElementById(`stage${i}`);
+          if (prevStage) {
+            prevStage.classList.remove('active');
+            prevStage.classList.add('completed');
+          }
+        }
+        
+        // Activate current stage
+        stage.classList.add('active');
+        
+        // Update progress bar - represents transition between stages
+        // Stage 1 = 0%, Stage 2 = 20%, Stage 3 = 40%, Stage 4 = 60%, Stage 5 = 80%, Stage 6 = 100%
+        const progress = ((stageNum - 1) / (TOTAL_STAGES - 1)) * 100;
+        pipelineProgress.style.width = `${progress}%`;
+      }, delay);
+    }
+
+    function completeAllStages(delay = 0) {
+      setTimeout(() => {
+        for (let i = 1; i <= TOTAL_STAGES; i++) {
+          const stage = document.getElementById(`stage${i}`);
+          if (stage) {
+            stage.classList.remove('active');
+            stage.classList.add('completed');
+          }
+        }
+        pipelineProgress.style.width = '100%';
+      }, delay);
+    }
+
+    async function deployToken(input) {
+      if (!input) return;
+      if (deploymentInProgress) {
+        searchBox.placeholder = 'Deployment in progress...';
+        setTimeout(() => {
+          searchBox.placeholder = 'Enter your deployment seed...';
+        }, 2000);
         return;
       }
-      if(data.answer) line(data.answer);
-      if(data.token){
-        line("🧱🟡🧱 TOKEN → " + JSON.stringify(data.token));
-      } else {
-        line("🧱📍🧱 no token returned");
-      }
-    }catch(err){
-      line("⚠️ fetch failed: " + err);
+      
+      deploymentInProgress = true;
+      
+      // Transition UI
+      mainWrapper.classList.add('deployed');
+      mongooseStatus.classList.add('visible');
+      deploymentPipeline.classList.add('active');
+      
+      clearTerminal();
+      
+      // Initialize terminal
+      addTerminalLine('='.repeat(60), 'info');
+      addTerminalLine('QUANTUM ELECTRON CLOUD SYNOPSIS', 'info');
+      addTerminalLine('Infinity Token Deploy System v2.0', 'info');
+      addTerminalLine('='.repeat(60), 'info');
+      addTerminalLine('');
+      addTerminalLine(`> Input Seed: "${input}"`, 'success');
+      
+      // Generate token with cryptographic randomness
+      addTerminalLine('> Initializing tokenization engine...', 'info');
+      const randomSalt = crypto.getRandomValues(new Uint32Array(4));
+      const saltString = Array.from(randomSalt).join('-');
+      const tokenInput = `${input}:${Date.now()}:${saltString}`;
+      const tokenId = await sha256(tokenInput);
+      
+      await new Promise(resolve => setTimeout(resolve, 500));
+      addTerminalLine('> Token generated successfully', 'success');
+      addTerminalLine(`> TOKEN_ID: ${tokenId}`, 'token');
+      addTerminalLine('');
+      
+      // Display token
+      tokenValue.textContent = tokenId;
+      tokenDisplay.style.display = 'block';
+      
+      // Stage 1: Token
+      activateStage(1, 500);
+      await new Promise(resolve => setTimeout(resolve, 800));
+      addTerminalLine('[STAGE 1/6] Token Generation', 'info');
+      addTerminalLine('  ✓ SHA-256 hash computed', 'success');
+      addTerminalLine('  ✓ Unique identifier assigned', 'success');
+      addTerminalLine('  ✓ Mongoose.os firmware initialized', 'success');
+      
+      // Activate carts
+      document.getElementById('memoryBismuth').classList.add('active');
+      await new Promise(resolve => setTimeout(resolve, 600));
+      
+      // Stage 2: Research
+      activateStage(2, 600);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      addTerminalLine('[STAGE 2/6] Research Phase', 'info');
+      addTerminalLine('  ✓ Memory Bismuth cart: ACTIVE', 'success');
+      addTerminalLine('  ✓ Data mining protocols engaged', 'success');
+      addTerminalLine('  ✓ Research vectors established', 'success');
+      
+      document.getElementById('hydrogenExchange').classList.add('active');
+      await new Promise(resolve => setTimeout(resolve, 600));
+      
+      // Stage 3: Webpage
+      activateStage(3, 600);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      addTerminalLine('[STAGE 3/6] Webpage Construction', 'info');
+      addTerminalLine('  ✓ Hydrogen Exchange cart: ACTIVE', 'success');
+      addTerminalLine('  ✓ DOM structure initialized', 'success');
+      addTerminalLine('  ✓ Asset pipeline configured', 'success');
+      
+      await new Promise(resolve => setTimeout(resolve, 600));
+      
+      // Stage 4: Advertising
+      activateStage(4, 600);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      addTerminalLine('[STAGE 4/6] Advertising Deployment', 'info');
+      addTerminalLine('  ✓ Market vectors calculated', 'success');
+      addTerminalLine('  ✓ Distribution channels mapped', 'success');
+      addTerminalLine('  ✓ Engagement metrics initialized', 'success');
+      
+      await new Promise(resolve => setTimeout(resolve, 600));
+      
+      // Stage 5: Value
+      activateStage(5, 600);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      addTerminalLine('[STAGE 5/6] Value Assessment', 'info');
+      addTerminalLine('  ✓ Asset valuation complete', 'success');
+      addTerminalLine('  ✓ Quantum electron cloud synced', 'success');
+      addTerminalLine('  ✓ Long-term ROI projected', 'success');
+      
+      await new Promise(resolve => setTimeout(resolve, 600));
+      
+      // Stage 6: Assets
+      activateStage(6, 600);
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      addTerminalLine('[STAGE 6/6] Asset Attachment', 'info');
+      addTerminalLine('  ✓ Import manifest generated', 'success');
+      addTerminalLine('  ✓ Resource allocation scheduled', 'success');
+      addTerminalLine('  ✓ Long-run attachment protocols set', 'success');
+      
+      await new Promise(resolve => setTimeout(resolve, 600));
+      completeAllStages(0);
+      
+      addTerminalLine('');
+      addTerminalLine('='.repeat(60), 'success');
+      addTerminalLine('DEPLOYMENT COMPLETE', 'success');
+      addTerminalLine('='.repeat(60), 'success');
+      addTerminalLine('');
+      addTerminalLine('Asset Import Schedule:', 'info');
+      addTerminalLine('  → T+0h:  Token registered in distributed ledger', '');
+      addTerminalLine('  → T+1h:  Research data indexed and cached', '');
+      addTerminalLine('  → T+6h:  Webpage templates compiled', '');
+      addTerminalLine('  → T+12h: Advertising campaigns activated', '');
+      addTerminalLine('  → T+24h: Value metrics aggregated', '');
+      addTerminalLine('  → T+48h: Assets permanently attached', '');
+      addTerminalLine('');
+      addTerminalLine('Long-run Manifest:', 'info');
+      addTerminalLine('  • Continuous electron cloud synchronization', '');
+      addTerminalLine('  • Automated research paper generation', '');
+      addTerminalLine('  • Dynamic webpage updates every 6 hours', '');
+      addTerminalLine('  • Value appreciation tracking', '');
+      addTerminalLine('  • Asset backup to infinity_tokens/', '');
+      addTerminalLine('');
+      addTerminalLine('Status: All systems operational', 'success');
+      addTerminalLine('Mongoose.os firmware: v2.0.1 (passive mode)', 'info');
+      
+      // Remove any existing cursors before adding a new one
+      const existingCursors = terminalBody.querySelectorAll('.terminal-cursor');
+      existingCursors.forEach(cursor => cursor.remove());
+      
+      const cursor = document.createElement('span');
+      cursor.className = 'terminal-cursor';
+      terminalBody.appendChild(cursor);
+      
+      deploymentInProgress = false;
     }
-  }
 
-  send.addEventListener("click", ask);
-  input.addEventListener("keydown",(e)=>{ if(e.key==="Enter") ask(); });
-})();
-</script>
-<!-- C13B0_CHAT_WIDGET_END -->
+    searchBox.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const input = searchBox.value.trim();
+        deployToken(input);
+        searchBox.value = '';
+      }
+    });
+
+    // Initialize
+    console.log('Infinity Token Deploy System initialized');
+    console.log('Mongoose.os firmware: passive mode');
+  </script>
+</body>
 </html>
