@@ -433,6 +433,7 @@
     const tokenValue = document.getElementById('tokenValue');
     const pipelineProgress = document.getElementById('pipelineProgress');
 
+    const TOTAL_STAGES = 6;
     let deploymentInProgress = false;
 
     function addTerminalLine(text, className = '') {
@@ -465,14 +466,14 @@
         stage.classList.add('active');
         
         // Update progress bar
-        const progress = ((stageNum - 1) / (6 - 1)) * 100;
+        const progress = ((stageNum - 1) / (TOTAL_STAGES - 1)) * 100;
         pipelineProgress.style.width = `${progress}%`;
       }, delay);
     }
 
     function completeAllStages(delay = 0) {
       setTimeout(() => {
-        for (let i = 1; i <= 6; i++) {
+        for (let i = 1; i <= TOTAL_STAGES; i++) {
           const stage = document.getElementById(`stage${i}`);
           if (stage) {
             stage.classList.remove('active');
@@ -610,6 +611,10 @@
       addTerminalLine('');
       addTerminalLine('Status: All systems operational', 'success');
       addTerminalLine('Mongoose.os firmware: v2.0.1 (passive mode)', 'info');
+      
+      // Remove any existing cursors before adding a new one
+      const existingCursors = terminalBody.querySelectorAll('.terminal-cursor');
+      existingCursors.forEach(cursor => cursor.remove());
       
       const cursor = document.createElement('span');
       cursor.className = 'terminal-cursor';
