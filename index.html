@@ -402,7 +402,7 @@
           <span class="terminal-dot green"></span>
           <span class="terminal-title">Quantum Electron Cloud Synopsis</span>
         </div>
-        <div class="terminal-body" id="terminalBody" tabindex="0">
+        <div class="terminal-body" id="terminalBody" tabindex="0" role="log" aria-label="Terminal output - Quantum Electron Cloud Synopsis" aria-live="polite">
           <div class="terminal-line info">Awaiting deployment initialization...</div>
         </div>
       </div>
@@ -465,7 +465,8 @@
         // Activate current stage
         stage.classList.add('active');
         
-        // Update progress bar
+        // Update progress bar - represents transition between stages
+        // Stage 1 = 0%, Stage 2 = 20%, Stage 3 = 40%, Stage 4 = 60%, Stage 5 = 80%, Stage 6 = 100%
         const progress = ((stageNum - 1) / (TOTAL_STAGES - 1)) * 100;
         pipelineProgress.style.width = `${progress}%`;
       }, delay);
@@ -511,10 +512,12 @@
       addTerminalLine('');
       addTerminalLine(`> Input Seed: "${input}"`, 'success');
       
-      // Generate token
+      // Generate token with cryptographic randomness
       addTerminalLine('> Initializing tokenization engine...', 'info');
-      const randomValue = crypto.getRandomValues(new Uint32Array(1))[0];
-      const tokenId = await sha256(input + Date.now().toString() + randomValue.toString());
+      const randomSalt = crypto.getRandomValues(new Uint32Array(4));
+      const saltString = Array.from(randomSalt).join('-');
+      const tokenInput = `${input}:${Date.now()}:${saltString}`;
+      const tokenId = await sha256(tokenInput);
       
       await new Promise(resolve => setTimeout(resolve, 500));
       addTerminalLine('> Token generated successfully', 'success');
