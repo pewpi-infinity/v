@@ -216,6 +216,10 @@ class AuthService {
    * Generate secure random token
    */
   async _generateToken() {
+    if (typeof crypto === 'undefined' || !crypto.getRandomValues) {
+      throw new Error('Web Crypto API not available');
+    }
+    
     const array = new Uint8Array(32);
     crypto.getRandomValues(array);
     return Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');

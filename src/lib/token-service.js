@@ -12,8 +12,20 @@ class TokenService {
     this.useLocalStorage = false;
     this.listeners = new Map();
     this.autoTrackingEnabled = false;
+    this.initPromise = null;
     
-    this.initDatabase();
+    // Start initialization but don't wait
+    this.initPromise = this.initDatabase();
+  }
+
+  /**
+   * Ensure database is initialized before operations
+   */
+  async _ensureInitialized() {
+    if (this.initPromise) {
+      await this.initPromise;
+      this.initPromise = null;
+    }
   }
 
   /**
@@ -47,6 +59,8 @@ class TokenService {
    * Create a new token
    */
   async createToken(tokenData) {
+    await this._ensureInitialized();
+    
     const token = {
       token_hash: tokenData.token_hash || await this._generateHash(tokenData.value || ''),
       value: tokenData.value || '',
@@ -76,6 +90,8 @@ class TokenService {
    * Get all tokens
    */
   async getAll() {
+    await this._ensureInitialized();
+    
     if (this.useLocalStorage) {
       return this._getAllLocalStorage();
     } else {

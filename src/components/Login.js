@@ -19,7 +19,8 @@ class LoginComponent extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        @import url('/src/lib/theme.css');
+        /* Import theme variables - using relative path */
+        @import url('../../lib/theme.css');
         
         :host {
           display: block;
