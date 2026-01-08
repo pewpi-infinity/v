@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>∞ Pewpi Infinity - Production Login & Wallet</title>
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="/src/lib/theme.css">
+  
+  <style>
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slideDown {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+    }
+    
+    .pewpi-button {
+      padding: 12px 24px;
+      background: var(--pewpi-primary);
+      color: var(--pewpi-bg-primary);
+      border: none;
+      border-radius: 9999px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 200ms ease;
+      font-size: 16px;
+    }
+    
+    .pewpi-button:hover {
+      background: var(--pewpi-primary-light);
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+      <div style="text-align: center; color: var(--pewpi-text-secondary);">
+        <div style="font-size: 48px; margin-bottom: 20px;">∞</div>
+        <div>Loading...</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main application script -->
+  <script type="module">
+    // Try to import Dexie from CDN, fall back if blocked
+    let Dexie;
+    try {
+      const dexieModule = await import('https://unpkg.com/dexie@3.2.4/dist/dexie.mjs');
+      Dexie = dexieModule.default;
+      console.log('[PewpiApp] Dexie loaded from CDN');
+    } catch (err) {
+      console.warn('[PewpiApp] Dexie CDN blocked or unavailable, using localStorage fallback');
+      // Create a mock Dexie that signals to use localStorage
+      Dexie = null;
+    }
+    
+    // Make Dexie available globally (or null to trigger localStorage fallback)
+    window.Dexie = Dexie;
+    
+    // Import main app
+    import('./src/main.js').catch(err => {
+      console.error('Failed to load application:', err);
+      document.getElementById('app').innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+          <div style="text-align: center; color: var(--pewpi-error);">
+            <div style="font-size: 48px; margin-bottom: 20px;">⚠️</div>
+            <div>Failed to load application</div>
+            <div style="margin-top: 10px; font-size: 14px; color: var(--pewpi-text-muted);">
+              ${err.message}
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>
