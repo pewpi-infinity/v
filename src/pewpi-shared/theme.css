@@ -1,0 +1,209 @@
+/**
+ * Pewpi Shared Theme CSS
+ * Production design system for consistent UI across repos
+ */
+
+:root {
+  /* Primary Colors */
+  --pewpi-primary: #ff69b4;
+  --pewpi-secondary: #4a90e2;
+  --pewpi-success: #10b981;
+  --pewpi-warning: #f59e0b;
+  --pewpi-error: #ef4444;
+  
+  /* Background Colors */
+  --pewpi-bg-dark: #0e0e0e;
+  --pewpi-bg-card: #1a1a1a;
+  --pewpi-bg-hover: #2a2a2a;
+  
+  /* Text Colors */
+  --pewpi-text-primary: #ffffff;
+  --pewpi-text-secondary: #a0a0a0;
+  --pewpi-text-muted: #6b7280;
+  
+  /* Border Colors */
+  --pewpi-border: rgba(255, 255, 255, 0.12);
+  --pewpi-border-focus: rgba(255, 105, 180, 0.5);
+  
+  /* Spacing */
+  --pewpi-space-xs: 4px;
+  --pewpi-space-sm: 8px;
+  --pewpi-space-md: 16px;
+  --pewpi-space-lg: 24px;
+  --pewpi-space-xl: 32px;
+  
+  /* Border Radius */
+  --pewpi-radius-sm: 6px;
+  --pewpi-radius-md: 12px;
+  --pewpi-radius-lg: 18px;
+  --pewpi-radius-full: 999px;
+  
+  /* Shadows */
+  --pewpi-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --pewpi-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --pewpi-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.35);
+  
+  /* Transitions */
+  --pewpi-transition: 200ms ease-in-out;
+  
+  /* Z-index layers */
+  --pewpi-z-dropdown: 1000;
+  --pewpi-z-modal: 9000;
+  --pewpi-z-overlay: 9999;
+}
+
+/* Reset and Base Styles */
+.pewpi-component {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.pewpi-component *, .pewpi-component *::before, .pewpi-component *::after {
+  box-sizing: inherit;
+}
+
+/* Button Styles */
+.pewpi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pewpi-space-sm);
+  padding: var(--pewpi-space-sm) var(--pewpi-space-md);
+  border: 0;
+  border-radius: var(--pewpi-radius-md);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all var(--pewpi-transition);
+  user-select: none;
+}
+
+.pewpi-btn-primary {
+  background: var(--pewpi-primary);
+  color: white;
+}
+
+.pewpi-btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: var(--pewpi-shadow-md);
+}
+
+.pewpi-btn-secondary {
+  background: var(--pewpi-bg-card);
+  color: var(--pewpi-text-primary);
+  border: 1px solid var(--pewpi-border);
+}
+
+.pewpi-btn-secondary:hover {
+  background: var(--pewpi-bg-hover);
+}
+
+/* Input Styles */
+.pewpi-input {
+  width: 100%;
+  padding: var(--pewpi-space-sm) var(--pewpi-space-md);
+  background: var(--pewpi-bg-card);
+  color: var(--pewpi-text-primary);
+  border: 1px solid var(--pewpi-border);
+  border-radius: var(--pewpi-radius-md);
+  font-size: 14px;
+  transition: all var(--pewpi-transition);
+  outline: none;
+}
+
+.pewpi-input:focus {
+  border-color: var(--pewpi-border-focus);
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.1);
+}
+
+.pewpi-input::placeholder {
+  color: var(--pewpi-text-muted);
+}
+
+/* Card Styles */
+.pewpi-card {
+  background: var(--pewpi-bg-card);
+  border: 1px solid var(--pewpi-border);
+  border-radius: var(--pewpi-radius-lg);
+  padding: var(--pewpi-space-lg);
+  box-shadow: var(--pewpi-shadow-sm);
+}
+
+/* Badge Styles */
+.pewpi-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--pewpi-radius-full);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pewpi-badge-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--pewpi-success);
+}
+
+.pewpi-badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--pewpi-warning);
+}
+
+.pewpi-badge-error {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--pewpi-error);
+}
+
+/* Modal/Overlay Styles */
+.pewpi-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--pewpi-z-overlay);
+  backdrop-filter: blur(4px);
+}
+
+.pewpi-modal {
+  background: var(--pewpi-bg-card);
+  border: 1px solid var(--pewpi-border);
+  border-radius: var(--pewpi-radius-lg);
+  max-width: min(500px, calc(100vw - 32px));
+  width: 100%;
+  max-height: calc(100vh - 64px);
+  overflow: auto;
+  box-shadow: var(--pewpi-shadow-lg);
+}
+
+/* Utility Classes */
+.pewpi-flex {
+  display: flex;
+}
+
+.pewpi-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.pewpi-gap-sm {
+  gap: var(--pewpi-space-sm);
+}
+
+.pewpi-gap-md {
+  gap: var(--pewpi-space-md);
+}
+
+.pewpi-gap-lg {
+  gap: var(--pewpi-space-lg);
+}
+
+.pewpi-text-center {
+  text-align: center;
+}
+
+.pewpi-hidden {
+  display: none !important;
+}
