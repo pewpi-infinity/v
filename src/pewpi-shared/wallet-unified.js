@@ -40,7 +40,7 @@ class WalletUnified {
    */
   async getSummary() {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     const tokens = await tokenService.getAll();
@@ -64,7 +64,7 @@ class WalletUnified {
    */
   async getTokens() {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     return await tokenService.getAll();
@@ -75,7 +75,7 @@ class WalletUnified {
    */
   async createToken(tokenData) {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     if (!authService.isAuthenticated()) {
@@ -90,7 +90,7 @@ class WalletUnified {
    */
   async updateToken(tokenHash, updates) {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     if (!authService.isAuthenticated()) {
@@ -105,7 +105,7 @@ class WalletUnified {
    */
   async deleteToken(tokenHash) {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     if (!authService.isAuthenticated()) {
@@ -120,7 +120,7 @@ class WalletUnified {
    */
   async getTotalBalance() {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     return await tokenService.getTotalBalance();
@@ -131,7 +131,7 @@ class WalletUnified {
    */
   async clearAll() {
     if (!this.initialized) {
-      await this.init();
+      throw new Error('Wallet not initialized. Call init() first.');
     }
 
     if (!authService.isAuthenticated()) {

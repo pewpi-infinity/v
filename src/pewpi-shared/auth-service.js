@@ -210,15 +210,12 @@ class AuthService {
   }
 
   async _generateToken() {
-    const array = new Uint8Array(32);
-    if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
-      crypto.getRandomValues(array);
-    } else {
-      // Fallback
-      for (let i = 0; i < array.length; i++) {
-        array[i] = Math.floor(Math.random() * 256);
-      }
+    if (typeof crypto === 'undefined' || !crypto.getRandomValues) {
+      throw new Error('Web Crypto API not available. Secure random number generation is required for authentication.');
     }
+    
+    const array = new Uint8Array(32);
+    crypto.getRandomValues(array);
     return Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
   }
 
@@ -249,11 +246,13 @@ class AuthService {
       this.listeners.set(eventName, []);
     }
     
-    this.listeners.get(eventName).push(callback);
+    // Create wrapper function and store it for proper cleanup
+    const wrapper = (e) => callback(e.detail);
+    this.listeners.get(eventName).push({ callback, wrapper });
     
-    // Add DOM event listener
+    // Add DOM event listener with wrapper
     if (typeof window !== 'undefined') {
-      window.addEventListener(eventName, (e) => callback(e.detail));
+      window.addEventListener(eventName, wrapper);
     }
     
     return () => this.off(eventType, callback);
@@ -267,14 +266,16 @@ class AuthService {
     
     if (this.listeners.has(eventName)) {
       const callbacks = this.listeners.get(eventName);
-      const index = callbacks.indexOf(callback);
+      const index = callbacks.findIndex(item => item.callback === callback);
       if (index > -1) {
+        const { wrapper } = callbacks[index];
         callbacks.splice(index, 1);
+        
+        // Remove DOM event listener with the correct wrapper
+        if (typeof window !== 'undefined') {
+          window.removeEventListener(eventName, wrapper);
+        }
       }
-    }
-    
-    if (typeof window !== 'undefined') {
-      window.removeEventListener(eventName, callback);
     }
   }
 }

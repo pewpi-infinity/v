@@ -10,6 +10,7 @@ class IntegrationListener {
   constructor() {
     this.listeners = [];
     this.enabled = false;
+    this.broadcastChannel = null; // Persistent channel
   }
 
   /**
@@ -22,6 +23,11 @@ class IntegrationListener {
     }
 
     console.log('[IntegrationListener] Initializing cross-repo sync...');
+
+    // Initialize persistent broadcast channel
+    if (typeof BroadcastChannel !== 'undefined') {
+      this.broadcastChannel = new BroadcastChannel('pewpi-sync');
+    }
 
     // Listen for token events
     this.setupTokenListeners();
@@ -86,8 +92,16 @@ class IntegrationListener {
    * Broadcast events to other browser contexts (tabs, windows)
    */
   broadcastToOtherContexts(eventType, data) {
-    if (typeof BroadcastChannel !== 'undefined') {
-      // Use BroadcastChannel API for cross-tab communication
+    if (this.broadcastChannel) {
+      // Use persistent BroadcastChannel
+      this.broadcastChannel.postMessage({
+        type: eventType,
+        data,
+        timestamp: new Date().toISOString(),
+        source: 'pewpi-shared'
+      });
+    } else if (typeof BroadcastChannel !== 'undefined') {
+      // Fallback: create temporary channel if persistent one not initialized
       const channel = new BroadcastChannel('pewpi-sync');
       channel.postMessage({
         type: eventType,
@@ -176,6 +190,13 @@ class IntegrationListener {
   destroy() {
     this.listeners.forEach(unsubscribe => unsubscribe());
     this.listeners = [];
+    
+    // Close persistent broadcast channel
+    if (this.broadcastChannel) {
+      this.broadcastChannel.close();
+      this.broadcastChannel = null;
+    }
+    
     this.enabled = false;
     console.log('[IntegrationListener] Destroyed');
   }
