@@ -28,6 +28,29 @@ class PewpiApp {
     await tokenService.initDatabase();
     tokenService.initAutoTracking();
 
+    // Initialize pewpi-shared services (optional, backward-compatible)
+    try {
+      const { tokenService: sharedTokenService } = await import('./pewpi-shared/token-service.js');
+      const { authService: sharedAuthService } = await import('./pewpi-shared/auth/auth-service.js');
+      
+      console.log('[PewpiApp] Initializing pewpi-shared services...');
+      
+      // Initialize shared token service auto-tracking
+      if (sharedTokenService && typeof sharedTokenService.initAutoTracking === 'function') {
+        sharedTokenService.initAutoTracking();
+      }
+      
+      // Restore session for shared auth service
+      if (sharedAuthService && typeof sharedAuthService.restoreSession === 'function') {
+        await sharedAuthService.restoreSession();
+      }
+      
+      console.log('[PewpiApp] pewpi-shared services initialized successfully');
+    } catch (error) {
+      console.log('[PewpiApp] pewpi-shared services not available or failed to initialize:', error.message);
+      // Continue with existing services
+    }
+
     // Initialize integration listener for cross-repo sync
     integrationListener.init();
 

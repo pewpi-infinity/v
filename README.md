@@ -11,6 +11,27 @@ This repo was updated by c13b0 safe sweeper.
 
 **Production-grade authentication, wallet management, and cross-repository token synchronization system for the pewpi ecosystem.**
 
+### 🔄 Pewpi Shared Library
+
+This repository now includes the **canonical pewpi-shared library** copied from [GPT-Vector-Design](https://github.com/pewpi-infinity/GPT-Vector-Design). The shared library provides unified auth, wallet, and token management components that can be used across all pewpi ecosystem repositories.
+
+**Location**: `src/pewpi-shared/`
+
+**Components**:
+- **token-service.js**: Unified token storage and management with Dexie (IndexedDB)
+- **auth/**: Authentication services with magic-link and login components
+- **wallet/**: Wallet UI component for token display and management
+- **integration-listener.js**: Cross-repository event synchronization
+- **models/**: Client-side data models with localStorage persistence
+- **sync/**: P2P synchronization capabilities
+
+**Initialization**: The shared services are automatically initialized in `src/main.js` on app startup. Events are emitted for:
+- `pewpi.token.created` - When a new token is created
+- `pewpi.token.updated` - When a token is modified
+- `pewpi.login.changed` - When authentication state changes
+
+For detailed integration instructions, see [src/pewpi-shared/INTEGRATION.md](src/pewpi-shared/INTEGRATION.md).
+
 ### 🚀 New Features
 
 - **Passwordless Authentication**: Magic-link login (dev-mode) without requiring GitHub or SMTP

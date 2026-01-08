@@ -9,7 +9,8 @@
     "build": "echo 'No build step required for now'"
   },
   "dependencies": {
-    "dexie": "^3.2.4"
+    "dexie": "^3.2.4",
+    "crypto-js": "^4.2.0"
   },
   "devDependencies": {},
   "keywords": [
