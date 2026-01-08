@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Infinity Token Deploy System</title>
+  <!-- Load Dexie for pewpi-shared -->
+  <script src="https://unpkg.com/dexie@3.2.4/dist/dexie.js"></script>
   <style>
     body {
       background:#050505;
@@ -51,6 +53,9 @@ pewpi-infinity / legend-core / mongoose.os / infinity system
 <pre id="output">Awaiting deployment…</pre>
 
 <script src="deploy.js"></script>
+
+<!-- Load pewpi-shared services -->
+<script type="module" src="/pewpi-shared-loader.js"></script>
 
 </body>
 </html>
